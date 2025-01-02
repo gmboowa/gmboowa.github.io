@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: /about/
 subtitle: Research Scientist, <a href='https://research-information.bris.ac.uk/en/persons/mike-nsubuga'>University of Bristol</a>, UK
 
 profile:
