@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://gmboowa.github.io/sitemap.xml
