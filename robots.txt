@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mikensubuga.github.io/sitemap.xml
+Sitemap: https://gmboowa.github.io/sitemap.xml
