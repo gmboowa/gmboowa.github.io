@@ -3,6 +3,7 @@ group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
     gem 'jekyll-archives'
+    gem 'github-pages'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'
@@ -21,6 +22,9 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'webrick'
     gem 'faraday-retry'
+    ##gem 'plugin-name'
+    gem 'jekyll-seo-tag'
+    gem 'nokogiri'
 end
 group :other_plugins do
     gem 'feedjira'
