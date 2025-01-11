@@ -1,16 +1,16 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: Research Scientist, <a href='https://research-information.bris.ac.uk/en/persons/mike-nsubuga'>University of Bristol</a>, UK
+subtitle: Bioinformatics Implementation Scientist, <a href='https://africacdc.org/people/gerald-mboowa/'>Africa CDC</a>, Addis Ababa, Ethiopia
 
 profile:
   align: right
-  image: mike-nsubuga.png
+  image: gerald-mboowa.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>BS8 1UH</p><br>
-    <p>United Kingdom</p>
+    <p></p><br>
+    <p></p>
  
 
 news: false  # includes a list of news items
@@ -19,8 +19,16 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I am a PhD student at the University of Bristol and a part-time Data Scientist at both the [Jean Golding Institute](https://www.bristol.ac.uk/golding/), UK and [Infectious Diseases Institute's ACE](https://ace.ac.ug/), Uganda. My PhD is funded by the Medical Research Council(MRC) under GW4 BioMed2 MRC DTP under the Population Health theme. My project under the supervision of [Prof Kristen Reyher](https://research-information.bris.ac.uk/en/persons/kristen-k-reyher), [Dr. Sion Bayliss](https://research-information.bris.ac.uk/en/persons/sion-c-bayliss), [Prof Andrew Dowsey](https://research-information.bris.ac.uk/en/persons/andrew-dowsey), and [Dr. Lauren Cowley](https://researchportal.bath.ac.uk/en/persons/lauren-cowley) centers on collaborating with the UK Health Security Agency(UKHSA) and Centers for Disease Control and Prevention(CDC) to develop cutting-edge machine learning tools aimed at forecasting outbreaks of foodborne diseases, while also identifying the genomic mechanisms of antimicrobial resistance (AMR).  These tools are used to support public health decision-making and facilitate rapid response to future outbreaks.
+Hi, I’m Gerald Mboowa, a bioinformatics implementation expert committed to advancing global health through innovative research and data-driven solutions, particularly in low- and middle-income countries (LMICs). My work integrates genome sequencing technologies and bioinformatics into public health strategies to address critical health challenges. As an implementation scientist, I have developed, alongside my team, two impactful bioinformatics pipelines: <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000583">rMAP (Rapid Microbial Analysis Pipeline)</a> and <a href="https://www.microbiologyresearch.org/content/journal/acmi/10.1099/acmi.0.000815.v3">HIV-DRIVES (HIV Drug Resistance Identification, Variant Evaluation, and Surveillance Pipeline)</a>. These tools significantly enhance antimicrobial resistance (AMR) surveillance and pathogen characterization, supporting outbreak investigations and evidence-based public health decision-making.
 
-I previously did an MSc in Bioinformatics supported by the Fogarty International Center(FIC) of the National Institutes of Health(NIH) under the EANBIT project at Makerere University where my research focussed on evaluating the practicality and broader adaptability of machine learning models, particularly in the realm of identifying antimicrobial resistance within low-middle-income countries(LMICs).
+The rMAP pipeline facilitates the rapid identification of genomic determinants of resistance and virulence, offering actionable insights to develop targeted interventions and inform AMR policies. Meanwhile, HIV-DRIVES focuses on identifying HIV drug resistance, evaluating variants, and enabling robust surveillance. Together, these pipelines empower health systems—especially in LMICs—with the capacity to utilize genomic data for real-time disease monitoring and response, transforming how public health challenges are addressed.
 
-I enjoy contributing to innovations in global health and education. My work spans AMR, genomics, infectious diseases, and education initiatives, with a particular focus on LMICs
+With expertise spanning next-generation sequencing (NGS) and genomic data analysis, I focus on bridging data science, bioinformatics, and genomics to develop innovative solutions for improving diagnostics, treatment strategies, and public health outcomes. My contributions underscore the transformative potential of bioinformatics in addressing complex biological systems and translating genomic insights into strategies that enhance global health.
+
+Currently, I contribute to global health initiatives at the <a href="https://www.broadinstitute.org/">Broad Institute of MIT and Harvard</a>, building on my extensive experience in developing bioinformatics frameworks for infectious disease surveillance. My work encompasses AMR, genomics, and infectious disease surveillance, with a strong focus on fostering equitable solutions for LMICs. Previously, I collaborated with global organizations such as Africa CDC to implement genomic surveillance programs that enhance disease detection and response systems across Africa.
+
+Passionate about translating research into actionable public health outcomes, I actively support Genomics, Bioinformatics, and Data Science programs at the <a href="https://ace.ac.ug/">African Center of Excellence in Bioinformatics & Data-intensive Sciences (ACE)</a> and <a href="https://chs.mak.ac.ug/team/gerald-mboowa" target="_blank">Makerere University</a>.
+
+For more details regarding my research contributions, visit my <a href="https://orcid.org/0000-0001-8445-9414" target="_blank">ORCID</a>, <a href="https://scholar.google.com/citations?user=P9dSDhoAAAAJ" target="_blank">Google Scholar</a>, and <a href="https://www.researchgate.net/profile/Gerald-Mboowa" target="_blank">ResearchGate</a> pages. You can also connect with me via <a href="https://twitter.com/GeraldGMboowa" target="_blank">Twitter</a> and <a href="https://www.linkedin.com/in/gerald-mboowa-99020537/" target="_blank">LinkedIn</a>.
+
+Let’s connect and explore collaborative opportunities to advance global health, genomics, bioinformatics, data science, and public health innovation!
