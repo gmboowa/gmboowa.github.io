@@ -1,4 +1,4 @@
-name: deploy
+name: Deploy Site
 
 on:
   push:
@@ -29,39 +29,26 @@ jobs:
           ruby-version: '3.2.2'
           bundler-cache: true
 
-      # Step 3: Install system dependencies, including ImageMagick
-      - name: Install System Dependencies 📦
+      # Step 3: Install system dependencies
+      - name: Install Dependencies 📦
         run: |
           sudo apt-get update
           sudo apt-get install -y imagemagick
           pip3 install --upgrade jupyter
+          npm install -g mermaid.cli
           npm install -g purgecss
-          run: npm install -g @mermaid-js/mermaid-cli
 
-      # Step 4: Update _config.yml
-      - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@v0.13.1
-        with:
-          commitChange: false
-          valueFile: '_config.yml'
-          propertyPath: 'giscus.repo'
-          value: ${{ github.repository }}
-
-      # Step 5: Build the site
-      - name: Install and Build 🔧
+      # Step 4: Build the site
+      - name: Build Site 🔧
         run: |
           export JEKYLL_ENV=production
+          bundle install
           bundle exec jekyll build --lsi
           purgecss -c purgecss.config.js
 
-      # Step 6: Deploy the site to GitHub Pages
+      # Step 5: Deploy the site to GitHub Pages
       - name: Deploy 🚀
-        if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          folder: _site
-
-
-      with:
-        folder: _site
-
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
