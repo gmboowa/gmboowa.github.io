@@ -20,7 +20,7 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem 'mini_racer'
     gem 'unicode_utils'
-    gem 'webrick'
+    #gem 'webrick'
     gem 'faraday-retry'
     ##gem 'plugin-name'
     gem 'jekyll-seo-tag'
@@ -29,8 +29,9 @@ group :jekyll_plugins do
     gem 'jekyll-paginate-v2', '~> 3.0'
 end
 group :other_plugins do
-    gem 'feedjira'
-    gem 'httparty'
+	gem 'feedjira'
+	gem 'httparty'
     #gem 'github-pages' 
+	gem "webrick", "~> 1.7"
 end
 
