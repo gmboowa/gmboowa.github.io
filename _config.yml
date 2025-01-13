@@ -79,7 +79,14 @@ disqus_shortname: al-folio # put your disqus shortname
 #external_sources:
 # - name: #medium.com
 #  rss_url: #https://medium.com/@al-folio/feed
-
+# -----------------------------------------------------------------------------
+# GitHub Metadata
+# -----------------------------------------------------------------------------
+github:
+  metadata: true
+#  repository: gmboowa/gmboowa.github.io # Your repository name
+  organization: gmboowa # Your GitHub username or organization
+  repository: "{{ ENV['PAGES_REPO_NWO'] | default: 'gmboowa/gmboowa.github.io' }}"
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
