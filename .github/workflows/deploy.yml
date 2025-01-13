@@ -21,7 +21,7 @@ jobs:
       # Step 1: Checkout the repository
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-   
+
       # Step 2: Set up Ruby
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -29,8 +29,23 @@ jobs:
           ruby-version: '3.2.2'
           bundler-cache: true
 
-      # Step 3: Install system dependencies
-      - name: Install Dependencies 📦
+      # Step 3: Install dependencies and fix bundler issues
+      - name: Install Dependencies
+        run: |
+          # Update bundler and ensure dependencies are installed
+          gem install bundler
+          bundle install --retry 3
+
+      # Step 4: Install additional required gems
+      - name: Install Additional Gems
+        run: |
+          # Install faraday-retry gem for compatibility with Faraday v2.0+
+          gem install faraday-retry
+          # Re-run bundle install to integrate additional gems
+          bundle install
+
+      # Step 5: Install system dependencies
+      - name: Install System Dependencies 📦
         run: |
           sudo apt-get update
           sudo apt-get install -y imagemagick
@@ -38,19 +53,14 @@ jobs:
           npm install -g mermaid.cli
           npm install -g purgecss
 
-      # Step 4: Set PAGES_REPO_NWO Environment Variable
-      - name: Set PAGES_REPO_NWO Variable
-        run: echo "PAGES_REPO_NWO=gmboowa/gmboowa.github.io" >> $GITHUB_ENV
-
-      # Step 5: Build the site
+      # Step 6: Build the site
       - name: Build Site 🔧
         run: |
           export JEKYLL_ENV=production
-          bundle install
           bundle exec jekyll build --lsi
           purgecss -c purgecss.config.js
 
-      # Step 6: Deploy the site to GitHub Pages
+      # Step 7: Deploy the site to GitHub Pages
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
