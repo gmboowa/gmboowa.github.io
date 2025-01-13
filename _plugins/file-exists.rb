@@ -1,5 +1,5 @@
 module Jekyll
-  class FileExistTag < Liquid::Tag
+  class FileExistsTag < Liquid::Tag
 
     def initialize(tag_name, path, tokens)
       super
@@ -20,4 +20,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('file_exist', Jekyll::FileExistTag)
+Liquid::Template.register_tag('file_exists', Jekyll::FileExistsTag)
