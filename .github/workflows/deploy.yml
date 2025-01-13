@@ -3,65 +3,32 @@ name: Deploy Site
 on:
   push:
     branches:
-      - master
       - main
-  pull_request:
-    branches:
       - master
-      - main
-  workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      PAGES_REPO_NWO: gmboowa/gmboowa.github.io # Replace with your repo name
+
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout 🛎️
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Set up Ruby
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2.2'
+          ruby-version: 3.1
           bundler-cache: true
 
-      # Step 3: Install dependencies and fix bundler issues
-      - name: Install Dependencies
-        run: |
-          # Update bundler and ensure dependencies are installed
-          gem install bundler
-          bundle install --retry 3
+      - name: Install dependencies
+        run: bundle install
 
-      # Step 4: Install additional required gems
-      - name: Install Additional Gems
-        run: |
-          # Install faraday-retry gem for compatibility with Faraday v2.0+
-          gem install faraday-retry
-          # Re-run bundle install to integrate additional gems
-          bundle install
+      - name: Build the site
+        run: bundle exec jekyll build
 
-      # Step 5: Install system dependencies
-      - name: Install System Dependencies 📦
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y imagemagick
-          pip3 install --upgrade jupyter
-          npm install -g mermaid.cli
-          npm install -g purgecss
-
-      # Step 6: Build the site
-      - name: Build Site 🔧
-        run: |
-          export JEKYLL_ENV=production
-          bundle exec jekyll build --lsi
-          purgecss -c purgecss.config.js
-
-      # Step 7: Deploy the site to GitHub Pages
-      - name: Deploy 🚀
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
