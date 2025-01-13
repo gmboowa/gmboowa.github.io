@@ -50,43 +50,42 @@ github:
   organization: gmboowa # Add your GitHub username or organization here
 
 # Enable AutoPages
-  #autopages:
-  #  enabled: true
-  #  categories: true
-  #  tags: true
+# Uncomment and configure AutoPages if needed
+# autopages:
+#   enabled: true
+#   categories: true
+#   tags: true
 
 # Giscus comments (RECOMMENDED)
-# Follow instructions on https://giscus.app/ to setup for your repo to fill out
-# the information below.
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
-  category: Comments # name of the category under which discussions will be created
-  mapping: title # identify discussions by post title
-  strict: 1 # use strict identification mode
-  reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
-  input_position: bottom # whether to display input form below (bottom) or above (top) the comments
-  theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
+  repo: gmboowa/gmboowa.github.io # Your GitHub repository
+  category: Comments # Name of the category for discussions
+  mapping: title # Identify discussions by post title
+  strict: 1 # Use strict identification mode
+  reactions_enabled: 1 # Enable emoji reactions
+  input_position: bottom # Input form position
+  theme: preferred_color_scheme # Color scheme (light/dark)
   emit_metadata: 0
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+disqus_shortname: al-folio # Disqus shortname
 
-# External sources.
-# If you have blog posts published on medium.com or other external sources,
-# you can display them in your blog by adding a link to the RSS feed.
-#external_sources:
+# External sources
+# Uncomment and configure if needed
+# external_sources:
 # - name: #medium.com
-#  rss_url: #https://medium.com/@al-folio/feed
+#   rss_url: #https://medium.com/@al-folio/feed
+
 # -----------------------------------------------------------------------------
-# GitHub Metadata
+# GitHub Metadata Fallback
 # -----------------------------------------------------------------------------
+
+# Use environment variable or default value to define the repository
 github:
   metadata: true
-#  repository: gmboowa/gmboowa.github.io # Your repository name
-  organization: gmboowa # Your GitHub username or organization
   repository: "{{ ENV['PAGES_REPO_NWO'] | default: 'gmboowa/gmboowa.github.io' }}"
+
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
