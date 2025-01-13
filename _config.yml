@@ -85,6 +85,7 @@ disqus_shortname: al-folio # Disqus shortname
 github:
   metadata: true
   repository: "{{ ENV['PAGES_REPO_NWO'] | default: 'gmboowa/gmboowa.github.io' }}"
+  token: ${{ secrets.GITHUB_TOKEN }}
 
 # -----------------------------------------------------------------------------
 # Collections
