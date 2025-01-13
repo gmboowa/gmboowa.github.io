@@ -35,8 +35,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y imagemagick
           pip3 install --upgrade jupyter
-          npm install -g mermaid.cli
           npm install -g purgecss
+          run: npm install -g @mermaid-js/mermaid-cli
 
       # Step 4: Update _config.yml
       - name: Update _config.yml ⚙️
