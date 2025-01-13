@@ -25,10 +25,14 @@ A sample blog page that demonstrates accessing GitHub metadata.
 - [This page](https://github.com/jekyll/github-metadata/blob/master/docs/site.github.md) highlights all the fields accessible with GitHub Metadata.
 
 ## Example Metadata
+{% if site.github %}
 - **Host Name:** {{ site.github.hostname }}
 - **URL:** {{ site.github.url }}
 - **BaseURL:** {{ site.github.baseurl }}
 - **Archived:** {{ site.github.archived }}
+{% else %}
+- **GitHub Metadata Unavailable**
+{% endif %}
 
 ## Contributors
 {% if site.github.contributors %}
