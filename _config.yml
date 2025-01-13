@@ -4,88 +4,157 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Gerald
-middle_name:
+middle_name: 
 last_name: Mboowa
 email: gmboowa@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Gerald Mboowa | Research Scientist, Makerere University, Uganda. | Specializing in Data Science for Global Health.
+  Gerald Mboowa | Scientist | Specializing in Data Science for Global Health.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: professional, gerald, academic, website, gerald-mboowa, mboowa # add your own keywords or leave empty
+keywords: academic-website, gerald-mboowa, mboowa  # add your own keywords or leave empty
+
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://gmboowa.github.io # the base hostname & protocol for your site
-baseurl: "" # no subpath for a GitHub Pages user site
-last_updated: true # set to true to display the last updated date in the footer
-impressum_path: # path for impressum link, if applicable
+baseurl:  # the subpath of your site, e.g. /blog/
+last_updated:  # set to true if you want to display last updated in the footer
+impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
+
+# repo color theme
+repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_trophies:
+  enabled: true
+  theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
+  theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
+
+# -----------------------------------------------------------------------------
+# RSS Feed
+# -----------------------------------------------------------------------------
+# will use title and url fields
+# Take a look to https://github.com/jekyll/jekyll-feed for more customization
+
+rss_icon: false
+
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
+
+navbar_fixed: true
+footer_fixed: false
+
+# Dimensions
+max_width: 800px
+
+# TODO: add layout settings (single page vs. multi-page)
+
+# -----------------------------------------------------------------------------
+# Open Graph & Schema.org
+# -----------------------------------------------------------------------------
+# Display links to the page with a preview object on social media.
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_schema_org: false # Include Schema.org in the HTML head
+og_image: # The site-wide (default for all links) Open Graph preview image
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
+github_username: gmboowa # your GitHub user name
+gitlab_username: # your GitLab user name
+twitter_username: GeraldGmboowa # your Twitter handle
+mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+linkedin_username: gerald-mboowa-99020537 # your LinkedIn user name
+telegram_username: # your Telegram user name
+scholar_userid: P9dSDhoAAAAJ # your Google Scholar ID
+semanticscholar_id: # your Semantic Scholar ID
+whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+orcid_id: 0000-0001-8445-9414 # your ORCID ID
+medium_username: # your Medium username
+quora_username: # your Quora username
+publons_id: # your ID on Publons
+lattes_id: # your ID on Lattes (Brazilian Lattes CV)
+osf_id: # your OSF ID
+research_gate_profile: Gerald-Mboowa # your profile on ResearchGate
+scopus_id: # your profile on Scopus
+blogger_url: # your blogger URL
+work_url: # work page URL
+keybase_username: # your keybase user name
+wikidata_id: # your wikidata id
+wikipedia_id: # your wikipedia id (Case sensitive)
+dblp_url: # your DBLP profile url
+stackoverflow_id: # your stackoverflow id
+kaggle_id: # your kaggle id
+lastfm_id: # your lastfm id
+spotify_id: # your spotify id
+pinterest_id: # your pinterest id
+unsplash_id: # your unsplash id
+instagram_id: # your instagram id
+facebook_id: # your facebook id
+youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+discord_id: # your discord id (18-digit unique numerical identifier)
+zotero_username: # your zotero username
+wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+
+contact_note: >
+  The best way to reach me is through my personal email nsubugamike021@gmail.com
+
+# -----------------------------------------------------------------------------
+# Analytics and search engine verification
+# -----------------------------------------------------------------------------
+
+google_analytics:  # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+cronitor_analytics:  # cronitor RUM analytics site ID (format: XXXXXXXXX)
+
+google_site_verification:  # your google-site-verification ID (Google Search Console)
+bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio
-blog_nav_title: Blog
-blog_description: A simple whitespace theme for academics
+blog_name: al-folio # blog_name will be displayed in your blog page
+blog_nav_title:  # your blog must have a title for it to be displayed in the nav bar
+blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
   enabled: true
-  per_page: 5
-  permalink: "/page/:num/"
 
-# Related blog posts
 related_blog_posts:
   enabled: true
   max_related: 5
 
-# -----------------------------------------------------------------------------
-# GitHub Metadata
-# -----------------------------------------------------------------------------
-
-github:
-  metadata: true
-  repository: gmboowa/gmboowa.github.io # Add your repository name here
-  organization: gmboowa # Add your GitHub username or organization here
-
-# Enable AutoPages
-# Uncomment and configure AutoPages if needed
-# autopages:
-#   enabled: true
-#   categories: true
-#   tags: true
-
 # Giscus comments (RECOMMENDED)
+# Follow instructions on https://giscus.app/ to setup for your repo to fill out
+# the information below.
 giscus:
-  repo: gmboowa/gmboowa.github.io # Your GitHub repository
-  category: Comments # Name of the category for discussions
-  mapping: title # Identify discussions by post title
-  strict: 1 # Use strict identification mode
-  reactions_enabled: 1 # Enable emoji reactions
-  input_position: bottom # Input form position
-  theme: preferred_color_scheme # Color scheme (light/dark)
+  repo:                          # <your-github-user-name>/<your-github-repo-name>
+  category: Comments             # name of the category under which discussions will be created
+  mapping: title                 # identify discussions by post title
+  strict: 1                      # use strict identification mode
+  reactions_enabled: 1           # enable (1) or disable (0) emoji reactions
+  input_position: bottom         # whether to display input form below (bottom) or above (top) the comments
+  theme: preferred_color_scheme  # name of the color scheme (preferred works well with al-folio light/dark mode)
   emit_metadata: 0
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # Disqus shortname
+disqus_shortname: al-folio # put your disqus shortname
+# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
-# External sources
-# Uncomment and configure if needed
-# external_sources:
-# - name: #medium.com
-#   rss_url: #https://medium.com/@al-folio/feed
-
-# -----------------------------------------------------------------------------
-# GitHub Metadata Fallback
-# -----------------------------------------------------------------------------
-
-# Use environment variable or default value to define the repository
-github:
-  metadata: true
-  repository: "{{ ENV['PAGES_REPO_NWO'] | default: 'gmboowa/gmboowa.github.io' }}"
-  token: ${{ secrets.GITHUB_TOKEN }}
+# External sources.
+# If you have blog posts published on medium.com or other external sources,
+# you can display them in your blog by adding a link to the RSS feed.
+#external_sources:
+ # - name: #medium.com
+  #  rss_url: #https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -121,7 +190,7 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter_opts:
-    css_class: "highlight"
+    css_class: 'highlight'
     span:
       line_numbers: false
     block:
@@ -129,7 +198,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include: ['_pages']
 exclude:
   - bin
   - Gemfile
@@ -152,13 +221,11 @@ plugins:
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
-  - jekyll-scholar
+  - jekyll/scholar
   - jekyll-sitemap
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
-  - jekyll-github-metadata
-  - jekyll-seo-tag
 
 # Sitemap settings
 defaults:
@@ -175,7 +242,7 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ["robots.txt"]
+  exclude: ['robots.txt']
   uglifier_args:
     harmony: true
 
@@ -190,18 +257,19 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: "/blog/:year/"
-    tag: "/blog/tag/:name/"
-    category: "/blog/category/:name/"
+    year: '/blog/:year/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
 
-display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
-display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
+display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
+display_categories: ['blockquotes'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
 scholar:
+
   last_name: [Gerald]
   first_name: [Mboowa]
 
@@ -233,28 +301,11 @@ enable_publication_badges:
   dimensions: true # Dimensions badge (https://badge.dimensions.ai/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords:
-  [
-    abbr,
-    abstract,
-    arxiv,
-    bibtex_show,
-    html,
-    pdf,
-    selected,
-    supp,
-    blog,
-    code,
-    poster,
-    slides,
-    website,
-    preview,
-    altmetric,
-  ]
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
-more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
+max_author_limit: 3  # leave blank to always show all authors
+more_authors_animation_delay: 10  # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
 enable_publication_thumbnails: true
@@ -269,6 +320,7 @@ external_links:
   rel: external nofollow noopener
   target: _blank
   exclude:
+
 
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
@@ -295,31 +347,29 @@ imagemagick:
 # -----------------------------------------------------------------------------
 
 jekyll-diagrams:
-  # configuration, see https://github.com/zhustec/jekyll-diagrams.
-  # feel free to comment out this section if not using jekyll diagrams.
+    # configuration, see https://github.com/zhustec/jekyll-diagrams.
+    # feel free to comment out this section if not using jekyll diagrams.
+
 
 # -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: false # enables google analytics
-enable_cronitor_analytics: false # enables cronitor RUM analytics
-enable_google_verification: true # enables google site verification
-enable_bing_verification: false # enables bing site verification
-enable_masonry: true # enables automatic project cards arrangement
-enable_math: true # enables math typesetting (uses MathJax)
-enable_tooltips:
-  false # enables automatic tooltip links generated
-  # for each section titles on pages and posts
-enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social:
-  true # enables displaying social links in the
-  # navbar on the about page
-enable_project_categories:
-  true # enables categorization of projects into
-  # multiple categories
-enable_medium_zoom: true # enables image zoom feature (as on medium.com)
-enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
+enable_google_analytics:    false  # enables google analytics
+enable_cronitor_analytics: false  # enables cronitor RUM analytics
+enable_google_verification: true  # enables google site verification
+enable_bing_verification:   false  # enables bing site verification
+enable_masonry:             true   # enables automatic project cards arrangement
+enable_math:                true   # enables math typesetting (uses MathJax)
+enable_tooltips:            false  # enables automatic tooltip links generated
+                                   # for each section titles on pages and posts
+enable_darkmode:            true   # enables switching between light/dark modes
+enable_navbar_social:       true  # enables displaying social links in the
+                                   # navbar on the about page
+enable_project_categories:  true   # enables categorization of projects into
+                                   # multiple categories
+enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
+enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
 
 # -----------------------------------------------------------------------------
 # Library versions
@@ -364,9 +414,3 @@ jsonresume:
   - languages
   - interests
   - references
-# -----------------------------------------------------------------------------
-# Get meta data
-# -----------------------------------------------------------------------------
-#github:
-#metadata: true
-#repository: gmboowa/gmboowa.github.io
