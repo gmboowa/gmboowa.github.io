@@ -20,4 +20,3 @@ end
 gem 'mini_racer'
 gem 'webrick' # Required for Jekyll in Ruby 3.x
 gem 'nokogiri'
-
