@@ -226,6 +226,9 @@ plugins:
   #- jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
+  #- jekyll-feed
+  #- jekyll-sitemap
+  - external-posts
 
 # Sitemap settings
 defaults:
