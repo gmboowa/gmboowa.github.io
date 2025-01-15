@@ -1,8 +1,8 @@
-# Adding functionality to Jekyll::Scholar without redefining it
+# Safely extend Jekyll::Scholar::Utilities
 module Jekyll
   module Scholar
     module Utilities
-      # Safely add the scholar_source method
+      # Define the scholar_source method only if it does not already exist
       unless method_defined?(:scholar_source)
         def scholar_source(source)
           # Check if the source is an absolute path and exists
