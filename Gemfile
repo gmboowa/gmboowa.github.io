@@ -13,6 +13,7 @@ gem 'jekyll-get-json'
 gem 'jekyll-imagemagick'
 gem 'jekyll-jupyter-notebook'
 gem 'jekyll-link-attributes'
+gem 'jekyll-deploy'
 
 group :jekyll_plugins do
   gem 'jekyll-toc' # For Table of Contents
