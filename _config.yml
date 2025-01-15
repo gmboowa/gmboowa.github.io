@@ -272,15 +272,14 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-
   last_name: [Gerald]
   first_name: [Mboowa]
 
   style: apa
   locale: en
 
-  source: /_bibliography/
-  bibliography: papers.bib
+  source: /_bibliography
+  bibliography: /papers.bib
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
