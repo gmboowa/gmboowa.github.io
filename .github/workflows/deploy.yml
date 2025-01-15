@@ -43,15 +43,35 @@ jobs:
           npm install -g mermaid.cli
           npm install -g purgecss
 
-      # Step 5: Build the site
-      - name: Build Site 🔧
+      # Step 5: Debugging Step - Run Jekyll Build with Trace
+      - name: Debug Jekyll Build with Trace 🔍
         run: |
           export JEKYLL_ENV=production
           bundle install
+          bundle exec jekyll build --trace
+
+      # Step 6: Additional Debugging Steps
+      - name: Check Installed Gems 📜
+        run: |
+          bundle show jekyll-get-json
+          bundle list
+
+      - name: Clear Jekyll Cache 🧹
+        run: |
+          rm -rf .jekyll-cache
+
+      - name: Validate Configuration 🛠️
+        run: |
+          bundle exec jekyll doctor
+
+      # Step 7: Retry Building the Site
+      - name: Build Site 🔧
+        run: |
+          export JEKYLL_ENV=production
           bundle exec jekyll build --lsi
           purgecss -c purgecss.config.js
 
-      # Step 6: Deploy the site to GitHub Pages
+      # Step 8: Deploy the site to GitHub Pages
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
