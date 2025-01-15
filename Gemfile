@@ -12,6 +12,7 @@ gem 'jekyll-diagrams'
 gem 'jekyll-email-protect', '~> 1.0'
 gem 'jekyll-get-json'
 gem 'jekyll-imagemagick'
+gem 'jekyll-jupyter-notebook'
 
 group :jekyll_plugins do
   gem 'jekyll-toc' # For Table of Contents
