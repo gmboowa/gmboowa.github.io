@@ -47,6 +47,7 @@ jobs:
       - name: Debug Jekyll Build with Trace 🔍
         run: |
           export JEKYLL_ENV=production
+          rm -rf vendor/bundle
           bundle install
           bundle exec jekyll build --trace
 
