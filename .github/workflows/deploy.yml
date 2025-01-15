@@ -36,21 +36,28 @@ jobs:
           sudo apt-get install -y imagemagick
           convert --version # Verify ImageMagick installation
 
+      - name: Update _config.yml ⚙️
+        uses: fjogeleit/yaml-update-action@v0.13.1
+        with:
+          commitChange: false
+          valueFile: '_config.yml'
+          propertyPath: 'giscus.repo'
+          value: ${{ github.repository }}
+
       # Step 4: Install Python and Node.js dependencies
       - name: Install Additional Tools 📦
         run: |
           pip3 install --upgrade jupyter
           npm install -g mermaid.cli
           npm install -g purgecss
+          pip3 install --upgrade jupyter
 
       # Step 5: Debugging Step - Run Jekyll Build with Trace
       - name: Debug Jekyll Build with Trace 🔍
         run: |
-          export JEKYLL_ENV=production
           rm -rf vendor/bundle
           bundle install
-          bundle exec jekyll build --trace
-
+          
       # Step 6: Additional Debugging Steps
       - name: Check Installed Gems 📜
         run: |
@@ -74,7 +81,7 @@ jobs:
 
       # Step 8: Deploy the site to GitHub Pages
       - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v3
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          folder: _site
