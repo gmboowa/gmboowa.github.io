@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 # Use Jekyll and specific plugins
 gem 'jekyll', '~> 4.3' # Keeping Jekyll 4.2 as desired
-gem 'jekyll-scholar', '~> 6.0' # Updated to a compatible version, if available
 gem 'jekyll-feed', '~> 0.15'
 gem 'jekyll-sitemap', '~> 1.4'
 gem 'jekyll-seo-tag', '~> 2.7'
@@ -21,6 +20,7 @@ group :jekyll_plugins do
   gem 'jekyll-minifier'
   gem 'jemoji'
   gem 'jekyll-twitter-plugin'
+  gem 'jekyll-scholar', '~> 6.0' # Updated to a compatible version, if available
 end
 
 # Other plugins
