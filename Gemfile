@@ -7,6 +7,7 @@ gem 'jekyll-feed', '~> 0.15'
 gem 'jekyll-sitemap', '~> 1.4'
 gem 'jekyll-seo-tag', '~> 2.7'
 gem 'faraday-retry', '~> 1.0' # For Faraday middleware with retry support
+gem 'jekyll-archives', '~> 2.2'
 
 group :jekyll_plugins do
   gem 'jekyll-toc' # For Table of Contents
