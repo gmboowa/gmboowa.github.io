@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 # Use Jekyll and specific plugins
-gem 'jekyll', '~> 4.2'
-gem 'jekyll-scholar', '~> 5.16' # Provides the `bibliography` tag
+gem 'jekyll', '~> 4.2' # Keeping Jekyll 4.2 as desired
+gem 'jekyll-scholar', '~> 6.0' # Updated to a compatible version, if available
 gem 'jekyll-feed', '~> 0.15'
 gem 'jekyll-sitemap', '~> 1.4'
 gem 'jekyll-seo-tag', '~> 2.7'
