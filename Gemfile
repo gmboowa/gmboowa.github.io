@@ -23,7 +23,7 @@ gem 'classifier-reborn'
 gem 'terminal-table', '~> 1.4'
 
 # Additional dependencies
-gem 'rouge', '~> 2.2'
+gem 'rouge', '~> 1.7'
 gem 'webrick', '~> 1.3.1' # Necessary for Jekyll server with Ruby 3.x
 gem 'mini_racer', '~> 0.2'
 gem 'unicode_utils'
