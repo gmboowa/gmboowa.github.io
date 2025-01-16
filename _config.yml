@@ -8,7 +8,7 @@ middle_name:
 last_name: Mboowa
 email: gmboowa@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Gerald Mboowa | Scientist | Specializing in Data Science for Global Health.
+  Gerald Mboowa | Research Scientist & Makerere University, Uganda. | Specializing in Data Science for Global Health.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: academic-website, gerald-mboowa, mboowa  # add your own keywords or leave empty
@@ -67,20 +67,20 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: gmboowa # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: GeraldGmboowa # your Twitter handle
+twitter_username:  # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: gerald-mboowa-99020537 # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: P9dSDhoAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: 0000-0001-8445-9414 # your ORCID ID
+orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 osf_id: # your OSF ID
-research_gate_profile: Gerald-Mboowa # your profile on ResearchGate
+research_gate_profile: # your profile on ResearchGate
 scopus_id: # your profile on Scopus
 blogger_url: # your blogger URL
 work_url: # work page URL
@@ -102,7 +102,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  The best way to reach me is through my personal email gmboowa@gmail.com
+  The best way to reach me is through my personal email nsubugamike021@gmail.com
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -221,14 +221,11 @@ plugins:
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
-  - jekyll-scholar
+  - jekyll/scholar
   - jekyll-sitemap
-  #- jekyll-toc
+  - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
-  #- jekyll-feed
-  #- jekyll-sitemap
-  - external-posts
 
 # Sitemap settings
 defaults:
@@ -272,14 +269,15 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
+
   last_name: [Gerald]
   first_name: [Mboowa]
 
   style: apa
   locale: en
 
-  source: _bibliography
-  bibliography: _bibliography/papers.bib
+  source: /_bibliography/
+  bibliography: papers.bib
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
