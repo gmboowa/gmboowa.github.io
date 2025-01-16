@@ -20,6 +20,7 @@ gem 'jekyll-twitter-plugin'
 gem 'jekyll-email-protect'
 gem 'jekyll-link-attributes'
 gem 'classifier-reborn'
+gem 'terminal-table', '~> 1.4'
 
 # Additional dependencies
 gem 'rouge', '~> 2.2'
