@@ -19,27 +19,29 @@ A sample blog page that demonstrates accessing GitHub metadata.
 - Allows access to metadata.
 - Generates editable links.
 
-## Additional Reading
-- If you're receiving incorrect or missing data, you may need to perform GitHub API [authentication](https://github.com/jekyll/github-metadata/blob/master/docs/authentication.md).
-- Go through this [README](https://jekyll.github.io/github-metadata/) for more details.
-- [This page](https://github.com/jekyll/github-metadata/blob/master/docs/site.github.md) highlights all the fields accessible with GitHub Metadata.
-
 ## Example Metadata
+
+### Repository Metadata
 {% if site.github %}
-- **Host Name:** {{ site.github.hostname }}
-- **URL:** {{ site.github.url }}
-- **BaseURL:** {{ site.github.baseurl }}
-- **Archived:** {{ site.github.archived }}
+- **Host Name:** {{ site.github.hostname | default: "Unavailable" }}
+- **URL:** {{ site.github.url | default: "Unavailable" }}
+- **BaseURL:** {{ site.github.baseurl | default: "Unavailable" }}
+- **Archived:** {{ site.github.archived | default: "Unavailable" }}
 {% else %}
-- **GitHub Metadata Unavailable**
+- **GitHub Metadata Unavailable**. Ensure your `_config.yml` includes the `repository` field set to `gmboowa/gmboowa.github.io`, or set the `PAGES_REPO_NWO` environment variable.
 {% endif %}
 
 ## Contributors
-{% if site.github.contributors %}
+{% if site.github and site.github.contributors %}
 - **List of Contributors:**
 {% for contributor in site.github.contributors %}
   - {{ contributor.login }}
 {% endfor %}
 {% else %}
-- **No contributors found.**
+- **No contributors found.** Ensure the repository has contributors listed.
 {% endif %}
+
+## Additional Reading
+- If you're receiving incorrect or missing data, you may need to perform GitHub API [authentication](https://github.com/jekyll/github-metadata/blob/master/docs/authentication.md).
+- Go through this [README](https://jekyll.github.io/github-metadata/) for more details.
+- [This page](https://github.com/jekyll/github-metadata/blob/master/docs/site.github.md) highlights all the fields accessible with GitHub Metadata.
