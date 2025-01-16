@@ -30,3 +30,4 @@ gem 'unicode_utils', '~> 1.4.0'
 gem 'faraday', '~> 0.17.0' # Older version compatible with Ruby 2.4
 gem 'listen', '~> 3.1.5' # For live reload
 gem 'httparty', '~> 0.16.0'
+gem update --system 3.2.3
