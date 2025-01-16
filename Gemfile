@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Jekyll core
-gem 'jekyll', '~> 3.8.0' 
+gem 'jekyll', '4.2.0' 
 
 # Plugins
 gem 'jekyll-archives', '~> 2.0'
@@ -13,7 +13,7 @@ gem 'jekyll-jupyter-notebook', '~> 0.0.6'
 gem 'jekyll-minifier', '~> 0.1'
 gem 'jekyll-paginate-v2', '~> 1.9'
 gem 'jekyll-scholar'
-gem 'jekyll-toc', '0.12' 
+gem 'jekyll-toc', '0.15.0' 
 gem 'jekyll-sitemap'
 gem 'jemoji', '~> 0.10.2'
 gem 'jekyll-twitter-plugin'
