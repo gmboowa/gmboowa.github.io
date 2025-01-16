@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Jekyll core
-gem 'jekyll', '3.7.4'
+gem 'jekyll', '3.8.4'
 
 # Plugins
 gem 'jekyll-archives', '~> 2.0'
