@@ -211,7 +211,7 @@ keep_files:
   - .git
 
 # Plug-ins
-plugins:
+plugins_dir:
   - jekyll-archives
   - jekyll-diagrams
   - jekyll-email-protect
