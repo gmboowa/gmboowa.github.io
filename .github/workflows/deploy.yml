@@ -82,7 +82,7 @@ jobs:
       - name: Build Site 🔧
         run: |
           export JEKYLL_ENV=production
-          bundle exec jekyll serve
+          bundle exec jekyll serve --trace
           purgecss -c purgecss.config.js
 
       # Step 8: Deploy the site to GitHub Pages
