@@ -21,6 +21,8 @@ jobs:
       # Step 1: Checkout the repository
       - name: Checkout Repository 🛎️
         uses: actions/checkout@v3
+      - name: Set Environment Variables
+        run: echo "PAGES_REPO_NWO=gmboowa/gmboowa.github.io" >> $GITHUB_ENV
 
       # Step 2: Set up Ruby
       - name: Setup Ruby
