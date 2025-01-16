@@ -14,7 +14,7 @@ group :jekyll_plugins do
   gem 'jekyll-minifier'
   gem 'jekyll-paginate-v2'
   gem 'jekyll-scholar'
-  gem 'github-pages', '~> 197'     group: :jekyll_plugins
+  gem 'github-pages', '~> 197'    
   gem 'jekyll-sitemap'
   gem 'jekyll-toc'
   gem 'jekyll-twitter-plugin'
