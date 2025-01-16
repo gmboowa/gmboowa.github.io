@@ -15,7 +15,6 @@ group :jekyll_plugins do
   gem 'jekyll-paginate-v2'
   gem 'jekyll-scholar'
   gem 'github-pages', group: :jekyll_plugins
-  gem 'faraday-retry'
   gem 'jekyll-sitemap'
   gem 'jekyll-toc'
   gem 'jekyll-twitter-plugin'
