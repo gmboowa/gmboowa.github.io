@@ -25,7 +25,7 @@ group :jekyll_plugins do
 end
 
 # Add faraday-retry gem for Faraday v2.0+ compatibility
-gem 'faraday-retry'
+gem 'faraday', '~> 2.0'
 
 # Additional gems for functionality
 group :other_plugins do
