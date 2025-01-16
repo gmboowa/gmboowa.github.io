@@ -6,7 +6,7 @@ gem 'jekyll', '~> 3.2.1'
 # Plugins
 gem 'jekyll-archives', '~> 2.0'
 gem 'jekyll-diagrams'
-gem 'jekyll-feed', '~> 0.9'
+gem 'jekyll-feed'
 gem 'jekyll-get-json', '~> 1.0'
 gem 'jekyll-imagemagick', '~> 1.3'
 gem 'jekyll-jupyter-notebook', '~> 0.0.6'
