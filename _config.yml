@@ -397,9 +397,9 @@ medium_zoom:
 # -----------------------------------------------------------------------------
 #  Github metadata
 # -----------------------------------------------------------------------------
-github:
-  token: "" # Leave blank to disable authentication
-  hostname: "github.com"
+#github:
+ # token: "" # Leave blank to disable authentication
+ # hostname: "github.com"
 
 # -----------------------------------------------------------------------------
 # Get external JSON data
