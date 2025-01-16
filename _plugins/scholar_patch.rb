@@ -1,14 +1,13 @@
+# scholar_patch.rb
 module Jekyll
-  module Scholar
+  class Scholar
+    # Assuming you are adding or modifying functionalities in the Utilities module of Jekyll::Scholar
     module Utilities
-      def scholar_source(source)
-        # Ensure source is an absolute path and exists
-        if source.start_with?('/') && File.exist?(source)
-          return source
-        end
-
-        # Otherwise, resolve relative to the configured source directory
-        File.join(@config['source'], source)
+      # Example: Add a new method or modify an existing one
+      def enhanced_scholar_source(source)
+        base_source = super(source)  # Call the original method with super if it exists
+        # Your custom enhancement logic goes here
+        base_source + "/enhanced_path"  # Example modification
       end
     end
   end
