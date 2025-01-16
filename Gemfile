@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 group :jekyll_plugins do
     gem 'classifier-reborn'
-    gem 'jekyll', '~> 3.8.7'
+    gem 'jekyll', '>= 3.2.3' # Use system-installed Jekyll version or a higher compatible version
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'
