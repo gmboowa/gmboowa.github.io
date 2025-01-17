@@ -40,17 +40,18 @@ layout: default
   </header>
 
   <article class="post-content">
-    <!-- Include the Table of Contents -->
-    {% include toc.html %}
+    <!-- Static Table of Contents -->
+    <nav>
+      <ul>
+        <li><a href="#section-1">Section 1</a></li>
+        <li><a href="#section-2">Section 2</a></li>
+        <li><a href="#section-3">Section 3</a></li>
+      </ul>
+    </nav>
 
     {% if page.toc and page.toc.beginning %}
     <div id="table-of-contents">
-      {% if site.plugins contains 'jekyll-toc' %}
-        {% toc %}
-      {% else %}
-        <!-- TOC plugin not found or disabled -->
-        <p><strong>Note:</strong> Table of contents is not available because the 'jekyll-toc' plugin is missing or not configured properly.</p>
-      {% endif %}
+      <p><strong>Note:</strong> Table of contents is displayed statically. Dynamic TOC is disabled because the 'jekyll-toc' plugin is not supported in the current setup.</p>
     </div>
     {% endif %}
   </article>
