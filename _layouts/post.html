@@ -64,7 +64,7 @@ layout: default
   {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
   <h2>References</h2>
   <div class="publications">
-    {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
+    <p><strong>Note:</strong> Bibliography feature is not supported in the current configuration. Please manually add references here.</p>
   </div>
   {%- endif %}
 
