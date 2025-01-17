@@ -22,6 +22,7 @@ gem 'jekyll-email-protect'
 gem 'jekyll-link-attributes'
 gem 'classifier-reborn'
 gem 'terminal-table'
+gem 'jekyll-mermaid'
 
 # Additional dependencies
 gem 'rouge'
