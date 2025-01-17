@@ -1,0 +1,17 @@
+<nav class="table-of-contents">
+  <h2>Table of Contents</h2>
+  <ul>
+    {% assign headings = content | split: '<h' %}
+    {% for heading in headings %}
+      {% if heading contains '</h' %}
+        {% capture tag %}
+          {{ heading | truncatewords: 1, '' | strip }}
+        {% endcapture %}
+        {% capture text %}
+          {{ heading | remove: '</h' | strip_html }}
+        {% endcapture %}
+        <li><a href="#{{ text | slugify }}">{{ text }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
