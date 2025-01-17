@@ -40,6 +40,9 @@ layout: default
   </header>
 
   <article class="post-content">
+    <!-- Include the Table of Contents -->
+    {% include toc.html %}
+
     {% if page.toc and page.toc.beginning %}
     <div id="table-of-contents">
       {% if site.plugins contains 'jekyll-toc' %}
