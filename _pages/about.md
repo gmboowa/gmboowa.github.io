@@ -11,7 +11,6 @@ profile:
   more_info: >
     <p></p><br>
     <p></p>
- 
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
