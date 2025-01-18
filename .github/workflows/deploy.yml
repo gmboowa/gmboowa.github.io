@@ -35,19 +35,28 @@ jobs:
           ruby-version: '3.2.2'
           bundler-cache: true
 
-      # Step 4: Install ImageMagick
+      # Step 4: Install Node.js
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # Step 5: Install ImageMagick
       - name: Install ImageMagick
         run: sudo apt-get update && sudo apt-get install -y imagemagick
 
-      # Step 5: Install dependencies
+      # Step 6: Install dependencies
       - name: Install dependencies
-        run: bundle install
+        run: |
+          bundle install
+          npm install -g @mermaid-js/mermaid-cli
+          npm install -g purgecss
 
-      # Step 6: Build the Jekyll site
+      # Step 7: Build the Jekyll site
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
-      # Step 7: Update _config.yml ⚙️
+      # Step 8: Update _config.yml ⚙️
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@v0.13.1
         with:
@@ -56,17 +65,15 @@ jobs:
           propertyPath: 'giscus.repo'
           value: ${{ github.repository }}
 
-      # Step 8: Install and Build 🔧
+      # Step 9: Install and Build 🔧
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade jupyter
-          npm install -g @mermaid-js/mermaid-cli
-          npm install -g purgecss
           export JEKYLL_ENV=production
           bundle exec jekyll build --lsi
           purgecss -c purgecss.config.js
 
-      # Step 9: Deploy 🚀
+      # Step 10: Deploy 🚀
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
