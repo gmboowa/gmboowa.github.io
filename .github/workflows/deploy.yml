@@ -45,18 +45,24 @@ jobs:
       - name: Install ImageMagick
         run: sudo apt-get update && sudo apt-get install -y imagemagick
 
-      # Step 6: Install dependencies
+      # Step 6: Clean Environment
+      - name: Clean Environment 🧹
+        run: |
+          rm -r .bundle || true
+          rm -r vendor || true
+
+      # Step 7: Install dependencies
       - name: Install dependencies
         run: |
           bundle install
           npm install -g @mermaid-js/mermaid-cli
           npm install -g purgecss
 
-      # Step 7: Build the Jekyll site
+      # Step 8: Build the Jekyll site
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
-      # Step 8: Update _config.yml ⚙️
+      # Step 9: Update _config.yml ⚙️
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@v0.13.1
         with:
@@ -65,7 +71,7 @@ jobs:
           propertyPath: 'giscus.repo'
           value: ${{ github.repository }}
 
-      # Step 9: Install and Build 🔧
+      # Step 10: Install and Build 🔧
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade jupyter
@@ -73,7 +79,7 @@ jobs:
           bundle exec jekyll build --lsi
           purgecss -c purgecss.config.js
 
-      # Step 10: Deploy 🚀
+      # Step 11: Deploy 🚀
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
