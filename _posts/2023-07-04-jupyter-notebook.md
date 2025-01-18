@@ -12,7 +12,6 @@ related_posts: false
 To include a Jupyter notebook in a post, you can use the following code:
 
 {% raw %}
-
 ```html
 {::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/blog.ipynb" | relative_url %}
@@ -22,4 +21,3 @@ To include a Jupyter notebook in a post, you can use the following code:
     <p>Sorry, the notebook you are looking for does not exist.</p>
 {% endif %}
 {:/nomarkdown}
-
