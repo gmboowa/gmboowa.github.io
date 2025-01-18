@@ -228,6 +228,7 @@ plugins_dir:
   - jekyll-twitter-plugin
   - jemoji
   - jekyll-mermaid
+  - file_exists
 
 # Sitemap settings
 defaults:
