@@ -22,8 +22,6 @@
         <div class="row">
           <!-- main content area -->
           <div class="col-sm-9">
-            <!-- Include the Table of Contents -->
-            {% include toc.html %}
             {{ content }}
           </div>
           <!-- sidebar, which will move to the top on a small screen -->
@@ -39,15 +37,11 @@
           </div>
           <!-- main content area -->
           <div class="col-sm-9">
-            <!-- Include the Table of Contents -->
-            {% include toc.html %}
             {{ content }}
           </div>
         </div>
         {% endif %}
       {% else %}
-        <!-- Include the Table of Contents -->
-        {% include toc.html %}
         {{ content }}
       {% endif %}
     </div>
