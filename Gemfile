@@ -22,6 +22,7 @@ group :jekyll_plugins do
     gem 'webrick'
     gem 'jekyll-github-metadata'
     gem 'file_exists'
+    gem 'jekyll-details-tag'
 end
 group :other_plugins do
     gem 'feedjira'
