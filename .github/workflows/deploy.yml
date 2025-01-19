@@ -78,16 +78,12 @@ jobs:
           propertyPath: 'giscus.repo'
           value: ${{ github.repository }}
 
-      # Step 11: Final Build for Production
-      - name: Install and Build 🔧
-        run: |
-          export JEKYLL_ENV=production
-          bundle exec jekyll build --lsi
-          purgecss -c purgecss.config.js
-
-      # Step 12: Deploy the site to GitHub Pages
-      - name: Deploy 🚀
+      # Step 11: Deploy the Jekyll site to GitHub Pages
+      - name: Deploy to GitHub Pages 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+          branch: gh-pages
+          clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}
