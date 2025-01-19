@@ -1,13 +1,8 @@
-name: deploy
+name: Build and Deploy Jekyll Site
 
 on:
   push:
     branches:
-      - master
-      - main
-  pull_request:
-    branches:
-      - master
       - main
   workflow_dispatch:
 
@@ -15,72 +10,29 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
-    # Use the latest Ubuntu image for the runner
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the code
-      - name: Checkout 🛎️
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Set up GitHub authentication
-      - name: Set up GitHub authentication
-        run: echo "JEKYLL_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+      - name: Set GitHub Authentication
+        run: echo "JEKYLL_GITHUB_TOKEN=${{ secrets.JEKYLL_GITHUB_TOKEN }}" >> $GITHUB_ENV
 
-      # Step 3: Set up Ruby and Bundler cache
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2.2'
+          ruby-version: 3.2.2
           bundler-cache: true
 
-      # Step 4: Install Node.js for JavaScript dependencies
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-
-      # Step 5: Install ImageMagick for image processing
-      - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y imagemagick
-
-      # Step 6: Install Python and Jupyter (if needed for site content)
-      - name: Install Python and Jupyter
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3 python3-pip
-          pip3 install --upgrade jupyter
-
-      # Step 7: Clean up the environment
-      - name: Clean Environment 🧹
-        run: |
-          rm -rf .bundle || true
-          rm -rf vendor || true
-
-      # Step 8: Install dependencies for Jekyll and Node.js
       - name: Install dependencies
-        run: |
-          bundle install
-          npm install -g @mermaid-js/mermaid-cli
-          npm install -g purgecss
+        run: bundle install
 
-      # Step 9: Build the Jekyll site
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
-      # Step 10: Update _config.yml with repository details
-      - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@v0.13.1
-        with:
-          commitChange: false
-          valueFile: '_config.yml'
-          propertyPath: 'giscus.repo'
-          value: ${{ github.repository }}
-
-      # Step 11: Deploy the Jekyll site to GitHub Pages
-      - name: Deploy to GitHub Pages 🚀
-        if: github.event_name != 'pull_request'
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
