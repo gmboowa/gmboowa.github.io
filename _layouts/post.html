@@ -40,31 +40,22 @@ layout: default
   </header>
 
   <article class="post-content">
-    <!-- Static Table of Contents -->
-    <nav>
-      <ul>
-        <li><a href="#section-1">Section 1</a></li>
-        <li><a href="#section-2">Section 2</a></li>
-        <li><a href="#section-3">Section 3</a></li>
-      </ul>
-    </nav>
-
     {% if page.toc and page.toc.beginning %}
     <div id="table-of-contents">
-      <p><strong>Note:</strong> Table of contents is displayed statically. Dynamic TOC is disabled because the 'jekyll-toc' plugin is not supported in the current setup.</p>
+      {% toc %}
     </div>
+    <hr>
     {% endif %}
+    <div id="markdown-content">
+      {{ content }}
+    </div>
   </article>
-  <hr>
-  <div id="markdown-content">
-    {{ content }}
-  </div>
 
   {%- if page.related_publications != null and page.related_publications.size > 0 -%}
   {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
   <h2>References</h2>
   <div class="publications">
-    <p><strong>Note:</strong> Bibliography feature is not supported in the current configuration. Please manually add references here.</p>
+    {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
   </div>
   {%- endif %}
 
