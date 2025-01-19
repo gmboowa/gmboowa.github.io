@@ -3,8 +3,7 @@
 
   <!-- Head -->
   <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="refresh" content="3; url=/">    <!-- Metadata, OpenGraph and Schema.org -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
     
     <!-- Website verification -->
     <meta name="google-site-verification" content="">
@@ -18,9 +17,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page not found | Gerald  Mboowa</title>
+    <title>CV | Gerald  Mboowa</title>
     <meta name="author" content="Gerald  Mboowa">
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here.">
+    <meta name="description" content="Click button below to download/view.">
     <meta name="keywords" content="academic-website, gerald-mboowa, mboowa">
 
 
@@ -40,13 +39,16 @@
     <link rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css" media="" id="highlight_theme_light">
 
     
+    <!-- Sidebar Table of Contents -->
+    <link href="/assets/css/bootstrap-toc.min.css" rel="stylesheet">
+    
 
     <!-- Styles -->
     
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/404.html">
+    <link rel="canonical" href="http://localhost:4000/cv/">
 
     <!-- Dark Mode -->
     
@@ -97,8 +99,8 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">Resources</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/cv/">CV</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="/cv/">CV<span class="sr-only">(current)</span></a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -125,20 +127,41 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- page.html -->
+        
+        <div class="row">
+          <!-- sidebar, which will move to the top on a small screen -->
+          <div class="col-sm-3">
+            <nav id="toc-sidebar" class="sticky-top"></nav>
+          </div>
+          <!-- main content area -->
+          <div class="col-sm-9">
+            <!-- _layouts/cv.html -->
+
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
-  </header>
+    <h1 class="post-title">CV </h1>
+      <p class="post-description">Click button below to download/view.</p>
+
+
+    <h1 class="post-title">
+      
+      <a href="/assets/pdf/geraldmboowacv.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i></a>
+      
+    </h1></header>
+      
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please go back to the <a href="/">home page</a>.</p>
-
+    <div class="cv">
+      
+      </div>
   </article>
+
 </div>
 
+          </div>
+        </div>
+        
       
     </div>
 
@@ -166,6 +189,9 @@
   <!-- Medium Zoom JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
   <script defer src="/assets/js/zoom.js"></script>
+  <!-- Sidebar Table of Contents -->
+  <script defer src="/assets/js/bootstrap-toc.min.js"></script>
+
 
   <!-- Bootstrap Table -->
   <script defer src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
