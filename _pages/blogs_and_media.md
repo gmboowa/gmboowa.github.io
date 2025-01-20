@@ -27,7 +27,7 @@ The blog discusses the integration of Next-Generation Sequencing (NGS) into HIV 
 
 ## **3. WHO EPI-WIN: Pathogen Genomics in Health Emergencies – Spotlight Cholera**
 
-### **WHO EPI-WIN Webinar: Pathogen Genomics in Health Emergencies – Spotlight on Cholera**
+
 On December 12, 2024, the World Health Organization (WHO) hosted a webinar focusing on the application of pathogen genomics in managing cholera outbreaks. This session highlighted how genomic data enhances understanding of cholera's transmission dynamics, thereby strengthening surveillance and informing public health interventions. Experts, including Dr. Timothy Dallman from WHO and Professor François-Xavier Weill from Institut Pasteur, discussed the integration of genomics into cholera response strategies. <a href='https://www.who.int/news-room/events/detail/2024/12/12/default-calendar/who-epi-win-webinar-pathogen-genomics-in-health-emergencies-spotlight-cholera'>This was the second webinar by IPSN on EPI-WIN, in collaboration with the WHO Cholera Team</a>.
 
 **Webinar Presentation:** [Pathogen Genomics in Health Emergencies: Spotlight Cholera](https://www.youtube.com/watch?v=7ZJbfTpNkfc)
@@ -42,7 +42,7 @@ The PHA4GE Conference 2023 was held from 30 October - 1 November 2023 at Cavalli
 
 ---
 
-## **5. Science Journey: How to Make Your Inroads in Science**
+## **5. My Science Journey: How to Make Your Inroads in Science**
 
 **Webinar Presentation:** [My Science Journey](https://www.youtube.com/watch?v=lUumnB5JS60)
 
