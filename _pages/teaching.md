@@ -41,7 +41,8 @@ This course focuses on viral de novo assembly workflows using Illumina sequencin
 
 **Course Link:** [Viral De Novo Assembly Workflows on Terra Cloud Platform](https://broadinstitute.github.io/viral-workshops/veme-ngs/denovo.html#viral-de-novo-assembly)
 
-## ** 3.0 A Beginner’s Guide to Genomic Data Analysis: Variant calling
+## **3. A Beginner’s Guide to Genomic Data Analysis: Variant calling**
+
 The link provides a beginner-friendly introduction to genomic data analysis, specifically focusing on variant calling, which involves identifying genetic variations in sequencing data. It outlines the key steps in the process, including quality control, alignment of reads to a reference genome, and the use of tools like GATK for variant identification and filtering. The guide emphasizes the importance of understanding the pipeline and highlights resources and tools to help newcomers get started with genomic data analysis.
 
 **Course Link:** [A Beginner’s Guide to Genomic Data Analysis: Variant calling](https://medium.com/@manabeel.vet/a-beginners-guide-to-genomic-data-analysis-variant-calling-ad8515eebddf)
