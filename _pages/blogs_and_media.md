@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /blogs-and-media/
+permalink: /blogs_and_media/
 title: Blogs & Media
 description:
 nav: true
