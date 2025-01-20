@@ -17,6 +17,6 @@ related_publications: false
     </div>
 </div>
 <div class="caption">
-    Schematic showing PHICAMS project.
+    Schematic showing PHICAMS project. <a href="https://edctpalumninetwork.org/profile/300/">This EDCTP project (TMA2020CDF-3159) aims to identify microbial pathogens, characterize clinical presentations, and determine comorbidities in HIV-infected children and adolescents with non-malarial febrile illnesses, utilizing advanced sequencing technologies to improve diagnostic and therapeutic strategies.
 </div>
 
