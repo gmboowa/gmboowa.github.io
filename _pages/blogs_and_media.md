@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 permalink: /blogs-and-media/
 title: Blogs & Media
 description:
