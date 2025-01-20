@@ -4,7 +4,7 @@ permalink: /media/
 title: Media
 description:
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 ## **1. Introducing the BMC Series SDG Editorial Board Members**
