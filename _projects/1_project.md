@@ -19,6 +19,6 @@ related_publications: false
 <div class="caption">
     Schematic Showing the PHICAMS Project. The PHICAMS project (<a href="https://edctpalumninetwork.org/profile/300/">TMA2020CDF-3159</a>) aims to identify microbial pathogens, characterize clinical presentations, and determine comorbidities in HIV-infected children and adolescents with non-malarial febrile illness. This project leverages advanced sequencing technologies to improve diagnostic and therapeutic strategies.
 
-Our results have been published in BMC Infectious Diseases under the collection Diagnostic and Management of Infections in Immunocompromised Patients. You can view the publication <a href="https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-025-10517-1">here</a>.
+Our results have been published in BMC Infectious Diseases under the collection Diagnostic and Management of Infections in Immunocompromised Patients. You can view the publication <a href="https://link.springer.com/article/10.1186/s12879-025-10517-1">here</a>.
 </div>
 
