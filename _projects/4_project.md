@@ -30,11 +30,10 @@ giscus_comments: false
         <strong>Project Overview</strong>
     </p>
     <p>
-        The project leverages the Thermo Fisher TaqMan SARS-CoV-2 Mutation Panel Molecular Genotyping Assay to rapidly detect and genotype SARS-CoV-2 VOCs. The six participating countries—Morocco, Senegal, Sierra Leone, Gabon, Rwanda, and Namibia—were selected based on their existing WGS capacity, molecular diagnostics infrastructure, and the prevalence of SARS-CoV-2 cases.
+        The project leverages the Thermo Fisher TaqMan SARS-CoV-2 Mutation Panel Molecular Genotyping Assay to rapidly detect and genotype SARS-CoV-2 VOCs. The five participating countries— Morocco, Senegal, Kenya, Gabon, and Namibia—were selected based on their existing WGS capacity, molecular diagnostics infrastructure, and the prevalence of SARS-CoV-2 cases.
     </p>
     <p>
-        The study will utilize nasopharyngeal and oropharyngeal samples collected by the National Public Health Institutes (NPHIs) of each country. Positive samples with a cycle threshold (Ct) value ≤30 will undergo genotyping to identify SARS-CoV-2 mutations. Each NPHI will analyze 50 samples weekly over a six-month period, generating vital data on VOC prevalence and spread.
-    </p>
+        The study will utilize nasopharyngeal and oropharyngeal samples collected by the National Public Health Institutes (NPHIs) of each country. Positive samples with a cycle threshold (Ct) value ≤30 will undergo genotyping to identify SARS-CoV-2 mutations. 
     <p>
         <strong>Objectives</strong>
     </p>
