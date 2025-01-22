@@ -25,6 +25,12 @@ group :jekyll_plugins do
   gem 'unicode_utils'
   gem 'file_exists'
   gem 'jekyll-theme-primer'
+  gem 'open-uri'
+  gem 'nokogiri'
+  gem 'jekyll-analytics'
+  gem 'algoliasearch-jekyll'
+  gem 'jekyll-target-blank'
+
 
 end
 
