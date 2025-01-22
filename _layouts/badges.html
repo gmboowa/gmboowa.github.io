@@ -1,0 +1,5 @@
+{%- if site.badges.gscholar_badge %}
+<span class="google-scholar-citations-count" aria-label="Google Scholar citation count">
+  Citations: {{ page.citation_count | default: "N/A" }}
+</span>
+{%- endif %}
