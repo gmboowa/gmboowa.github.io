@@ -25,6 +25,12 @@ category: work
         Cholera remains a significant public health challenge across Africa, with periodic outbreaks causing considerable morbidity and mortality. The CholGen project aims to strengthen genomic surveillance capacity for cholera in Africa, addressing the critical need for rapid, data-driven public health interventions. By leveraging advancements in pathogen genomics, CholGen seeks to enhance understanding of cholera dynamics, improve outbreak response, and support long-term control strategies.
     </p>
     <p>
+        <strong>Project Progress</strong>
+    </p>
+    <p>
+        You can access a detailed overview of CholGen activities here <a href="https://github.com/gmboowa/gmboowa.github.io/blob/master/assets/pdf/Gerald_Mboowa_Enhanced_Cholera_Genomic_Surveillance_in_Africa.pdf" target="_blank">here</a>.
+    </p>
+    <p>
         <strong>Project Goals</strong>
     </p>
     <p>
