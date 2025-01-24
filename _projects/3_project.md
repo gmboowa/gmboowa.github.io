@@ -28,7 +28,7 @@ category: work
         <strong>Project Progress</strong>
     </p>
     <p>
-        You can access a detailed overview of CholGen activities here <a href="https://github.com/gmboowa/gmboowa.github.io/blob/master/assets/pdf/Gerald_Mboowa_Enhanced_Cholera_Genomic_Surveillance_in_Africa.pdf" target="_blank">here</a>.
+        You can access a detailed overview of CholGen activities <a href="https://github.com/gmboowa/gmboowa.github.io/blob/master/assets/pdf/Gerald_Mboowa_Enhanced_Cholera_Genomic_Surveillance_in_Africa.pdf" target="_blank">here</a>.
     </p>
     <p>
         <strong>Project Goals</strong>
