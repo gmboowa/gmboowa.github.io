@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Bioinformatics Implementation Scientist, <a href='https://africacdc.org/people/gerald-mboowa/'>Africa CDC</a>, Addis Ababa, Ethiopia
+subtitle: 
 
 profile:
   align: right
@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, I’m Gerald Mboowa, a bioinformatics implementation expert dedicated to advancing global health through innovative research and data-driven solutions, particularly in low- and middle-income countries (LMICs). My work integrates genome sequencing technologies and bioinformatics into public health strategies to address critical health challenges. As an implementation scientist, I have collaborated with my team to develop two impactful bioinformatics pipelines: <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000583">rMAP (Rapid Microbial Analysis Pipeline)</a> and <a href="https://www.microbiologyresearch.org/content/journal/acmi/10.1099/acmi.0.000815.v3">HIV-DRIVES (HIV Drug Resistance Identification, Variant Evaluation, and Surveillance Pipeline)</a>. These tools significantly enhance antimicrobial resistance (AMR) surveillance and pathogen characterization, supporting outbreak investigations and evidence-based public health decision-making.
+Hi, I’m Gerald Mboowa, a scientist dedicated to advancing global health through innovative research and data-driven solutions, particularly in low- and middle-income countries (LMICs). My work integrates genome sequencing technologies and bioinformatics into public health strategies to address critical health challenges. As an implementation scientist, I have collaborated with my team to develop two impactful bioinformatics pipelines: <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000583">rMAP (Rapid Microbial Analysis Pipeline)</a> and <a href="https://www.microbiologyresearch.org/content/journal/acmi/10.1099/acmi.0.000815.v3">HIV-DRIVES (HIV Drug Resistance Identification, Variant Evaluation, and Surveillance Pipeline)</a>. These tools significantly enhance antimicrobial resistance (AMR) surveillance and pathogen characterization, supporting outbreak investigations and evidence-based public health decision-making.
 
 The rMAP pipeline facilitates the rapid identification of clinically important bacterial pathogens and genomic determinants of resistance and virulence, offering actionable insights to develop targeted interventions and inform AMR policies. Meanwhile, HIV-DRIVES focuses on identifying HIV drug resistance, evaluating variants, and enabling robust surveillance. Together, these pipelines empower health systems—especially in LMICs—with the capacity to utilize genomic data, transforming how public health challenges are addressed.
 
