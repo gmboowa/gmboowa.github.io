@@ -38,7 +38,7 @@ On December 12, 2024, the World Health Organization (WHO) hosted a webinar focus
 
 The PHA4GE Conference 2023 was held from 30 October - 1 November 2023 at Cavalli Estate, Cape Town, South Africa. The conference explored a range of topics that are crucial to public health and genomics.
 
-**Conference Presentation:** [Africa Pathogen Data Management & Exchange Platform](https://www.youtube.com/watch?v=7ZJbfTpNkfc)
+**Conference Presentation:** [Africa Pathogen Data Management & Exchange Platform](https://www.youtube.com/watch?v=YpQFh_ZtA4E&t=2s)
 
 ---
 
