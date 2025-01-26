@@ -10,8 +10,10 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-
+  <body
+    class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}"
+    style="color: #1A1A1A; font-size: 16px; background-color: #f9f9f9;"
+  >
     <!-- Header -->
     {%- include header.html %}
 
