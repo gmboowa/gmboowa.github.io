@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: "Resources"
+title: Resources
 description:
 nav: true
 nav_order: 4
