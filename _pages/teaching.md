@@ -1,12 +1,13 @@
 ---
 layout: page
 permalink: /teaching/
+title: Resources
 description:
 nav: true
 nav_order: 4
 ---
 
-# **Resources**
+<h1 style="font-weight: bold;">{{ page.title }}</h1>
 
 <hr style="border: 3px dashed black;">
 
