@@ -24,8 +24,7 @@ My work focuses on utilizing DNA sequencing technologies and computational tools
 
 **Focus:** Enhancing Antiretroviral Treatment Monitoring and Public Health Outcomes  
 This blog discusses the integration of Next-Generation Sequencing (NGS) into HIV drug resistance testing, highlighting its superior sensitivity in detecting resistance mutations. Key steps include:
-- Sample preparation
-- Sequencing
+
 - Data analysis
 - Clinical interpretation
 
