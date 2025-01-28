@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: # <span style="font-weight: 900; font-size: 2em;">Resources</span>
+title: Resources
 description:
 nav: true
 nav_order: 4
