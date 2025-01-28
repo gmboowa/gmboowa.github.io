@@ -1,3 +1,13 @@
+/* Styling for Page Titles */
+.page-title {
+  font-weight: bold;
+  font-size: 2em; /* Adjust font size to your preference */
+  margin-bottom: 20px; /* Adds spacing below the title */
+  text-align: center; /* Centers the title on the page */
+  color: #333; /* Dark gray for a clean, professional look */
+}
+
+/* Styling for Table of Contents */
 .table-of-contents {
   border: 1px solid #ddd;
   padding: 10px;
