@@ -7,7 +7,7 @@ nav: true
 nav_order: 7
 ---
 
-# **Media and Blogs**
+# **Media & Blogs**
 
 <hr style="border: 3px dashed black;">
 
