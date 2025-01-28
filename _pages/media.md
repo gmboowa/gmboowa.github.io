@@ -1,13 +1,12 @@
 ---
 layout: default
 permalink: /media/
-title: 
+title: **Media**
 description:
 nav: true
 nav_order: 7
 ---
 
-# <span style="font-weight: 900; font-size: 2em;">Media</span>
 
 <hr style="border: 3px dashed black;">
 
