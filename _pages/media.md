@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /media/
-title: **Media**
+title: "Media"
 description:
 nav: true
 nav_order: 7
