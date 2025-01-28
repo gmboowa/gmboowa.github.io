@@ -7,7 +7,7 @@ nav: true
 nav_order: 7
 ---
 
-# Media
+# <span style="font-weight: 900; font-size: 2em;">Media</span>
 
 <hr style="border: 3px dashed black;">
 
@@ -38,6 +38,7 @@ These steps improve patient outcomes by enabling timely adjustments to antiretro
 
 **Date:** December 12, 2024  
 The WHO hosted a webinar on pathogen genomics for managing cholera outbreaks. Key topics included:
+
 - Understanding transmission dynamics
 - Strengthening surveillance
 - Informing public health interventions  
