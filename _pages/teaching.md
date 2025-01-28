@@ -7,10 +7,10 @@ nav: true
 nav_order: 4
 ---
 
+## **1. Bioinformatics Training Resources**
 
 <hr style="border: 3px dashed black;">
 
-## **1. Bioinformatics Training Resources**
 
 ### **1.1 Taylor Paisie's VEME 2024 NGS De Novo Assembly Tutorial**  
 This course focuses on de novo genome assembly using next-generation sequencing (NGS) data, providing a comprehensive overview of workflows and practical exercises tailored for the VEME 2024 workshop. It includes step-by-step guidance on assembling viral genomes, with specific tools and methods to handle Illumina sequencing data efficiently.
