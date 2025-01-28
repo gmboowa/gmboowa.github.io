@@ -1,13 +1,12 @@
 ---
 layout: page
 permalink: /teaching/
-title: Resources
+title: # <span style="font-weight: 900; font-size: 2em;">Resources</span>
 description:
 nav: true
 nav_order: 4
 ---
 
-# <span style="font-weight: 900; font-size: 2em;">Resources</span>
 
 <hr style="border: 3px dashed black;">
 
