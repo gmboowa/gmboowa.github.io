@@ -7,7 +7,7 @@ nav: true
 nav_order: 4
 ---
 
-<h1 style="font-weight: bold;">{{ page.title }}</h1>
+<h1 class="page-title">{{ page.title }}</h1>
 
 <hr style="border: 3px dashed black;">
 
