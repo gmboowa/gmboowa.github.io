@@ -11,7 +11,7 @@ nav_order: 7
 
 <hr style="border: 3px dashed black;">
 
-## 1. **Introducing the BMC Series SDG Editorial Board Members**  
+## **1. Introducing the BMC Series SDG Editorial Board Members**  
 
 **Role:** Editorial Board Member of BMC Infectious Diseases  
 My work focuses on utilizing DNA sequencing technologies and computational tools for pathogen detection, characterization, and antimicrobial resistance surveillance, aligning with the WHO's Sustainable Development Goal 3.  
@@ -20,7 +20,7 @@ My work focuses on utilizing DNA sequencing technologies and computational tools
 
 <hr style="border: 3px dashed black;">  
 
-## 2. **Advancing Diagnostics for Non-Malarial Febrile Illnesses in HIV-Infected Children**  
+## **2. Advancing Diagnostics for Non-Malarial Febrile Illnesses in HIV-Infected Children**  
 
 This study, funded under the EDCTP Career Development Fellow, enrolled 144 HIV-infected children presenting with NMFI at the Baylor Children’s Clinic in Uganda.  
 
@@ -28,7 +28,7 @@ This study, funded under the EDCTP Career Development Fellow, enrolled 144 HIV-i
 
 <hr style="border: 3px dashed black;">  
 
-## 3. **Implementation of Next-Generation Sequencing-Based HIV Drug Resistance Testing**  
+## **3. Implementation of Next-Generation Sequencing-Based HIV Drug Resistance Testing**  
 
 **Focus:** Enhancing Antiretroviral Treatment Monitoring and Public Health Outcomes  
 This blog discusses the integration of Next-Generation Sequencing (NGS) into HIV drug resistance testing, highlighting its superior sensitivity in detecting resistance mutations. Key steps include:  
@@ -42,7 +42,7 @@ These steps improve patient outcomes by enabling timely adjustments to antiretro
 
 <hr style="border: 3px dashed black;">  
 
-## 4. **WHO EPI-WIN: Pathogen Genomics in Health Emergencies – Spotlight Cholera**  
+## **4. WHO EPI-WIN: Pathogen Genomics in Health Emergencies – Spotlight Cholera**  
 
 **Date:** December 12, 2024  
 The WHO hosted a webinar on pathogen genomics for managing cholera outbreaks. Key topics included:  
@@ -56,7 +56,7 @@ The WHO hosted a webinar on pathogen genomics for managing cholera outbreaks. Ke
 
 <hr style="border: 3px dashed black;">  
 
-## 5. **Africa Pathogen Data Management & Exchange Platform**  
+## **5. Africa Pathogen Data Management & Exchange Platform**  
 
 **Event:** PHA4GE Conference 2023  
 **Date:** October 30 - November 1, 2023  
@@ -67,16 +67,17 @@ The conference explored topics related to public health and genomics.
 
 <hr style="border: 3px dashed black;">  
 
-## 6. **My Science Journey: How to Make Your Inroads in Science**  
+## **6. My Science Journey: How to Make Your Inroads in Science**  
 
 - **Webinar Presentation:** [My Science Journey](https://www.youtube.com/watch?v=lUumnB5JS60)  
 
 <hr style="border: 3px dashed black;">  
 
-## 7. **My PhD Defense Presentation**  
+## **7. My PhD Defense Presentation**  
 
 **Research Topic:**  
 Identifying host-genetic factors influencing the progression of HIV disease in Ugandan and Botswanan pediatric populations.  
 **Funding:** Collaborative African Genomics Network (CAfGEN) and THRiVE consortium.  
 
 - **PhD Defense Presentation:** [Watch Here](https://www.youtube.com/watch?v=nAXN6JNu8Ng&t=2133s)  
+
