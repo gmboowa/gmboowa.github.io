@@ -10,59 +10,66 @@ nav_order: 7
 # **Media & Blogs**
 
 <hr style="border: 3px dashed black;">
-# Recent Highlights in My Research & Public Health Contributions  
+## 1. **Advancing diagnostics for non-malarial febrile illnesses in HIV-infected children**  
 
-## 1. My Contributions to Scientific Leadership & Editorial Work  
-### 1.1 Introducing the BMC Series SDG Editorial Board Members  
-📌 **Role:** Editorial Board Member, BMC Infectious Diseases  
-🔬 **Focus:** Using **DNA sequencing & computational tools** for pathogen detection, characterization, and **AMR surveillance**, aligned with **WHO’s Sustainable Development Goal 3**.  
+This study, funded under the EDCTP Career Development Fellow, enrolled 144 HIV-infected children presenting with NMFI at the Baylor Children’s Clinic in Uganda.
+**Newsletter Link:** [https://www.edctp.org/project/advancing-diagnostics-for-non-malarial-febrile-illnesses-in-hiv-infected-children/](https://www.edctp.org/project/advancing-diagnostics-for-non-malarial-febrile-illnesses-in-hiv-infected-children/)  
 
-📖 [Read More](https://blogs.biomedcentral.com/bmcseriesblog/2022/01/14/introducing-the-bmc-series-sdg-editorial-board-members-gerald-mboowa/)  
+## 2. **Introducing the BMC Series SDG Editorial Board Members**  
 
-<hr style="border: 3px dashed black;">
+**Role:** Editorial Board Member of BMC Infectious Diseases  
+My work focuses on utilizing DNA sequencing technologies and computational tools for pathogen detection, characterization, and antimicrobial resistance surveillance, aligning with the WHO's Sustainable Development Goal 3.  
 
-## 2. Advancing Pathogen Genomics & Infectious Disease Research  
-### 2.1 Advancing Diagnostics for Non-Malarial Febrile Illnesses in HIV-Infected Children  
-🌍 **Public Health Impact:** Addressing challenges in diagnosing NMFI among **HIV-infected children** using **shotgun metagenomics**.  
-📑 [Newsletter Link](https://www.edctp.org/project/advancing-diagnostics-for-non-malarial-febrile-illnesses-in-hiv-infected-children/)  
+**Blog Link:** [Introducing the BMC Series SDG Editorial Board Members: Gerald Mboowa](https://blogs.biomedcentral.com/bmcseriesblog/2022/01/14/introducing-the-bmc-series-sdg-editorial-board-members-gerald-mboowa/)  
 
-### 2.2 Implementation of Next-Generation Sequencing-Based HIV Drug Resistance Testing  
-🧬 **Focus:** Enhancing **HIV treatment monitoring** with **NGS technology** to detect **drug resistance mutations** earlier.  
-💡 **Impact:** **Improves patient outcomes** through **faster treatment adjustments**.  
+<hr style="border: 3px dashed black;">  
 
-📖 [Read More](https://microbiologysociety.org/blog/implementation-of-next-generation-sequencing-based-hiv-drug-resistance-testing-enhancing-antiretroviral-treatment-monitoring-and-public-health-outcomes.html)  
+## 3. **Implementation of Next-Generation Sequencing-Based HIV Drug Resistance Testing**  
 
-<hr style="border: 3px dashed black;">
+**Focus:** Enhancing Antiretroviral Treatment Monitoring and Public Health Outcomes  
+This blog discusses the integration of Next-Generation Sequencing (NGS) into HIV drug resistance testing, highlighting its superior sensitivity in detecting resistance mutations. Key steps include:  
 
-## 3. Pathogen Genomics in Health Emergencies  
-### 3.1 WHO EPI-WIN: Pathogen Genomics in Health Emergencies – Spotlight Cholera  
-📅 **Date:** December 12, 2024  
-🌍 **Objective:** Using **genomics to improve cholera outbreak response**, focusing on:  
-✅ **Transmission dynamics**  
-✅ **Enhanced surveillance**  
-✅ **Public health interventions**  
+Data analysis & Clinical interpretation  
 
-🎥 [Webinar Presentation](https://www.youtube.com/watch?v=7ZJbfTpNkfc)  
-📑 [WHO Event Details](https://www.who.int/news-room/events/detail/2024/12/12/default-calendar/who-epi-win-webinar-pathogen-genomics-in-health-emergencies-spotlight-cholera)  
+These steps improve patient outcomes by enabling timely adjustments to antiretroviral therapy.  
 
-<hr style="border: 3px dashed black;">
+**Blog Link:** [Advancing HIV Treatment: Implementing Next-Generation Sequencing for Drug Resistance Testing](https://microbiologysociety.org/blog/implementation-of-next-generation-sequencing-based-hiv-drug-resistance-testing-enhancing-antiretroviral-treatment-monitoring-and-public-health-outcomes.html)  
 
-## 4. Strengthening Public Health Genomics Infrastructure  
-### 4.1 Africa Pathogen Data Management & Exchange Platform  
-📌 **Event:** **PHA4GE Conference 2023**  
-📅 **Date:** October 30 - November 1, 2023  
-📍 **Location:** Cape Town, South Africa  
+<hr style="border: 3px dashed black;">  
 
-💡 **Focus:** Discussing public health and **data-sharing challenges** in genomics research.  
+## 4. **WHO EPI-WIN: Pathogen Genomics in Health Emergencies – Spotlight Cholera**  
 
-🎥 [Conference Presentation](https://www.youtube.com/watch?v=YpQFh_ZtA4E&t=2s)  
+**Date:** December 12, 2024  
+The WHO hosted a webinar on pathogen genomics for managing cholera outbreaks. Key topics included:  
 
-<hr style="border: 3px dashed black;">
+- Understanding transmission dynamics  
+- Strengthening surveillance  
+- Informing public health interventions  
 
-## 5. My Scientific Journey & Career Development  
-### 5.1 My Science Journey: How to Make Your Inroads in Science  
-🎥 [Webinar Presentation](https://www.youtube.com/watch?v=lUumnB5JS60)  
+- **Webinar Presentation:** [Pathogen Genomics in Health Emergencies: Spotlight Cholera](https://www.youtube.com/watch?v=7ZJbfTpNkfc)  
+- **Details:** [WHO EPI-WIN Webinar](https://www.who.int/news-room/events/detail/2024/12/12/default-calendar/who-epi-win-webinar-pathogen-genomics-in-health-emergencies-spotlight-cholera)  
 
-### 5.2 My PhD Defense Presentation  
-🧬 **Research Topic:** Identifying **host-genetic factors** influencing **HIV disease progression** in **Ugandan & Botswanan pediatric populations**.  
-📌 **Funding:** Collaborative African Genomics Network (**CAfGEN**) & **THRiVE Consortium**.
+<hr style="border: 3px dashed black;">  
+
+## 5. **Africa Pathogen Data Management & Exchange Platform**  
+
+**Event:** PHA4GE Conference 2023  
+**Date:** October 30 - November 1, 2023  
+**Location:** Cavalli Estate, Cape Town, South Africa  
+
+The conference explored topics related to public health and genomics.  
+**Conference Presentation:** [Africa Pathogen Data Management & Exchange Platform](https://www.youtube.com/watch?v=YpQFh_ZtA4E&t=2s)  
+
+<hr style="border: 3px dashed black;">  
+
+## 6. **My Science Journey: How to Make Your Inroads in Science**  
+
+**Webinar Presentation:** [My Science Journey](https://www.youtube.com/watch?v=lUumnB5JS60)  
+
+<hr style="border: 3px dashed black;">  
+
+## 7. **My PhD Defense Presentation**  
+
+**Research Topic:**  
+Identifying host-genetic factors influencing the progression of HIV disease in Ugandan and Botswanan pediatric populations.  
+**Funding:** Collaborative African Genomics Network (CAfGEN) and THRiVE consortium.  
