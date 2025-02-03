@@ -9,7 +9,7 @@ nav_order: 7
 
 # **Media & Blogs**
 
-<hr style="border: 3px dashed black;">
+<hr style="border: 3px solid #00008B;">
 
 ## **1. Introducing the BMC Series SDG Editorial Board Members**  
 
@@ -18,7 +18,7 @@ My work focuses on utilizing DNA sequencing technologies and computational tools
 
 - **Blog Link:** [Introducing the BMC Series SDG Editorial Board Members: Gerald Mboowa](https://blogs.biomedcentral.com/bmcseriesblog/2022/01/14/introducing-the-bmc-series-sdg-editorial-board-members-gerald-mboowa/)  
 
-<hr style="border: 3px dashed black;">  
+<hr style="border: 3px solid #00008B;">  
 
 ## **2. Advancing Diagnostics for Non-Malarial Febrile Illnesses in HIV-Infected Children**  
 
@@ -26,7 +26,7 @@ This study, funded under the EDCTP Career Development Fellow, enrolled 144 HIV-i
 
 - **Newsletter Link:** [https://www.edctp.org/project/advancing-diagnostics-for-non-malarial-febrile-illnesses-in-hiv-infected-children/](https://www.edctp.org/project/advancing-diagnostics-for-non-malarial-febrile-illnesses-in-hiv-infected-children/)  
 
-<hr style="border: 3px dashed black;">  
+<hr style="border: 3px solid #00008B;"> 
 
 ## **3. Implementation of Next-Generation Sequencing-Based HIV Drug Resistance Testing**  
 
@@ -40,7 +40,7 @@ These steps improve patient outcomes by enabling timely adjustments to antiretro
 
 - **Blog Link:** [Advancing HIV Treatment: Implementing Next-Generation Sequencing for Drug Resistance Testing](https://microbiologysociety.org/blog/implementation-of-next-generation-sequencing-based-hiv-drug-resistance-testing-enhancing-antiretroviral-treatment-monitoring-and-public-health-outcomes.html)  
 
-<hr style="border: 3px dashed black;">  
+<hr style="border: 3px solid #00008B;">  
 
 ## **4. WHO EPI-WIN: Pathogen Genomics in Health Emergencies – Spotlight Cholera**  
 
@@ -54,7 +54,7 @@ The WHO hosted a webinar on pathogen genomics for managing cholera outbreaks. Ke
 - **Webinar Presentation:** [Pathogen Genomics in Health Emergencies: Spotlight Cholera](https://www.youtube.com/watch?v=7ZJbfTpNkfc)  
 - **Details:** [WHO EPI-WIN Webinar](https://www.who.int/news-room/events/detail/2024/12/12/default-calendar/who-epi-win-webinar-pathogen-genomics-in-health-emergencies-spotlight-cholera)  
 
-<hr style="border: 3px dashed black;">  
+<hr style="border: 3px solid #00008B;"> 
 
 ## **5. Africa Pathogen Data Management & Exchange Platform**  
 
@@ -65,13 +65,13 @@ The WHO hosted a webinar on pathogen genomics for managing cholera outbreaks. Ke
 The conference explored topics related to public health and genomics.  
 - **Conference Presentation:** [Africa Pathogen Data Management & Exchange Platform](https://www.youtube.com/watch?v=YpQFh_ZtA4E&t=2s)  
 
-<hr style="border: 3px dashed black;">  
+<hr style="border: 3px solid #00008B;"> 
 
 ## **6. My Science Journey: How to Make Your Inroads in Science**  
 
 - **Webinar Presentation:** [My Science Journey](https://www.youtube.com/watch?v=lUumnB5JS60)  
 
-<hr style="border: 3px dashed black;">  
+<hr style="border: 3px solid #00008B;">
 
 ## **7. My PhD Defense Presentation**  
 
