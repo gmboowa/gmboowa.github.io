@@ -16,7 +16,7 @@ nav_order: 7
 **Role:** Editorial Board Member of BMC Infectious Diseases  
 My work focuses on utilizing DNA sequencing technologies and computational tools for pathogen detection, characterization, and antimicrobial resistance surveillance, aligning with the WHO's Sustainable Development Goal 3.  
 
-- **Blog Link:** [Introducing the BMC Series SDG Editorial Board Members: Gerald Mboowa](https://blogs.biomedcentral.com/bmcseriesblog/2022/01/14/introducing-the-bmc-series-sdg-editorial-board-members-gerald-mboowa/)  
+- **<span style="color: #00008B; font-weight: bold;">Blog Link:</span>:** [Introducing the BMC Series SDG Editorial Board Members: Gerald Mboowa](https://blogs.biomedcentral.com/bmcseriesblog/2022/01/14/introducing-the-bmc-series-sdg-editorial-board-members-gerald-mboowa/)  
 
 <hr style="border: 3px solid #00008B;">  
 
