@@ -3,17 +3,62 @@
 
   <!-- Head -->
   <head>
-  {%- if page.redirect -%}
-    <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
-  {%- endif -%}
-  {% include head.html %}
+    {%- if page.redirect -%}
+      <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
+    {%- endif -%}
+    {% include head.html %}
+
+    <!-- Inline CSS for Light/Dark Mode -->
+    <style>
+      /* Default Light Mode */
+      :root {
+          --background-color: #FFFFFF;
+          --text-color: #1A1A1A;
+          --link-color: #8B008B;
+      }
+
+      /* Dark Mode */
+      [data-theme="dark"] {
+          --background-color: #121212;
+          --text-color: #ffffff;
+          --link-color: #4da8da;
+      }
+
+      /* Apply Theme Variables */
+      body {
+          background-color: var(--background-color);
+          color: var(--text-color);
+      }
+
+      a {
+          color: var(--link-color);
+      }
+
+      /* Theme Toggle Button */
+      #theme-toggle {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 1000;
+          background-color: var(--background-color);
+          color: var(--text-color);
+          border: 1px solid var(--text-color);
+          padding: 8px 12px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+    </style>
   </head>
 
   <!-- Body -->
   <body
     class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}"
-    style="color: #1A1A1A; font-size: 16px; background-color: #f9f9f9;"
   >
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙 Toggle Theme</button>
+
     <!-- Header -->
     {%- include header.html %}
 
@@ -22,25 +67,13 @@
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == "right" %}
         <div class="row">
-          <!-- main content area -->
-          <div class="col-sm-9">
-            {{ content }}
-          </div>
-          <!-- sidebar, which will move to the top on a small screen -->
-          <div class="col-sm-3">
-            <nav id="toc-sidebar" class="sticky-top"></nav>
-          </div>
+          <div class="col-sm-9">{{ content }}</div>
+          <div class="col-sm-3"><nav id="toc-sidebar" class="sticky-top"></nav></div>
         </div>
         {% else %}
         <div class="row">
-          <!-- sidebar, which will move to the top on a small screen -->
-          <div class="col-sm-3">
-            <nav id="toc-sidebar" class="sticky-top"></nav>
-          </div>
-          <!-- main content area -->
-          <div class="col-sm-9">
-            {{ content }}
-          </div>
+          <div class="col-sm-3"><nav id="toc-sidebar" class="sticky-top"></nav></div>
+          <div class="col-sm-9">{{ content }}</div>
         </div>
         {% endif %}
       {% else %}
@@ -61,5 +94,29 @@
     {% include scripts/analytics.html %}
     {% include scripts/progressBar.html %}
     {% include scripts/wechatModal.html %}
+
+    <!-- Inline JavaScript for Theme Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const toggleSwitch = document.getElementById("theme-toggle");
+
+          // Check if a theme is saved in localStorage
+          const currentTheme = localStorage.getItem("theme") || "light";
+          document.documentElement.setAttribute("data-theme", currentTheme);
+
+          // Toggle theme on click
+          toggleSwitch.addEventListener("click", function () {
+              let theme = document.documentElement.getAttribute("data-theme");
+              if (theme === "dark") {
+                  document.documentElement.setAttribute("data-theme", "light");
+                  localStorage.setItem("theme", "light");
+              } else {
+                  document.documentElement.setAttribute("data-theme", "dark");
+                  localStorage.setItem("theme", "dark");
+              }
+          });
+      });
+    </script>
+
   </body>
 </html>
