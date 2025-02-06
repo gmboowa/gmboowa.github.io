@@ -36,13 +36,14 @@ giscus_comments: false
         The study will utilize nasopharyngeal and oropharyngeal samples collected by the National Public Health Institutes (NPHIs) of each country. Positive samples with a cycle threshold (Ct) value ≤30 will undergo genotyping to identify SARS-CoV-2 mutations.
     </p>
     <p>
-        <strong>Objectives</strong>
-    </p>
-    <ul>
-        <li><strong>Primary Objective:</strong> Demonstrate the feasibility of deploying the TaqMan genotyping assay for VOC detection in routine surveillance.</li>
-        <li><strong>Secondary Objective:</strong> Document the prevalence of circulating VOCs in the participating member states.</li>
-    </ul>
-    <p>
+ <pre><code>
+🔹 **Primary Objective:**  
+   Demonstrate the feasibility of deploying the TaqMan genotyping assay for VOC detection  
+   in routine surveillance.  
+
+🔹 **Secondary Objective:**  
+   Document the prevalence of circulating VOCs in the participating member states.  
+</code></pre>
         <strong>Outcomes</strong>
     </p>
     <p>
