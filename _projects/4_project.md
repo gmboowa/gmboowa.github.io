@@ -34,22 +34,21 @@ giscus_comments: false
     </p>
     <p>
         The study will utilize nasopharyngeal and oropharyngeal samples collected by the National Public Health Institutes (NPHIs) of each country. Positive samples with a cycle threshold (Ct) value ≤30 will undergo genotyping to identify SARS-CoV-2 mutations.
-    </p>
-    <p>
- <pre><code>
-🔹 **Primary Objective:**  
-   Demonstrate the feasibility of deploying the TaqMan genotyping assay for VOC detection  
-   in routine surveillance.  
+        </p>
+        <strong>Objectives</strong>
+      <pre>
+      🔹 **Primary Objective:**  
+         Demonstrate the feasibility of deploying the commercial TaqMan genotyping assay for VOC detection  
+         in routine surveillance.  
 
-🔹 **Secondary Objective:**  
-   Document the prevalence of circulating VOCs in the participating member states.  
-</code></pre>
+      🔹 **Secondary Objective:**  
+         Document the prevalence of circulating VOCs in the participating member states in Africa.  
+      </pre>
+
         <strong>Outcomes</strong>
-    </p>
-    <p>
+
         This project aims to enhance Africa's capacity to detect and monitor SARS-CoV-2 VOCs efficiently, addressing the current challenges of limited genomic surveillance in the region. By complementing WGS efforts, this initiative will inform public health strategies and support the control of COVID-19 in Africa.
-    </p>
-    <p>
+  
         By pioneering scalable solutions, the project highlights the importance of regional collaboration and innovation in genomic surveillance amidst ongoing public health challenges.
-    </p>
+
 </div>
