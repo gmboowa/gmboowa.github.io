@@ -32,12 +32,7 @@ This study, funded under the EDCTP Career Development Fellow, enrolled 144 HIV-i
 ## **3. Implementation of Next-Generation Sequencing-Based HIV Drug Resistance Testing**  
 
 **<span style="color: #00A3E0; font-weight: bold;">Focus:</span>** Enhancing Antiretroviral Treatment Monitoring and Public Health Outcomes  
-This blog discusses the integration of Next-Generation Sequencing (NGS) into HIV drug resistance testing, highlighting its superior sensitivity in detecting resistance mutations. Key steps include:  
-
-- Data analysis  
-- Clinical interpretation  
-
-These steps improve patient outcomes by enabling timely adjustments to antiretroviral therapy.  
+This blog discusses the integration of Next-Generation Sequencing (NGS) into HIV drug resistance testing, highlighting its superior sensitivity in detecting resistance mutations enabling timely adjustments to antiretroviral therapy.  
 
 **<span style="color: #00A3E0; font-weight: bold;">Blog Link:</span>** [Advancing HIV Treatment: Implementing Next-Generation Sequencing for Drug Resistance Testing](https://microbiologysociety.org/blog/implementation-of-next-generation-sequencing-based-hiv-drug-resistance-testing-enhancing-antiretroviral-treatment-monitoring-and-public-health-outcomes.html)  
 
@@ -66,11 +61,41 @@ The WHO hosted a webinar on pathogen genomics for managing cholera outbreaks. Ke
 
 The conference explored topics related to public health and genomics.
 
-**<span style="color: #00A3E0; font-weight: bold;">Conference Presentation:</span>** [Africa Pathogen Data Management & Exchange Platform](https://www.youtube.com/watch?v=YpQFh_ZtA4E&t=2s)  
+**<span style="color: #00A3E0; font-weight: bold;">Conference Presentation:</span>** [Africa Pathogen Data Management & Exchange Platform](https://www.youtube.com/watch?v=YpQFh_ZtA4E&t=2s)
+
+**<span style="color: #00A3E0; font-weight: bold;">AFROSCREEN's Webinar Presentation:</span>** [Watch Here](https://www.youtube.com/watch?v=w53rH8I48pM&t=1s)
 
 <hr style="border: 3px solid #00008B;">
 
-## **6. My Science Journey: How to Make Your Inroads in Science**  
+## **6. What can we do better for the pandemics that may come?**  
+
+The interview emphasizes the critical role of genomics in understanding and combating the COVID-19 pandemic. It highlights how genomic sequencing has enabled rapid identification of the SARS-CoV-2 virus, facilitating the development of diagnostic tests and vaccines. The piece also discusses the importance of global collaboration in genomic surveillance to monitor viral mutations and prepare for future pandemics.  
+
+**<span style="color: #00A3E0; font-weight: bold;">Q & A Link:</span>** [Watch Here](https://www.futurelearn.com/info/courses/genomics-covid-19/0/steps/289332)  
+
+<hr style="border: 3px solid #00008B;">
+
+## **7. Rising Antimicrobial Resistance in Uganda's National Referral Hospital Demands Immediate Action**  
+
+A study conducted at Mulago National Referral Hospital in Uganda from 2014 to 2018 revealed a significant increase in antimicrobial resistance (AMR) among patients in surgical wards. Resistance levels to commonly used antibiotics, including penicillins, cephalosporins, and carbapenems, escalated dramatically during this period. The findings underscore the urgent need to enhance infection prevention and control practices, implement robust antibiotic stewardship programs, and strengthen laboratory capacities to provide timely culture and sensitivity testing.  
+
+**<span style="color: #00A3E0; font-weight: bold;">Dissemination of AMR Policy brief:</span>** [Watch Here](https://www.youtube.com/watch?v=LJGrV75hhgo&list=PL0AD2eggSrnYo5MO-f6-P_544e9Ly2wrS&index=3)
+
+**<span style="color: #00A3E0; font-weight: bold;">Summary of AMR Policy brief:</span>** [Read Here](https://bit.ly/3u23Hu5)
+
+<hr style="border: 3px solid #00008B;">
+
+## **8. Laboratory capacity strengthening for genomic sequencing in LMICs**  
+
+
+The Mérieux Foundation and the London School of Hygiene & Tropical Medicine (LSHTM) co-hosted a two-hour webinar on September 15, 2021, at 3 PM (CET), focusing on strengthening laboratory capacity for genomic sequencing in low- and middle-income countries (LMICs).
+
+**<span style="color: #00A3E0; font-weight: bold;">Q & A Link:</span>** [Watch Here](https://www.youtube.com/watch?v=zB6P57yoeJQ)  
+
+
+<hr style="border: 3px solid #00008B;">
+
+## **9. My Science Journey: How to Make Your Inroads in Science**  
 
 My science journey has been driven by curiosity, persistence, and a willingness to learn from both successes and failures. I have built a strong foundation by seeking mentorship, collaborating on research, and embracing new opportunities. By staying adaptable and continuously refining my skills, I strive to make meaningful contributions and establish myself in the scientific community.
 
@@ -78,7 +103,7 @@ My science journey has been driven by curiosity, persistence, and a willingness 
 
 <hr style="border: 3px solid #00008B;">
 
-## **7. My PhD Defense Presentation**  
+## **10. My PhD Defense Presentation**  
 
 **<span style="color: #00A3E0; font-weight: bold;">Research Topic:</span>**
 
@@ -89,7 +114,7 @@ Identifying host-genetic factors influencing the progression of HIV disease in U
 
 <hr style="border: 3px solid #00008B;">
 
-## **8. Researcher studies how long it takes for HIV positive person to develop AIDS**  
+## **11. Researcher studies how long it takes for HIV positive person to develop AIDS**  
 
 
 The progression from HIV infection to AIDS varies among individuals and is influenced by several factors, including genetics. The research I conducted while at Makerere University catergorised HIV-infected children into two distinct groups based on disease progression rates:
@@ -111,5 +136,18 @@ Understanding these genetic factors can assist healthcare providers in prioritiz
 Continued research in this area is crucial for developing personalized treatment approaches and improving outcomes for individuals living with HIV.  
 
 **<span style="color: #00A3E0; font-weight: bold;">The Independent | News Paper:</span>** [Read Here](https://www.independent.co.ug/researcher-studies-how-long-it-takes-for-hiv-positive-person-to-develop-aids/)  
+
+**<span style="color: #00A3E0; font-weight: bold;">Genes can determine the years a person living with HIV will take to develop AIDS if not on treatment :</span>** [Watch Here](https://www.youtube.com/watch?v=xAmK9bsXLQg)  
+
+<hr style="border: 3px solid #00008B;">
+
+## **12. Successes & failures of grant applications**  
+
+The presentation looks at successes and failures of grant writing provides an in-depth analysis of the common pitfalls and effective strategies in the grant application process. It emphasizes the importance of aligning proposals with funding agency priorities, clearly articulating objectives, and demonstrating the potential impact of the proposed work. The guide also highlights the value of thorough preparation, understanding reviewer expectations, and the necessity of resilience in the face of rejection, encouraging applicants to view unsuccessful attempts as learning opportunities for future submissions.
+
+**<span style="color: #00A3E0; font-weight: bold;">Topic:</span>** H3Africa: Successes and failures of grants writing 15 Sept 2020.  
+
+**<span style="color: #00A3E0; font-weight: bold;">Presentation:</span>** [Watch Here](https://www.youtube.com/watch?v=Yky1Oo3CK44)  
+
 
 <hr style="border: 3px solid #00008B;">
