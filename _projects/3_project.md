@@ -48,15 +48,19 @@ category: work
 <div style="white-space: pre-wrap; word-wrap: break-word;">
     <code>
 🔹 **Enhanced Genomic Surveillance:**  
+        
    Development of a sustainable genomic surveillance network capable of tracking cholera outbreaks in real-time.  
 
 🔹 **Data-Driven Interventions:**  
+
    Improved understanding of cholera transmission dynamics and hotspots, informing targeted interventions.  
 
 🔹 **Capacity Building:**  
+
    A skilled workforce proficient in genomic technologies, ensuring long-term sustainability of cholera surveillance efforts.  
 
 🔹 **Policy Support:**  
+
    Evidence-based insights to guide regional and national cholera control strategies.  
     </code>
 </div>
