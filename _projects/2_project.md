@@ -29,10 +29,17 @@ giscus_comments: false
         AMR threatens the effective prevention and treatment of infections caused by bacteria, viruses, fungi, and parasites. It is a growing concern in East Africa, where limited access to quality healthcare and the misuse of antibiotics exacerbate the problem. Understanding the factors driving AMR in the region is essential for developing targeted interventions and informing policy.
     </p>
     <h4>Our Research Goals</h4>
-    <ul>
-        <li>Investigate the role of healthcare systems in shaping resistance patterns.</li>
-        <li>Provide actionable data to guide public health policies and interventions that combat AMR effectively.</li>
-    </ul>
+   <div style="white-space: pre-wrap; word-wrap: break-word;">
+    <code>
+🔹 **Investigate the Role of Healthcare Systems in AMR Transmission:** 
+        
+   Examine how healthcare infrastructure and practices influence resistance patterns.  
+
+🔹 **Provide Actionable Data:**  
+
+   Generate insights to guide public health policies and interventions that combat AMR effectively.  
+    </code>
+</div>
     <h4>Our Results</h4>
     <ol>
         <li><a href="https://www.ajtmh.org/view/journals/tpmd/105/2/article-p498.xml">Transmission Dynamics of Antimicrobial Resistance at a National Referral Hospital in Uganda.</a></li>
