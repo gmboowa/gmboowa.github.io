@@ -14,7 +14,8 @@ nav_order: 4
 
 ### **1.1 Taylor Paisie's VEME 2024 NGS De Novo Assembly Tutorial**  
 
-This course focuses on <em>de novo<em> genome assembly using next-generation sequencing (NGS) data, providing a comprehensive overview of workflows and practical exercises tailored for the VEME 2024 workshop. It includes step-by-step guidance on assembling viral genomes, with specific tools and methods to handle Illumina sequencing data efficiently.
+This course focuses on <em>de novo</em> genome assembly using next-generation sequencing (NGS) data, providing a comprehensive overview of workflows and practical exercises tailored for the VEME 2024 workshop. It includes step-by-step guidance on assembling viral genomes, with specific tools and methods to handle Illumina sequencing data efficiently.
+
 
 **<span style="color: #00A3E0; font-weight: bold;">Course Link:</span>** [Taylor Paisie's VEME 2024 NGS De Novo Assembly](https://github.com/taylorpaisie/VEME_2024_NGS_Denovo_Assembly)
 
