@@ -75,7 +75,17 @@ The interview emphasizes the critical role of genomics in understanding and comb
 
 <hr style="border: 3px solid #00008B;">
 
-## **7. Rising Antimicrobial Resistance in Uganda's National Referral Hospital Demands Immediate Action**  
+
+## **7. World Health Summit Africa Regional Meeting**  
+
+The presentation show cases the power of genomics in the fight against COVID-19 and discusses how genomic sequencing has been pivotal in identifying SARS-CoV-2 variants, understanding transmission patterns, and informing public health interventions. Experts highlight the importance of global collaboration and data sharing to monitor viral mutations and develop effective vaccines. The presentation underscores the need for continued investment in genomic surveillance to manage the current pandemic and prepare for future outbreaks.  
+
+**<span style="color: #00A3E0; font-weight: bold;">Presentation Link:</span>** [Watch Here](https://www.youtube.com/watch?v=Fbm4FQKqIPs)  
+
+<hr style="border: 3px solid #00008B;">
+
+
+## **8. Rising Antimicrobial Resistance in Uganda's National Referral Hospital Demands Immediate Action**  
 
 A study conducted at Mulago National Referral Hospital in Uganda from 2014 to 2018 revealed a significant increase in antimicrobial resistance (AMR) among patients in surgical wards. Resistance levels to commonly used antibiotics, including penicillins, cephalosporins, and carbapenems, escalated dramatically during this period. The findings underscore the urgent need to enhance infection prevention and control practices, implement robust antibiotic stewardship programs, and strengthen laboratory capacities to provide timely culture and sensitivity testing.  
 
@@ -85,7 +95,7 @@ A study conducted at Mulago National Referral Hospital in Uganda from 2014 to 20
 
 <hr style="border: 3px solid #00008B;">
 
-## **8. Laboratory capacity strengthening for genomic sequencing in LMICs**  
+## **9. Laboratory capacity strengthening for genomic sequencing in LMICs**  
 
 
 The Mérieux Foundation and the London School of Hygiene & Tropical Medicine (LSHTM) co-hosted a two-hour webinar on September 15, 2021, at 3 PM (CET), focusing on strengthening laboratory capacity for genomic sequencing in low- and middle-income countries (LMICs).
@@ -95,7 +105,7 @@ The Mérieux Foundation and the London School of Hygiene & Tropical Medicine (LS
 
 <hr style="border: 3px solid #00008B;">
 
-## **9. My Science Journey: How to Make Your Inroads in Science**  
+## **10. My Science Journey: How to Make Your Inroads in Science**  
 
 My science journey has been driven by curiosity, persistence, and a willingness to learn from both successes and failures. I have built a strong foundation by seeking mentorship, collaborating on research, and embracing new opportunities. By staying adaptable and continuously refining my skills, I strive to make meaningful contributions and establish myself in the scientific community.
 
@@ -103,7 +113,7 @@ My science journey has been driven by curiosity, persistence, and a willingness 
 
 <hr style="border: 3px solid #00008B;">
 
-## **10. My PhD Defense Presentation**  
+## **11. My PhD Defense Presentation**  
 
 **<span style="color: #00A3E0; font-weight: bold;">Research Topic:</span>**
 
@@ -114,7 +124,7 @@ Identifying host-genetic factors influencing the progression of HIV disease in U
 
 <hr style="border: 3px solid #00008B;">
 
-## **11. Researcher studies how long it takes for HIV positive person to develop AIDS**  
+## **12. Researcher studies how long it takes for HIV positive person to develop AIDS**  
 
 
 The progression from HIV infection to AIDS varies among individuals and is influenced by several factors, including genetics. The research I conducted while at Makerere University catergorised HIV-infected children into two distinct groups based on disease progression rates:
@@ -141,7 +151,7 @@ Continued research in this area is crucial for developing personalized treatment
 
 <hr style="border: 3px solid #00008B;">
 
-## **12. Successes & failures of grant applications**  
+## **13. Successes & failures of grant applications**  
 
 The presentation looks at successes and failures of grant writing provides an in-depth analysis of the common pitfalls and effective strategies in the grant application process. It emphasizes the importance of aligning proposals with funding agency priorities, clearly articulating objectives, and demonstrating the potential impact of the proposed work. The guide also highlights the value of thorough preparation, understanding reviewer expectations, and the necessity of resilience in the face of rejection, encouraging applicants to view unsuccessful attempts as learning opportunities for future submissions.
 
