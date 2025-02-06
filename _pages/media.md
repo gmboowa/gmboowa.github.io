@@ -17,7 +17,7 @@ nav_order: 7
 
 My work focuses on utilizing DNA sequencing technologies and computational tools for pathogen detection, characterization, and antimicrobial resistance surveillance, aligning with the WHO's Sustainable Development Goal 3.  
 
-**<span style="color: #00A3E0; font-weight: bold;">Blog Link:</span>** [Introducing the BMC Series SDG Editorial Board Members: Gerald Mboowa](https://blogs.biomedcentral.com/bmcseriesblog/2022/01/14/introducing-the-bmc-series-sdg-editorial-board-members-gerald-mboowa/)  
+**<span style="color: #00A3E0; font-weight: bold;">Blog Link:</span>** [Read Here](https://blogs.biomedcentral.com/bmcseriesblog/2022/01/14/introducing-the-bmc-series-sdg-editorial-board-members-gerald-mboowa/)  
 
 <hr style="border: 3px solid #00008B;">  
 
@@ -25,7 +25,7 @@ My work focuses on utilizing DNA sequencing technologies and computational tools
 
 This study, funded under the EDCTP Career Development Fellow, enrolled 144 HIV-infected children presenting with NMFI at the Baylor Children’s Clinic in Uganda.  
 
-**<span style="color: #00A3E0; font-weight: bold;">Newsletter Link:</span>** [https://www.edctp.org/project/advancing-diagnostics-for-non-malarial-febrile-illnesses-in-hiv-infected-children/](https://www.edctp.org/project/advancing-diagnostics-for-non-malarial-febrile-illnesses-in-hiv-infected-children/)  
+**<span style="color: #00A3E0; font-weight: bold;">Newsletter Link:</span>** [Read Here](https://www.edctp.org/project/advancing-diagnostics-for-non-malarial-febrile-illnesses-in-hiv-infected-children/)  
 
 <hr style="border: 3px solid #00008B;">
 
@@ -34,7 +34,7 @@ This study, funded under the EDCTP Career Development Fellow, enrolled 144 HIV-i
 **<span style="color: #00A3E0; font-weight: bold;">Focus:</span>** Enhancing Antiretroviral Treatment Monitoring and Public Health Outcomes  
 This blog discusses the integration of Next-Generation Sequencing (NGS) into HIV drug resistance testing, highlighting its superior sensitivity in detecting resistance mutations enabling timely adjustments to antiretroviral therapy.  
 
-**<span style="color: #00A3E0; font-weight: bold;">Blog Link:</span>** [Advancing HIV Treatment: Implementing Next-Generation Sequencing for Drug Resistance Testing](https://microbiologysociety.org/blog/implementation-of-next-generation-sequencing-based-hiv-drug-resistance-testing-enhancing-antiretroviral-treatment-monitoring-and-public-health-outcomes.html)  
+**<span style="color: #00A3E0; font-weight: bold;">Blog Link:</span>** [Read Here](https://microbiologysociety.org/blog/implementation-of-next-generation-sequencing-based-hiv-drug-resistance-testing-enhancing-antiretroviral-treatment-monitoring-and-public-health-outcomes.html)  
 
 <hr style="border: 3px solid #00008B;">  
 
@@ -109,7 +109,7 @@ The Mérieux Foundation and the London School of Hygiene & Tropical Medicine (LS
 
 My science journey has been driven by curiosity, persistence, and a willingness to learn from both successes and failures. I have built a strong foundation by seeking mentorship, collaborating on research, and embracing new opportunities. By staying adaptable and continuously refining my skills, I strive to make meaningful contributions and establish myself in the scientific community.
 
-**<span style="color: #00A3E0; font-weight: bold;">Webinar Presentation:</span>** [My Science Journey](https://www.youtube.com/watch?v=lUumnB5JS60)  
+**<span style="color: #00A3E0; font-weight: bold;">Webinar Presentation:</span>** [Watch Here](https://www.youtube.com/watch?v=lUumnB5JS60)  
 
 <hr style="border: 3px solid #00008B;">
 
