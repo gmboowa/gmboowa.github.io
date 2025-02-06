@@ -1,9 +1,9 @@
 ---
 layout: page
 title: CholGen
-description: 
+description:
 img: assets/img/Project3.jpg
-redirect: 
+redirect:
 importance: 3
 category: work
 ---
@@ -43,27 +43,24 @@ category: work
         CholGen collaborates with National Public Health Institutes (NPHIs) and regional laboratories, providing specialized training in whole-genome sequencing (WGS) and bioinformatics. By utilizing cutting-edge genomic tools, the project supports routine surveillance and rapid response during outbreaks. CholGen also emphasizes partnerships, fostering collaboration between African countries to share data and resources for regional cholera control.
     </p>
     <p>
-        <strong>Expected Outcomes</strong>
-        
-<div style="white-space: pre-wrap; word-wrap: break-word;">
-    <code>
-🔹 **Enhanced Genomic Surveillance:**  
-        
-   Development of a sustainable genomic surveillance network capable of tracking cholera outbreaks in real-time.  
+    <strong>Expected Outcomes</strong>
+    <pre>
+    🔹 **Enhanced Genomic Surveillance:**  
+       Development of a sustainable genomic surveillance network capable of tracking cholera outbreaks
+       in real-time.  
 
-🔹 **Data-Driven Interventions:**  
+    🔹 **Data-Driven Interventions:**  
+       Improved understanding of cholera transmission dynamics and hotspots, informing targeted
+       interventions.  
 
-   Improved understanding of cholera transmission dynamics and hotspots, informing targeted interventions.  
+    🔹 **Capacity Building:**  
+       A skilled workforce proficient in genomic technologies, ensuring long-term sustainability of   
+       cholera surveillance efforts.  
 
-🔹 **Capacity Building:**  
+    🔹 **Policy Support:**  
+       Evidence-based insights to guide regional and national cholera control strategies.   
 
-   A skilled workforce proficient in genomic technologies, ensuring long-term sustainability of cholera surveillance efforts.  
-
-🔹 **Policy Support:**  
-
-   Evidence-based insights to guide regional and national cholera control strategies.  
-    </code>
-</div>
-        CholGen represents a critical step towards combating cholera in Africa, empowering countries to respond effectively to outbreaks and move closer to eliminating this deadly disease. By combining technology, expertise, and collaboration, the project contributes to building resilient health systems and saving lives.
-    </p>
-</div>
+    </pre>
+        <p>
+      CholGen represents a critical step towards combating cholera in Africa, empowering countries to respond effectively to outbreaks and move closer to eliminating this deadly disease. By combining technology, expertise, and collaboration, the project contributes to building resilient health systems and saving lives.
+        </p>
