@@ -13,7 +13,7 @@ nav_order: 7
 
 ## **1. Introducing the BMC Series SDG Editorial Board Members**  
 
-**<span style="color: #00A3E0; font-weight: bold;">Role:</span>** Editorial Board Member of <em>BMC Infectious Diseases Journal</em>.
+**<span style="color: #00A3E0; font-weight: bold;">Role:</span>** Editorial Board Member of <em>BMC Infectious Diseases</em> Journal.
 
 My work focuses on utilizing DNA sequencing technologies and computational tools for pathogen detection, characterization, and antimicrobial resistance surveillance, aligning with the WHO's Sustainable Development Goal 3.  
 
