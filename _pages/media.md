@@ -88,3 +88,28 @@ Identifying host-genetic factors influencing the progression of HIV disease in U
 **<span style="color: #00A3E0; font-weight: bold;">PhD Defense:</span>** [Watch Here](https://www.youtube.com/watch?v=nAXN6JNu8Ng&t=2133s)  
 
 <hr style="border: 3px solid #00008B;">
+
+## **8. Researcher studies how long it takes for HIV positive person to develop AIDS**  
+
+
+The progression from HIV infection to AIDS varies among individuals and is influenced by several factors, including genetics. The research I conducted while at Makerere University catergorised HIV-infected children into two distinct groups based on disease progression rates:
+
+<pre>
+🔹 **Rapid Progressors (RP):**  
+   Individuals who develop AIDS symptoms within three years or less after HIV infection    
+   without treatment.
+
+🔹 **Long-Term Non-Progressors (LTNP):**  
+   Individuals who remain asymptomatic and do not develop AIDS for more than ten years
+   post-infection without treatment.
+</pre>
+
+My study involved analyzing blood samples from 314 participants, comprising 173 rapid progressors and 141 non-progressors. By examining their genetic profiles, I aimed to identify genetic markers associated with the rate of disease progression. The findings suggested that certain genetic factors influenced an individual's susceptibility to rapid HIV-disease progression.
+
+Understanding these genetic factors can assist healthcare providers in prioritizing treatment for those most at risk of rapid progression, especially in settings where access to antiretroviral therapy (ART) is limited. While current guidelines recommend initiating ART for all individuals diagnosed with HIV, insights from such research could inform strategies to optimize treatment allocation and management.
+
+Continued research in this area is crucial for developing personalized treatment approaches and improving outcomes for individuals living with HIV.  
+
+**<span style="color: #00A3E0; font-weight: bold;">The Independent | News Paper:</span>** [Read Here](https://www.independent.co.ug/researcher-studies-how-long-it-takes-for-hiv-positive-person-to-develop-aids/)  
+
+<hr style="border: 3px solid #00008B;">
