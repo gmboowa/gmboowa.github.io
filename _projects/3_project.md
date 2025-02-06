@@ -44,14 +44,22 @@ category: work
     </p>
     <p>
         <strong>Expected Outcomes</strong>
-    </p>
-    <ul>
-        <li><strong>Enhanced Genomic Surveillance:</strong> Development of a sustainable genomic surveillance network capable of tracking cholera outbreaks in real-time.</li>
-        <li><strong>Data-Driven Interventions:</strong> Improved understanding of cholera transmission dynamics and hotspots, informing targeted interventions.</li>
-        <li><strong>Capacity Building:</strong> A skilled workforce proficient in genomic technologies, ensuring long-term sustainability of cholera surveillance efforts.</li>
-        <li><strong>Policy Support:</strong> Evidence-based insights to guide regional and national cholera control strategies.</li>
-    </ul>
-    <p>
+        
+<div style="white-space: pre-wrap; word-wrap: break-word;">
+    <code>
+🔹 **Enhanced Genomic Surveillance:**  
+   Development of a sustainable genomic surveillance network capable of tracking cholera outbreaks in real-time.  
+
+🔹 **Data-Driven Interventions:**  
+   Improved understanding of cholera transmission dynamics and hotspots, informing targeted interventions.  
+
+🔹 **Capacity Building:**  
+   A skilled workforce proficient in genomic technologies, ensuring long-term sustainability of cholera surveillance efforts.  
+
+🔹 **Policy Support:**  
+   Evidence-based insights to guide regional and national cholera control strategies.  
+    </code>
+</div>
         CholGen represents a critical step towards combating cholera in Africa, empowering countries to respond effectively to outbreaks and move closer to eliminating this deadly disease. By combining technology, expertise, and collaboration, the project contributes to building resilient health systems and saving lives.
     </p>
 </div>
