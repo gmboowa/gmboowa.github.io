@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RT-qPCR Based SARS-CoV-2 Variants of Concern (VOC) testing
+title: RT-qPCR Based SARS-CoV-2 Variants of Concern (VOC) Testing
 description:
 img: assets/img/Project4.jpg
 importance: 2
