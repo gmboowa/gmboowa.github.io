@@ -7,11 +7,12 @@ nav: true
 nav_order: 7
 ---
 
-# **Media & Blogs**
+# **Media, Blogs & Roles**
 
 <hr style="border: 3px solid #00008B;">
 
-<h2 style="text-align: justify; font-weight: bold;">1. Introducing the BMC Series SDG Editorial Board Members</h2>
+
+## **1. Introducing the BMC Series SDG Editorial Board Members**  
 
 
 **<span style="color: #00A3E0; font-weight: bold;">Role:</span>** Editorial Board Member of <em>BMC Infectious Diseases</em> Journal.
@@ -25,7 +26,8 @@ nav_order: 7
 
 <hr style="border: 3px solid #00008B;">  
 
-<h2 style="text-align: justify; font-weight: bold;">2. Advancing Diagnostics for Non-Malarial Febrile Illnesses in HIV-Infected Children</h2>
+
+## **2. Advancing Diagnostics for Non-Malarial Febrile Illnesses in HIV-Infected Children**
 
 
 <p style="text-align: justify;">
@@ -36,8 +38,8 @@ nav_order: 7
 
 <hr style="border: 3px solid #00008B;">
 
-<h2 style="text-align: justify; font-weight: bold;">3. Implementation of Next-Generation Sequencing-Based HIV Drug Resistance Testing</h2>
 
+## **3. Implementation of Next-Generation Sequencing-Based HIV Drug Resistance Testing**
 
 <p style="text-align: justify;">
     <strong><span style="color: #00A3E0;">Focus:</span></strong> Enhancing Antiretroviral Treatment Monitoring and Public Health Outcomes  
@@ -49,8 +51,8 @@ nav_order: 7
 
 <hr style="border: 3px solid #00008B;">  
 
-<h2 style="text-align: justify; font-weight: bold;">4. WHO EPI-WIN: Pathogen Genomics in Health Emergencies – Spotlight Cholera</h2>
 
+## **4. WHO EPI-WIN: Pathogen Genomics in Health Emergencies – Spotlight Cholera**
 
 **<span style="color: #00A3E0; font-weight: bold;">Date:</span>** December 12, 2024  
 The WHO hosted a webinar on pathogen genomics for managing cholera outbreaks. Key topics included:  
@@ -65,7 +67,8 @@ The WHO hosted a webinar on pathogen genomics for managing cholera outbreaks. Ke
 
 <hr style="border: 3px solid #00008B;">
 
-<h2 style="text-align: justify; font-weight: bold;">5. Africa Pathogen Data Management & Exchange Platform</h2>
+
+## **5. Africa Pathogen Data Management & Exchange Platform**
 
 
 **<span style="color: #00A3E0; font-weight: bold;">Event:</span>** PHA4GE Conference 2023  
@@ -80,8 +83,8 @@ The conference explored topics related to public health and genomics.
 
 <hr style="border: 3px solid #00008B;">
 
-<h2 style="text-align: justify; font-weight: bold;">6. What can we do better for the pandemics that may come?</h2>
 
+## **6. What can we do better for the pandemics that may come?**
 
 <p style="text-align: justify;">
     The interview emphasizes the critical role of genomics in understanding and combating the COVID-19 pandemic. It highlights how genomic sequencing has enabled rapid identification of the SARS-CoV-2 virus, facilitating the development of diagnostic tests and vaccines. The piece also discusses the importance of global collaboration in genomic surveillance to monitor viral mutations and prepare for future pandemics.
@@ -93,8 +96,8 @@ The conference explored topics related to public health and genomics.
 <hr style="border: 3px solid #00008B;">
 
 
-<h2 style="text-align: justify; font-weight: bold;">7. World Health Summit Africa Regional Meeting</h2>
 
+## **7. World Health Summit Africa Regional Meeting**
 
 <p style="text-align: justify;">
     The presentation showcases the power of genomics in the fight against COVID-19 and discusses how genomic sequencing has been pivotal in identifying SARS-CoV-2 variants, understanding transmission patterns, and informing public health interventions. Experts highlight the importance of global collaboration and data sharing to monitor viral mutations and develop effective vaccines. The presentation underscores the need for continued investment in genomic surveillance to manage the current pandemic and prepare for future outbreaks.
@@ -106,7 +109,7 @@ The conference explored topics related to public health and genomics.
 <hr style="border: 3px solid #00008B;">
 
 
-<h2 style="text-align: justify; font-weight: bold;">8. Rising Antimicrobial Resistance in Uganda's National Referral Hospital Demands Immediate Action</h2>
+## **8. Rising Antimicrobial Resistance in Uganda's National Referral Hospital Demands Immediate Action**  
 
 
 <p style="text-align: justify;">
@@ -120,8 +123,8 @@ The conference explored topics related to public health and genomics.
 
 <hr style="border: 3px solid #00008B;">
 
-<h2 style="text-align: justify; font-weight: bold;">9. Laboratory Capacity Strengthening for Genomic Sequencing in LMICs</h2>
 
+## **9. Laboratory Capacity Strengthening for Genomic Sequencing in LMICs**
 
 
 <p style="text-align: justify;">
@@ -134,7 +137,8 @@ The conference explored topics related to public health and genomics.
 
 <hr style="border: 3px solid #00008B;">
 
-<h2 style="text-align: justify; font-weight: bold;">10. My Science Journey: How to Make Your Inroads in Science</h2>
+
+## **10. My Science Journey: How to Make Your Inroads in Science**
 
 
 <p style="text-align: justify;">
@@ -146,7 +150,8 @@ The conference explored topics related to public health and genomics.
 
 <hr style="border: 3px solid #00008B;">
 
-<h2 style="text-align: justify; font-weight: bold;">11. My PhD Defense Presentation</h2>
+
+## **11. My PhD Defense Presentation**
 
 
 **<span style="color: #00A3E0; font-weight: bold;">Research Topic:</span>**
@@ -161,8 +166,8 @@ The conference explored topics related to public health and genomics.
 
 <hr style="border: 3px solid #00008B;">
 
-<h2 style="text-align: justify; font-weight: bold;">12. Researcher Studies How Long It Takes for an HIV-Positive Person to Develop AIDS</h2>
 
+## **12. Researcher Studies How Long It Takes for an HIV-Positive Person to Develop AIDS**
 
 
 <p style="text-align: justify;">
@@ -199,8 +204,9 @@ The conference explored topics related to public health and genomics.
 
 <hr style="border: 3px solid #00008B;">
 
-<h2 style="text-align: justify; font-weight: bold;">13. Successes & Failures of Grant Applications</h2>
-  
+
+## **13. Successes & Failures of Grant Applications**
+
 
 <p style="text-align: justify;">
     The presentation looks at successes and failures of grant writing, providing an in-depth analysis of the common pitfalls and effective strategies in the grant application process. It emphasizes the importance of aligning proposals with funding agency priorities, clearly articulating objectives, and demonstrating the potential impact of the proposed work. The guide also highlights the value of thorough preparation, understanding reviewer expectations, and the necessity of resilience in the face of rejection, encouraging applicants to view unsuccessful attempts as learning opportunities for future submissions.
@@ -210,6 +216,31 @@ The conference explored topics related to public health and genomics.
 **<span style="color: #00A3E0; font-weight: bold;">Topic:</span>** H3Africa: Successes and failures of grants writing 15 Sept 2020.  
 
 **<span style="color: #00A3E0; font-weight: bold;">Presentation:</span>** [Watch Here](https://www.youtube.com/watch?v=Yky1Oo3CK44)  
+
+
+<hr style="border: 3px solid #00008B;">
+
+## **14. Other Selected Roles**
+
+
+**<span style="color: #00A3E0; font-weight: bold;">Member of DS-I Africa Partnership & Outreach Working Group:</span>** The working group aims to support the consortium's goal of enhancing the impact of data science on health in Africa.
+
+
+**<span style="color: #00A3E0; font-weight: bold;">Member of PHA4GE Bioinformatics Pipelines and Visualization:</span>** [Read Here](https://pha4ge.org/bioinformatics-pipelines-and-visualization/)
+The group is focused on the establishment of standards and best practices for bioinformatic pipeline development, workflow templating and management.
+
+**<span style="color: #00A3E0; font-weight: bold;">Editorial Board Member, BMC Genomics Journal:</span>** [Read Here](https://bmcgenomics.biomedcentral.com/about/editorial-board)
+
+**<span style="color: #00A3E0; font-weight: bold;">Associate editor at BMC Infectious Diseases Journal:</span>** [Read Here](https://bmcinfectdis.biomedcentral.com/about/editorial-board)
+
+
+**<span style="color: #00A3E0; font-weight: bold;"> Editorial Board Member, Global Health, Epidemiology and Genomics Journal:</span>** [Read Here](https://onlinelibrary.wiley.com/page/journal/gheg/homepage/editorial-board)
+
+
+**<span style="color: #00A3E0; font-weight: bold;"> The African Population Cohort Consortium (APCC) Omics workstream:</span>** [Read Here](https://ce-apcc.org/collaborators/)
+
+
+**<span style="color: #00A3E0; font-weight: bold;"> Section Editor Journal of Public Health in Africa (JPHiA):</span>** [Read Here](https://publichealthinafrica.org/index.php/jphia/pages/view/editorial-team)
 
 
 <hr style="border: 3px solid #00008B;">
