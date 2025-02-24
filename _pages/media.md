@@ -226,7 +226,7 @@ The conference explored topics related to public health and genomics.
 **<span style="color: #00A3E0; font-weight: bold;">Member of DS-I Africa Partnership & Outreach Working Group:</span>** The working group aims to support the consortium's goal of enhancing the impact of data science on health in Africa.
 
 
-**<span style="color: #00A3E0; font-weight: bold;">Member of PHA4GE Bioinformatics Pipelines and Visualization:</span>** [Read Here](https://pha4ge.org/bioinformatics-pipelines-and-visualization/)
+**<span style="color: #00A3E0; font-weight: bold;">Member of PHA4GE Bioinformatics Pipelines & Visualization:</span>** [Read Here](https://pha4ge.org/bioinformatics-pipelines-and-visualization/)
 The group is focused on the establishment of standards and best practices for bioinformatic pipeline development, workflow templating and management.
 
 **<span style="color: #00A3E0; font-weight: bold;">Editorial Board Member, BMC Genomics Journal:</span>** [Read Here](https://bmcgenomics.biomedcentral.com/about/editorial-board)
@@ -234,7 +234,7 @@ The group is focused on the establishment of standards and best practices for bi
 **<span style="color: #00A3E0; font-weight: bold;">Associate editor at BMC Infectious Diseases Journal:</span>** [Read Here](https://bmcinfectdis.biomedcentral.com/about/editorial-board)
 
 
-**<span style="color: #00A3E0; font-weight: bold;"> Editorial Board Member, Global Health, Epidemiology and Genomics Journal:</span>** [Read Here](https://onlinelibrary.wiley.com/page/journal/gheg/homepage/editorial-board)
+**<span style="color: #00A3E0; font-weight: bold;"> Editorial Board Member, Global Health, Epidemiology & Genomics Journal:</span>** [Read Here](https://onlinelibrary.wiley.com/page/journal/gheg/homepage/editorial-board)
 
 
 **<span style="color: #00A3E0; font-weight: bold;"> The African Population Cohort Consortium (APCC) Omics workstream:</span>** [Read Here](https://ce-apcc.org/collaborators/)
