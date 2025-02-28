@@ -108,7 +108,19 @@ nav_order: 4
 
 **<span style="color: #00A3E0; font-weight: bold;">Events Link:</span>** [Previous Event Materials on Terra Cloud Platform](https://support.terra.bio/hc/en-us/sections/360003513671-Previous-Event-Materials)
 
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
+
+### **2.4 Explore detailed insights on the variant calling process and GATK best practices, accessible via a public Google Drive**
+
+<p style="text-align: justify;">
+  Gain in-depth knowledge on the variant calling process and GATK best practices. Access comprehensive guides, workflows, and best practices through a publicly available Google Drive resource.
+
+</p>
+
+[Public Presentations](https://drive.google.com/drive/folders/1LCzccNIm4jovDfgYIvgwwPJiYKVS6fT2)
+
 <hr style="border: 3px solid #00008B;">
+
 
 ## **3. A Beginner’s Guide to Genomic Data Analysis: Variant Calling**
 
@@ -199,5 +211,3 @@ nav_order: 4
 
 
 <hr style="border: 3px solid #00008B;">
-
-
