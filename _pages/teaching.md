@@ -11,36 +11,12 @@ nav_order: 4
 
 <hr style="border: 3px solid #00008B;">
 
-## **1. Taylor's trainings**
 
 
-### **1.1 Taylor Paisie's VEME 2024 NGS *De Novo* Assembly Tutorial**
-
-<p style="text-align: justify;">
-    This course focuses on <em>de novo</em> genome assembly using next-generation sequencing (NGS) data, providing a comprehensive overview of workflows and practical exercises tailored for the VEME 2024 workshop. It includes step-by-step guidance on assembling viral genomes, with specific tools and methods to handle Illumina sequencing data efficiently.
-</p>
+## **1. Broad Institute’s Training Resources**
 
 
-
-**<span style="color: #00A3E0; font-weight: bold;">Course Link:</span>** [Taylor Paisie's VEME 2024 NGS De Novo Assembly](https://github.com/taylorpaisie/VEME_2024_NGS_Denovo_Assembly)
-
-<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
-
-### **1.2 Taylor Paisie's VEME 2024 NGS Variant Calling**  
-
-<p style="text-align: justify;">
-    This course provides comprehensive guidance on variant calling workflows using next-generation sequencing (NGS) data. It is tailored for the VEME 2024 workshop and includes step-by-step instructions and examples.
-</p>
-
-
-**<span style="color: #00A3E0; font-weight: bold;">Course Link:</span>** [Taylor Paisie's VEME 2024 NGS Variant Calling](https://github.com/taylorpaisie/VEME_2024_NGS_Variant_Calling)
-
-<hr style="border: 3px solid #00008B;">
-
-## **2. Broad Institute’s Training Resources**
-
-
-### **2.1 Viral Genomics Workshops**  
+### **1.1 Viral Genomics Workshops**  
 
 <p style="text-align: justify;">
     These workshops provide hands-on training in genomic analysis workflows, focusing on the study of viral genomes using next-generation sequencing (NGS) data. Hosted by the Broad Institute, they offer practical insights into cutting-edge tools and techniques for viral surveillance, assembly, and data interpretation.
@@ -51,7 +27,7 @@ nav_order: 4
 
 <hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
 
-### **2.2 Viral *De Novo* Assembly Workflows on the Terra Cloud Platform**
+### **1.2 Viral *De Novo* Assembly Workflows on the Terra Cloud Platform**
 
 <p style="text-align: justify;">
     This course focuses on viral <em>de novo</em> assembly workflows using Illumina sequencing data. It specifically uses Lassa virus data as a case study and leverages the Terra cloud platform to demonstrate the assembly process.
@@ -63,7 +39,7 @@ nav_order: 4
 
 <hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
 
-### **2.3 Terra Training Archive: Access Previous Workshops & Event Materials**
+### **1.3 Terra Training Archive: Access Previous Workshops & Event Materials**
 
 <p style="text-align: justify;">
     The Terra Support platform offers a comprehensive repository of materials from previous training events, designed to assist users in effectively utilizing Terra's data science infrastructure. These resources encompass a wide range of topics, including <strong>cloud-native pipeline development, data repository management, and machine learning applications.</strong>
@@ -110,7 +86,7 @@ nav_order: 4
 
 <hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
 
-### **2.4 Explore detailed insights on the variant calling process and GATK best practices, accessible via a public Google Drive**
+### **1.4 Explore detailed insights on the variant calling process and GATK best practices, accessible via a public Google Drive**
 
 <p style="text-align: justify;">
   Gain in-depth knowledge on the variant calling process and GATK best practices. Access comprehensive guides, workflows, and best practices through a publicly available Google Drive resource.
@@ -121,6 +97,31 @@ nav_order: 4
 
 <hr style="border: 3px solid #00008B;">
 
+## **2. Taylor's trainings**
+
+
+### **2.1 Taylor Paisie's VEME 2024 NGS *De Novo* Assembly Tutorial**
+
+<p style="text-align: justify;">
+    This course focuses on <em>de novo</em> genome assembly using next-generation sequencing (NGS) data, providing a comprehensive overview of workflows and practical exercises tailored for the VEME 2024 workshop. It includes step-by-step guidance on assembling viral genomes, with specific tools and methods to handle Illumina sequencing data efficiently.
+</p>
+
+
+
+**<span style="color: #00A3E0; font-weight: bold;">Course Link:</span>** [Taylor Paisie's VEME 2024 NGS De Novo Assembly](https://github.com/taylorpaisie/VEME_2024_NGS_Denovo_Assembly)
+
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
+
+### **2.2 Taylor Paisie's VEME 2024 NGS Variant Calling**  
+
+<p style="text-align: justify;">
+    This course provides comprehensive guidance on variant calling workflows using next-generation sequencing (NGS) data. It is tailored for the VEME 2024 workshop and includes step-by-step instructions and examples.
+</p>
+
+
+**<span style="color: #00A3E0; font-weight: bold;">Course Link:</span>** [Taylor Paisie's VEME 2024 NGS Variant Calling](https://github.com/taylorpaisie/VEME_2024_NGS_Variant_Calling)
+
+<hr style="border: 3px solid #00008B;">
 
 ## **3. A Beginner’s Guide to Genomic Data Analysis: Variant Calling**
 
