@@ -6,6 +6,7 @@ description:
 nav: true
 nav_order: 4
 ---
+<hr style="border: 3px solid #800080;">
 
 ### **Selected Training Resources**
 
@@ -210,5 +211,30 @@ nav_order: 4
 **<span style="color: #00A3E0; font-weight: bold;">Bioinformatics Courses Here:</span>**  
 [Bioinformatics Courses](https://www.edx.org/search?q=bioinformatics)
 
+
+<hr style="border: 3px solid #800080;">
+
+### **Selected Collection of Public Health Bioinformatics (PHB) Resources**
+
+<hr style="border: 3px solid #00008B;">
+
+
+## **Theiagen Genomics**
+
+**<span style="color: #00A3E0; font-weight: bold;">TheiaProk:</span>**  
+[Workflow Series](https://theiagen.notion.site/TheiaProk-Workflow-Series-1296f3df6a7c41c7937053a03f664a5a)
+
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
+
+
+**<span style="color: #00A3E0; font-weight: bold;">Theiagen Public Health Resources:</span>**
+
+[PHB v1.2.1 Resources](https://theiagen.notion.site/6bbb869ea4134b52be6e729adfefea9c?v=2466758e3fe6402191baf9be4d12a504)
+
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
+
+**<span style="color: #00A3E0; font-weight: bold;">PHB Dockstore Resources:</span>**
+
+[Dockstore Collection](https://dockstore.org/organizations/Theiagen/collections/public-health-bioinformatics)
 
 <hr style="border: 3px solid #00008B;">
