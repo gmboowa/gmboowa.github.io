@@ -8,7 +8,7 @@ nav_order: 4
 ---
 <hr style="border: 3px solid #800080;">
 
-### **Selected Training Resources**
+### **Training Resources**
 
 <hr style="border: 3px solid #00008B;">
 
@@ -214,7 +214,7 @@ nav_order: 4
 
 <hr style="border: 3px solid #800080;">
 
-### **Selected Collection of Public Health Bioinformatics (PHB) Resources**
+### **Collection of Public Health Bioinformatics (PHB) Resources**
 
 <hr style="border: 3px solid #00008B;">
 
