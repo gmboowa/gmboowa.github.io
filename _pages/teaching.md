@@ -221,13 +221,19 @@ nav_order: 4
 
 ## **Theiagen Genomics**
 
+<p style="text-align: justify;">
+
+Theiagen Genomics is a leading bioinformatics company specializing in infectious disease genomics, pathogen surveillance, and public health data analysis. They provide cutting-edge solutions for next-generation sequencing (NGS) data interpretation, enabling researchers and public health institutions to track and respond to emerging threats. With a strong focus on capacity building and open-source bioinformatics tools, Theiagen Genomics empowers global health communities to harness genomic data for better disease control and prevention.
+
+</p>
+
 **<span style="color: #00A3E0; font-weight: bold;">TheiaProk:</span>**  
 [Workflow Series](https://theiagen.notion.site/TheiaProk-Workflow-Series-1296f3df6a7c41c7937053a03f664a5a)
 
 <hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
 
 
-**<span style="color: #00A3E0; font-weight: bold;">Theiagen Public Health Resources:</span>**
+**<span style="color: #00A3E0; font-weight: bold;">Theiagen Public Health Bioinformatics Resources:</span>**
 
 [PHB v1.2.1 Resources](https://theiagen.notion.site/6bbb869ea4134b52be6e729adfefea9c?v=2466758e3fe6402191baf9be4d12a504)
 
