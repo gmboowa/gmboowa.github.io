@@ -51,25 +51,25 @@ nav_order: 4
 
 <pre>
 
-🔹 **Cloud-Native Pipelines:**  
+🔹 Cloud-Native Pipelines:  
    Workshops such as the July 2024 session focused on creating & running cloud-native
    pipelines using WDL, Dockstore & Terra.
 
-🔹 **Data Repository Management:**  
+🔹 Data Repository Management:  
    The March and February 2024 workshops introduced users to the Terra Data Repository
    (TDR), covering essential features like data organization, secure collaboration, &
    efficient data retrieval methods.
 
-🔹 **Machine Learning Integration:**  
+🔹 Machine Learning Integration:
    In September 2023, a collaborative workshop with Google's AI in Healthcare and Life
    Sciences team showcased the integration of Vertex AI on Terra.
 
-🔹 **Interactive Analysis Tools:**  
+🔹 Interactive Analysis Tools:
    Regular sessions, including those in October 2023, provided introductions to Terra's
    interactive analysis capabilities, emphasizing the use of Jupyter Notebooks
    for data exploration & visualization.
 
-🔹 **Specialized Applications:**  
+🔹 Specialized Applications:
    Workshops have also delved into niche areas such as structural variant discovery using
    the GATK-SV pipeline (February 2023) & the integration of DRAGEN-GATK workflows
    (October 2022), catering to advanced genomic analysis needs.
