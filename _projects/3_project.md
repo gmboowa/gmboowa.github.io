@@ -45,19 +45,19 @@ category: work
     <p>
     <strong>Expected Outcomes</strong>
     <pre>
-    🔹 **Enhanced Genomic Surveillance:**  
+    🔹 Enhanced Genomic Surveillance:  
        Development of a sustainable genomic surveillance network capable of tracking cholera outbreaks
        in real-time.  
 
-    🔹 **Data-Driven Interventions:**  
+    🔹 Data-Driven Interventions: 
        Improved understanding of cholera transmission dynamics and hotspots, informing targeted
        interventions.  
 
-    🔹 **Capacity Building:**  
+    🔹 Capacity Building: 
        A skilled workforce proficient in genomic technologies, ensuring long-term sustainability of   
        cholera surveillance efforts.  
 
-    🔹 **Policy Support:**  
+    🔹 Policy Support: 
        Evidence-based insights to guide regional and national cholera control strategies.   
 
     </pre>
