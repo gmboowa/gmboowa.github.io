@@ -37,11 +37,11 @@ giscus_comments: false
         </p>
         <strong>Objectives</strong>
       <pre>
-      🔹 **Primary Objective:**  
+      🔹 Primary Objective: 
          Demonstrate the feasibility of deploying the commercial TaqMan genotyping assay for VOC detection  
          in routine surveillance.  
 
-      🔹 **Secondary Objective:**  
+      🔹 Secondary Objective:
          Document the prevalence of circulating VOCs in the participating member states in Africa.  
       </pre>
 
