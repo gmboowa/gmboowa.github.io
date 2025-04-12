@@ -30,10 +30,10 @@ giscus_comments: false
     </p>
     <h4>Our Research Goals</h4>
     <pre>
-    🔹 **Investigate the Role of Healthcare Systems in AMR Transmission:**  
+    🔹 Investigate the Role of Healthcare Systems in AMR Transmission: 
      Examine how healthcare infrastructure and practices influence resistance patterns in Africa.  
 
-    🔹 **Provide Actionable Data:**  
+    🔹 Provide Actionable Data: 
      Generate insights to guide public health policies and interventions that can combat AMR effectively.
         </pre>
              <p>
