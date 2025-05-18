@@ -12,3 +12,5 @@ github_repos:
   - MicroBioGenoHub/HIV-DRIVES
   - MicroBioGenoHub/VaricellaGen
   - gmboowa/ASFV-ONT-Gen
+  - gmboowa/nf-rMAP
+  - gmboowa/AMRSurveillanceDashboard
