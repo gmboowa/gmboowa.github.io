@@ -6,12 +6,12 @@ description:
 nav: true
 nav_order: 7
 ---
-<style type="text/css">
+
+<style>
 h2 {
   font-size: 1.2em !important;
 }
 </style>
-
 # **Media, Blogs & Roles**
 
 <hr style="border: 3px solid #00008B;">
