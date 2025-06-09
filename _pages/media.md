@@ -179,7 +179,7 @@ The conference explored topics related to public health and genomics.
    Individuals who develop AIDS symptoms within three years or less after HIV infection    
    without treatment.
 
-🔹 Long-Term Non-Progressors (LTNP): 
+🔹 Long-Term Non-Progressors (LTNP):
    Individuals who remain asymptomatic and do not develop AIDS for more than ten years
    post-infection without treatment.
 </pre>
