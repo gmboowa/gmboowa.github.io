@@ -9,7 +9,9 @@ nav_order: 7
 
 # **Media, Blogs & Roles**
 
+
 <hr style="border: 3px solid #00008B;">
+
 <style>
 h2 {
   font-size: 1.2em !important;
