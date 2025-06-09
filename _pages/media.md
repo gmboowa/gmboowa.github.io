@@ -7,14 +7,6 @@ nav: true
 nav_order: 7
 ---
 
-<style>
-h2 {
-  font-size: 1em !important;
-  margin-top: 1.5em;
-  margin-bottom: 0.75em;
-}
-</style>
-
 # **Media, Blogs & Roles**
 
 <hr style="border: 3px solid #00008B;">
