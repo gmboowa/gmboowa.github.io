@@ -229,6 +229,9 @@ The conference explored topics related to public health and genomics.
 **<span style="color: #00A3E0; font-weight: bold;">Member of PHA4GE Bioinformatics Pipelines & Visualization:</span>** [Read Here](https://pha4ge.org/bioinformatics-pipelines-and-visualization/)
 The group is focused on the establishment of standards and best practices for bioinformatic pipeline development, workflow templating and management.
 
+
+**<span style="color: #00A3E0; font-weight: bold;">Editorial Board Member, Communication Medicine Journal:</span>** [Read Here](https://www.nature.com/commsmed/editorial-board)
+
 **<span style="color: #00A3E0; font-weight: bold;">Editorial Board Member, BMC Genomics Journal:</span>** [Read Here](https://bmcgenomics.biomedcentral.com/about/editorial-board)
 
 **<span style="color: #00A3E0; font-weight: bold;">Associate editor at BMC Infectious Diseases Journal:</span>** [Read Here](https://bmcinfectdis.biomedcentral.com/about/editorial-board)
