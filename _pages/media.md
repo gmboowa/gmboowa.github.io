@@ -242,7 +242,8 @@ The group is focused on the establishment of standards and best practices for bi
 The Collaboration for the Establishment of an African Population Cohorts Consortium (CE-APCC) is a project designed to build a transformative platform for population-based cohort studies in Africa. It fosters interdisciplinary engagement by uniting scientists, policymakers, community contributors, and stakeholders to advance collaborative research and inform evidence-based decision-making.
 
 
-**<span style="color: #00A3E0; font-weight: bold;"> Section Editor Journal of Public Health in Africa (JPHiA):</span>** [Read Here](https://publichealthinafrica.org/index.php/jphia/pages/view/editorial-team)
+**<span style="color: #00A3E0; font-weight: bold;">Section Editor, <em>Journal of Public Health in Africa (JPHiA)</em>:</span>** [Read Here](https://publichealthinafrica.org/index.php/jphia/pages/view/editorial-team)
+
 
 
 <hr style="border: 3px solid #00008B;">
