@@ -1,15 +1,15 @@
-/* Default Light Mode */
+/* Default Dark Mode */
 :root {
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --link-color: #007bff;
-}
-
-/* Dark Mode */
-[data-theme="dark"] {
     --background-color: #121212;
     --text-color: #ffffff;
     --link-color: #4da8da;
+}
+
+/* Light Mode (optional override if theme toggled) */
+[data-theme="light"] {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #007bff;
 }
 
 /* Apply the Variables */
@@ -31,4 +31,19 @@ a {
     font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* 👇 Additional styles for media and teaching pages */
+.media-page h2,
+.teaching-page h2 {
+    font-size: 1em !important;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+.media-page hr,
+.teaching-page hr {
+    border: 3px solid #00008B;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
