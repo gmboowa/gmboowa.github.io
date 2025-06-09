@@ -36,14 +36,14 @@ a {
 /* 👇 Additional styles for media and teaching pages */
 .media-page h1,
 .teaching-page h1 {
-    font-size: 1.4em !important;
+    font-size: 0.7em !important;
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
 
 .media-page h2,
 .teaching-page h2 {
-    font-size: 1.1em !important;
+    font-size: 0.5em !important;
     margin-top: 1.5em;
     margin-bottom: 0.75em;
 }
