@@ -229,15 +229,13 @@ The conference explored topics related to public health and genomics.
 The group is focused on the establishment of standards and best practices for bioinformatic pipeline development, workflow templating and management.
 
 
-**<span style="color: #00A3E0; font-weight: bold;">Editorial Board Member, Communication Medicine Journal:</span>** [Read Here](https://www.nature.com/commsmed/editorial-board)
+**<span style="color: #00A3E0; font-weight: bold;">Editorial Board Member, <em>Communication Medicine</em> Journal:</span>** [Read Here](https://www.nature.com/commsmed/editorial-board)
 
-**<span style="color: #00A3E0; font-weight: bold;">Editorial Board Member, BMC Genomics Journal:</span>** [Read Here](https://bmcgenomics.biomedcentral.com/about/editorial-board)
+**<span style="color: #00A3E0; font-weight: bold;">Editorial Board Member, <em>BMC Genomics</em> Journal:</span>** [Read Here](https://bmcgenomics.biomedcentral.com/about/editorial-board)
 
-**<span style="color: #00A3E0; font-weight: bold;">Associate editor at BMC Infectious Diseases Journal:</span>** [Read Here](https://bmcinfectdis.biomedcentral.com/about/editorial-board)
+**<span style="color: #00A3E0; font-weight: bold;">Associate Editor at <em>BMC Infectious Diseases</em> Journal:</span>** [Read Here](https://bmcinfectdis.biomedcentral.com/about/editorial-board)
 
-
-**<span style="color: #00A3E0; font-weight: bold;"> Editorial Board Member, Global Health, Epidemiology & Genomics Journal:</span>** [Read Here](https://onlinelibrary.wiley.com/page/journal/gheg/homepage/editorial-board)
-
+**<span style="color: #00A3E0; font-weight: bold;">Editorial Board Member, <em>Global Health, Epidemiology & Genomics</em> Journal:</span>** [Read Here](https://onlinelibrary.wiley.com/page/journal/gheg/homepage/editorial-board)
 
 **<span style="color: #00A3E0; font-weight: bold;"> The African Population Cohort Consortium (APCC) Omics workstream:</span>** [Read Here](https://ce-apcc.org/collaborators/)
 
