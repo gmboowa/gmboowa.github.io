@@ -10,21 +10,18 @@
 
     <!-- Inline CSS for Light/Dark Mode -->
     <style>
-      /* Default Light Mode */
       :root {
           --background-color: #FFFFFF;
           --text-color: #1A1A1A;
           --link-color: #8B008B;
       }
 
-      /* Dark Mode */
       [data-theme="dark"] {
           --background-color: #121212;
           --text-color: #ffffff;
           --link-color: #4da8da;
       }
 
-      /* Apply Theme Variables */
       body {
           background-color: var(--background-color);
           color: var(--text-color);
@@ -34,7 +31,6 @@
           color: var(--link-color);
       }
 
-      /* Theme Toggle Button */
       #theme-toggle {
           position: fixed;
           top: 10px;
@@ -48,13 +44,72 @@
           border-radius: 5px;
           cursor: pointer;
       }
+
+      /* Font scaling for media & teaching pages */
+      .media-page h1,
+      .teaching-page h1 {
+          font-size: 2rem;
+          margin-top: 1.2rem;
+          margin-bottom: 0.6rem;
+      }
+
+      .media-page h2,
+      .teaching-page h2 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+      }
+
+      .media-page h3,
+      .teaching-page h3 {
+          font-size: 1.2rem;
+          margin-top: 0.8rem;
+          margin-bottom: 0.4rem;
+      }
+
+      @media screen and (max-width: 768px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.6rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.2rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1.05rem;
+          }
+      }
+
+      @media screen and (max-width: 480px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.4rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.1rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1rem;
+          }
+      }
     </style>
   </head>
 
   <!-- Body -->
-  <body
-    class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}"
-  >
+  {% assign segments = page.url | split: '/' | reject: '' %}
+  {% assign slug = segments | last %}
+  {% if slug == "index" and segments.size > 1 %}
+    {% assign slug = segments[segments.size | minus: 2] %}
+  {% endif %}
+  <body class="{{ slug }}-page {% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
     <!-- Theme Toggle Button -->
     <button id="theme-toggle">🌙 Toggle Theme</button>
@@ -95,25 +150,18 @@
     {% include scripts/progressBar.html %}
     {% include scripts/wechatModal.html %}
 
-    <!-- Inline JavaScript for Theme Toggle -->
+    <!-- Theme Toggle -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
           const toggleSwitch = document.getElementById("theme-toggle");
-
-          // Check if a theme is saved in localStorage
           const currentTheme = localStorage.getItem("theme") || "light";
           document.documentElement.setAttribute("data-theme", currentTheme);
 
-          // Toggle theme on click
           toggleSwitch.addEventListener("click", function () {
-              let theme = document.documentElement.getAttribute("data-theme");
-              if (theme === "dark") {
-                  document.documentElement.setAttribute("data-theme", "light");
-                  localStorage.setItem("theme", "light");
-              } else {
-                  document.documentElement.setAttribute("data-theme", "dark");
-                  localStorage.setItem("theme", "dark");
-              }
+              const theme = document.documentElement.getAttribute("data-theme");
+              const newTheme = theme === "dark" ? "light" : "dark";
+              document.documentElement.setAttribute("data-theme", newTheme);
+              localStorage.setItem("theme", newTheme);
           });
       });
     </script>
