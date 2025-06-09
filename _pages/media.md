@@ -12,9 +12,9 @@ h2 {
 }
 </style>
 
-<hr style="border: 3px solid #00008B;">
-
 # **Media, Blogs & Roles**
+
+<hr style="border: 3px solid #00008B;">
 
 ## **1. Introducing the BMC Series SDG Editorial Board Members**  
 
