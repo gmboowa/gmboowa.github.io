@@ -9,8 +9,10 @@ github_users:
 
 github_repos:
   - GunzIvan28/rMAP
+  - gmboowa/rMAP-2.0
   - MicroBioGenoHub/HIV-DRIVES
   - MicroBioGenoHub/VaricellaGen
   - gmboowa/ASFV-ONT-Gen
   - gmboowa/nf-rMAP
+  - gmboowa/phyloTreeViz-WDL
   - gmboowa/AMRSurveillanceDashboard
