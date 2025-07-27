@@ -25,3 +25,8 @@ related_publications: false
         Our results have been published in <strong><em>BMC Infectious Diseases</em></strong> under the collection <strong>Diagnostic and Management of Infections in Immunocompromised Patients</strong>. You can view the publication <a href="https://link.springer.com/article/10.1186/s12879-025-10517-1">here</a>.
     </p>
 </div>
+
+<div style="text-align: center; margin-top: 1.5rem;">
+  <img src="/assets/img/team.jpg" alt="Our Team" style="max-width: 600px; width: 100%;" />
+  <p style="font-size: 1.2em; font-weight: bold; color: white; margin-top: 0.5rem;">PHICAMS team</p>
+</div>
