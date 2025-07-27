@@ -7,7 +7,38 @@ redirect:
 importance: 3
 category: work
 ---
-<a href="https://bit.ly/3ZzVJWX">Building Africa's Capacity for Cholera Surveillance and Outbreak Response</a>
+<style>
+  /* Color definitions for both modes */
+  :root {
+    --cholera-link-color: #B509AC; /* Purple for light mode */
+  }
+
+  [data-theme="dark"] {
+    --cholera-link-color: #4682b4; /* Steel blue for dark mode */
+  }
+
+  /* Style for Cholera project links (bold) */
+  .cholera-project-link {
+    color: var(--cholera-link-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .cholera-project-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Style for CholGen activity link */
+  .cholgen-activity-link {
+    color: var(--cholera-link-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .cholgen-activity-link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<a href="https://bit.ly/3ZzVJWX" class="cholera-project-link">Building Africa's Capacity for Cholera Surveillance and Outbreak Response</a>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -28,7 +59,7 @@ category: work
         <strong>Project Progress</strong>
     </p>
     <p>
-        You can access a detailed overview of CholGen activities <a href="https://github.com/gmboowa/gmboowa.github.io/blob/master/assets/pdf/Gerald_Mboowa_Enhanced_Cholera_Genomic_Surveillance_in_Africa.pdf" target="_blank">here</a>.
+        You can access a detailed overview of CholGen activities <a href="https://github.com/gmboowa/gmboowa.github.io/blob/master/assets/pdf/Gerald_Mboowa_Enhanced_Cholera_Genomic_Surveillance_in_Africa.pdf" target="_blank" class="cholgen-activity-link">here</a>.
     </p>
     <p>
         <strong>Project Goals</strong>
@@ -49,18 +80,17 @@ category: work
        Development of a sustainable genomic surveillance network capable of tracking cholera outbreaks
        in real-time.  
 
-    🔹 Data-Driven Interventions: 
+    🔹 Data-Driven Interventions:
        Improved understanding of cholera transmission dynamics and hotspots, informing targeted
        interventions.  
 
-    🔹 Capacity Building: 
+    🔹 Capacity Building:
        A skilled workforce proficient in genomic technologies, ensuring long-term sustainability of   
        cholera surveillance efforts.  
 
-    🔹 Policy Support: 
+    🔹 Policy Support:
        Evidence-based insights to guide regional and national cholera control strategies.   
-
     </pre>
-        <p>
+    <p>
       CholGen represents a critical step towards combating cholera in Africa, empowering countries to respond effectively to outbreaks and move closer to eliminating this deadly disease. By combining technology, expertise, and collaboration, the project contributes to building resilient health systems and saving lives.
-        </p>
+    </p>
