@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: gerald-mboowa.png
+  image: gerald-mboowa-1.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p></p><br>
