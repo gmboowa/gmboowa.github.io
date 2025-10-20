@@ -228,6 +228,7 @@ Theiagen Genomics is a leading bioinformatics company specializing in infectious
 </p>
 
 **<span style="color: #00A3E0; font-weight: bold;">TheiaProk:</span>**  
+
 [Workflow Series](https://theiagen.notion.site/TheiaProk-Workflow-Series-1296f3df6a7c41c7937053a03f664a5a)
 
 <hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
@@ -236,6 +237,22 @@ Theiagen Genomics is a leading bioinformatics company specializing in infectious
 **<span style="color: #00A3E0; font-weight: bold;">Theiagen Public Health Bioinformatics Resources:</span>**
 
 [PHB v1.2.1 Resources](https://theiagen.notion.site/6bbb869ea4134b52be6e729adfefea9c?v=2466758e3fe6402191baf9be4d12a504)
+
+
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
+
+
+**<span style="color: #00A3E0; font-weight: bold;">Theiagen Public Health Bioinformatics Resources:</span>**
+
+[Theiagen's Public Health Bioinformatics](https://theiagen.github.io/public_health_bioinformatics/latest/workflows_overview/workflows_type/)
+
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
+
+
+**<span style="color: #00A3E0; font-weight: bold;">Theiagen Public Health Bioinformatics Resources:</span>**
+
+[Theiagen's Public Health Bioinformatics relationships between the workflows](https://theiagen.github.io/public_health_bioinformatics/v3.1.1/#purpose-workflows)
+
 
 <hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
 
