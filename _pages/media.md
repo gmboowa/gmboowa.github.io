@@ -20,6 +20,8 @@ Published by CRC Press (Taylor & Francis Group)
 
 ## **2. Guest Editor – Journal Special Issues**
 
+BMC Genomics Journal [Genomics of human pathogens](https://www.biomedcentral.com/collections/COL5422)
+
 MDPI Pathogens’ [Genomic Epidemiology & Drug Resistance in Mycobacterium tuberculosis](https://www.mdpi.com/journal/pathogens/special_issues/340F8X1PKC)
 
 
