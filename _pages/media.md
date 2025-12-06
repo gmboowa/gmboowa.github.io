@@ -83,6 +83,10 @@ The WHO hosted a webinar on pathogen genomics for managing cholera outbreaks. Ke
 
 **<span style="color: #00A3E0; font-weight: bold;">Details:</span>** [WHO EPI-WIN Webinar](https://www.who.int/news-room/events/detail/2024/12/12/default-calendar/who-epi-win-webinar-pathogen-genomics-in-health-emergencies-spotlight-cholera)  
 
+
+**<span style="color: #00A3E0; font-weight: bold;">Presentation:</span>** [Slides](https://cdn.who.int/media/docs/default-source/crs-crr/gerald-mboowa-enhanced-cholera-genomic-surveillance-in-africa----gerald-mboowa-(1).pdf?sfvrsn=15f2ce1e_1)  
+ 
+
 <hr style="border: 3px solid #00008B;">
 
 
