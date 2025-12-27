@@ -54,10 +54,110 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
+
+    <!-- Inline CSS for Light/Dark Mode -->
+    <style>
+      :root {
+          --background-color: #FFFFFF;
+          --text-color: #1A1A1A;
+          --link-color: #8B008B;
+      }
+
+      [data-theme="dark"] {
+          --background-color: #121212;
+          --text-color: #ffffff;
+          --link-color: #4da8da;
+      }
+
+      body {
+          background-color: var(--background-color);
+          color: var(--text-color);
+      }
+
+      a {
+          color: var(--link-color);
+      }
+
+      #theme-toggle {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 1000;
+          background-color: var(--background-color);
+          color: var(--text-color);
+          border: 1px solid var(--text-color);
+          padding: 8px 12px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      /* Font scaling for media & teaching pages */
+      .media-page h1,
+      .teaching-page h1 {
+          font-size: 2rem;
+          margin-top: 1.2rem;
+          margin-bottom: 0.6rem;
+      }
+
+      .media-page h2,
+      .teaching-page h2 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+      }
+
+      .media-page h3,
+      .teaching-page h3 {
+          font-size: 1.2rem;
+          margin-top: 0.8rem;
+          margin-bottom: 0.4rem;
+      }
+
+      @media screen and (max-width: 768px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.6rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.2rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1.05rem;
+          }
+      }
+
+      @media screen and (max-width: 480px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.4rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.1rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1rem;
+          }
+      }
+    </style>
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav sticky-bottom-footer">
+  
+  
+  
+  <body class="people-page fixed-top-nav sticky-bottom-footer">
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙 Toggle Theme</button>
 
     <!-- Header -->
     <header>
@@ -97,7 +197,7 @@
                 <a class="nav-link" href="/teaching/">Resources</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">CV</a>
+                <a class="nav-link" href="/media/">Media</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -125,10 +225,10 @@
     <div class="container mt-5">
       
         <!-- page.html -->
-<div class="post">
+<div class="post ">
 
   <header class="post-header">
-    <h1 class="post-title">people</h1>
+    <h1 class="post-title"><strong>people</strong></h1> <!-- Bold the page title -->
     <p class="post-description">members of the lab or group</p>
   </header>
 
@@ -164,11 +264,11 @@
 
           <div class="clearfix">
             
-            <p>Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" rel="external nofollow noopener" target="_blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture <code class="language-plaintext highlighter-rouge">prof_pic.jpg</code> and put it in the <code class="language-plaintext highlighter-rouge">img/</code> folder.</p>
+            <p>Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" rel="external nofollow noopener noopener noreferrer" target="_blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture <code class="language-plaintext highlighter-rouge">prof_pic.jpg</code> and put it in the <code class="language-plaintext highlighter-rouge">img/</code> folder.</p>
 
 <p>Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing <code class="language-plaintext highlighter-rouge">profile</code> property of the YAML header of your <code class="language-plaintext highlighter-rouge">_pages/about.md</code>. Edit <code class="language-plaintext highlighter-rouge">_bibliography/papers.bib</code> and Jekyll will render your <a href="/al-folio/publications/">publications page</a> automatically.</p>
 
-<p>Link to your social media connections, too. This theme is set up to use <a href="http://fortawesome.github.io/Font-Awesome/" rel="external nofollow noopener" target="_blank">Font Awesome icons</a> and <a href="https://jpswalsh.github.io/academicons/" rel="external nofollow noopener" target="_blank">Academicons</a>, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.</p>
+<p>Link to your social media connections, too. This theme is set up to use <a href="http://fortawesome.github.io/Font-Awesome/" rel="external nofollow noopener noopener noreferrer" target="_blank">Font Awesome icons</a> and <a href="https://jpswalsh.github.io/academicons/" rel="external nofollow noopener noopener noreferrer" target="_blank">Academicons</a>, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.</p>
 
           </div>
 
@@ -199,11 +299,11 @@
 
           <div class="clearfix">
             
-            <p>Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" rel="external nofollow noopener" target="_blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture <code class="language-plaintext highlighter-rouge">prof_pic.jpg</code> and put it in the <code class="language-plaintext highlighter-rouge">img/</code> folder.</p>
+            <p>Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" rel="external nofollow noopener noopener noreferrer" target="_blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture <code class="language-plaintext highlighter-rouge">prof_pic.jpg</code> and put it in the <code class="language-plaintext highlighter-rouge">img/</code> folder.</p>
 
 <p>Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing <code class="language-plaintext highlighter-rouge">profile</code> property of the YAML header of your <code class="language-plaintext highlighter-rouge">_pages/about.md</code>. Edit <code class="language-plaintext highlighter-rouge">_bibliography/papers.bib</code> and Jekyll will render your <a href="/al-folio/publications/">publications page</a> automatically.</p>
 
-<p>Link to your social media connections, too. This theme is set up to use <a href="http://fortawesome.github.io/Font-Awesome/" rel="external nofollow noopener" target="_blank">Font Awesome icons</a> and <a href="https://jpswalsh.github.io/academicons/" rel="external nofollow noopener" target="_blank">Academicons</a>, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.</p>
+<p>Link to your social media connections, too. This theme is set up to use <a href="http://fortawesome.github.io/Font-Awesome/" rel="external nofollow noopener noopener noreferrer" target="_blank">Font Awesome icons</a> and <a href="https://jpswalsh.github.io/academicons/" rel="external nofollow noopener noopener noreferrer" target="_blank">Academicons</a>, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.</p>
 
           </div>
 
@@ -220,7 +320,7 @@
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2025 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+        © Copyright 2025 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener noopener noreferrer" target="_blank">al-folio</a> theme.
 
       </div>
     </footer>
@@ -354,5 +454,22 @@
 </script>
 
     
+
+    <!-- Theme Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const toggleSwitch = document.getElementById("theme-toggle");
+          const currentTheme = localStorage.getItem("theme") || "light";
+          document.documentElement.setAttribute("data-theme", currentTheme);
+
+          toggleSwitch.addEventListener("click", function () {
+              const theme = document.documentElement.getAttribute("data-theme");
+              const newTheme = theme === "dark" ? "light" : "dark";
+              document.documentElement.setAttribute("data-theme", newTheme);
+              localStorage.setItem("theme", newTheme);
+          });
+      });
+    </script>
+
   </body>
 </html>
