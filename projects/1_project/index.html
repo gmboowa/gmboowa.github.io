@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PHICAMS | Gerald  Mboowa</title>
+    <title>rMAP (Rapid Microbial Analysis Pipeline) | Gerald  Mboowa</title>
     <meta name="author" content="Gerald  Mboowa">
     <meta name="description" content="Gerald Mboowa integrates data science, genomics, and bioinformatics to tackle critical global health challenges, driving innovations in antimicrobial resistance surveillance, outbreak investigation, and pathogen characterization.
 ">
@@ -55,10 +55,110 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
+
+    <!-- Inline CSS for Light/Dark Mode -->
+    <style>
+      :root {
+          --background-color: #FFFFFF;
+          --text-color: #1A1A1A;
+          --link-color: #8B008B;
+      }
+
+      [data-theme="dark"] {
+          --background-color: #121212;
+          --text-color: #ffffff;
+          --link-color: #4da8da;
+      }
+
+      body {
+          background-color: var(--background-color);
+          color: var(--text-color);
+      }
+
+      a {
+          color: var(--link-color);
+      }
+
+      #theme-toggle {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 1000;
+          background-color: var(--background-color);
+          color: var(--text-color);
+          border: 1px solid var(--text-color);
+          padding: 8px 12px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      /* Font scaling for media & teaching pages */
+      .media-page h1,
+      .teaching-page h1 {
+          font-size: 2rem;
+          margin-top: 1.2rem;
+          margin-bottom: 0.6rem;
+      }
+
+      .media-page h2,
+      .teaching-page h2 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+      }
+
+      .media-page h3,
+      .teaching-page h3 {
+          font-size: 1.2rem;
+          margin-top: 0.8rem;
+          margin-bottom: 0.4rem;
+      }
+
+      @media screen and (max-width: 768px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.6rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.2rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1.05rem;
+          }
+      }
+
+      @media screen and (max-width: 480px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.4rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.1rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1rem;
+          }
+      }
+    </style>
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav sticky-bottom-footer">
+  
+  
+  
+  <body class="1_project-page fixed-top-nav sticky-bottom-footer">
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙 Toggle Theme</button>
 
     <!-- Header -->
     <header>
@@ -98,7 +198,7 @@
                 <a class="nav-link" href="/teaching/">Resources</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">CV</a>
+                <a class="nav-link" href="/media/">Media</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -126,19 +226,78 @@
     <div class="container mt-5">
       
         <!-- page.html -->
-<div class="post">
+<div class="post ">
 
   <header class="post-header">
-    <h1 class="post-title">PHICAMS</h1>
+    <h1 class="post-title"><strong>rMAP (Rapid Microbial Analysis Pipeline)</strong></h1> <!-- Bold the page title -->
     <p class="post-description"></p>
   </header>
 
   <article>
-    <p><a href="https://www.edctp.org/projects-2/edctp2-projects/career-development-fellowships-in-poverty-related-diseases-and-child-and-adolescent-health-2020/" rel="external nofollow noopener" target="_blank">Pathogen detection in HIV-infected children and adolescents with non-malarial febrile illnesses using metagenomic next-generation sequencing approach in Uganda</a></p>
+    <style>
+  /* Color definitions for both modes */
+  :root {
+    --rmap-color: #B509AC; /* Deep purple for light mode */
+    --link-color: #B509AC; /* Link color in light mode */
+  }
+
+  [data-theme="dark"] {
+    --rmap-color: #4682b4; /* Steel blue for dark mode */
+    --link-color: #4682b4; /* Link color in dark mode */
+  }
+
+  /* Accent text */
+  .rmap-color {
+    color: var(--rmap-color);
+    font-weight: bold;
+  }
+
+  /* Caption block spacing and width */
+  .rmap-caption {
+    max-width: 900px;
+    margin: 1.5rem auto 0 auto;
+    text-align: justify;
+  }
+
+  .rmap-caption p {
+    margin-top: 0;
+    margin-bottom: 0.75rem;  /* matches screenshot paragraph spacing */
+  }
+
+  .rmap-caption ul {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;   /* standard bullet indent */
+  }
+
+  .rmap-caption li {
+    margin-bottom: 0.75rem;  /* gap between bullet items */
+  }
+
+  .rmap-caption li:last-child {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Make links in the caption bold + colored */
+  .rmap-caption a {
+    font-weight: bold;
+    color: var(--link-color);
+  }
+
+  /* Main project links (if needed later) */
+  .project-link {
+    font-weight: bold;
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  .project-link:hover {
+    text-decoration: underline;
+  }
+</style>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+  <div class="col-sm mt-3 mt-md-0 text-center">
+    <figure>
 
   <picture>
     
@@ -148,17 +307,58 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/Project1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/Project1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="rMAP overview schematic" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
 </figure>
 
-    </div>
-</div>
-<div class="caption">
-    Schematic showing PHICAMS project.
+  </div>
 </div>
 
+<div class="caption rmap-caption">
+
+  <p>
+    <span class="rmap-color">rMAP (Rapid Microbial Analysis Pipeline)</span> is a modular, reproducible bioinformatics workflow suite for microbial whole-genome sequencing analysis, supporting routine genomic epidemiology and public-health workflows. rMAP streamlines common steps including read QC, trimming, <em>de novo</em> assembly, species/lineage typing (e.g., MLST), resistance gene detection, plasmid replicon screening, virulence profiling, and reporting.
+  </p>
+
+  <p>
+    rMAP is available in three deployable implementations to support different users and computing environments:
+  </p>
+
+  <ul>
+    <li>
+      <strong>rMAP-1.0 (Bash-based CLI)</strong> — a lightweight command-line implementation for rapid local analyses and quick turnaround in low-resource settings. Designed to run on a standard Linux workstation or server, it supports straightforward execution with minimal dependencies and is well-suited for routine QC, assembly, and downstream screening steps in small-to-medium WGS datasets.
+      <br>
+      <a href="https://github.com/GunzIvan28/rMAP" target="_blank" rel="noopener noopener noreferrer">
+        https://github.com/GunzIvan28/rMAP
+      </a>
+    </li>
+
+    <li>
+      <strong>rMAP Web</strong> — a browser-accessible interface for guided analysis with no local setup required. The rMAP Genome Analysis Platform supports uploading <code>.fastq</code> files and running end-to-end microbial genomics workflows for researchers, organizations, and data scientists. Users can upload data, launch analyses on large datasets, and receive notifications when jobs complete.
+      <br>
+      <a href="https://genomeclarity.com/" target="_blank" rel="noopener noopener noreferrer">
+        https://genomeclarity.com/
+      </a>
+    </li>
+
+    <li>
+      <strong>rMAP-2.0 (Docker + Cromwell/WDL)</strong> — containerized, workflow-orchestrated implementation designed for reproducible and scalable execution. Its implementation emphasizes portability and reproducibility by running version-controlled workflows in containerized environments, enabling consistent results across laptops, servers, and cloud platforms. The pipeline produces standardized QC summaries and analysis outputs suitable for surveillance reporting, research projects, and training.
+      <br>
+      <a href="https://github.com/gmboowa/rMAP-2.0" target="_blank" rel="noopener noopener noreferrer">
+        https://github.com/gmboowa/rMAP-2.0
+      </a>
+    </li>
+  </ul>
+
+  <p style="margin-top: 0.75rem;">
+    <strong>rMAP-1.0 Publication:</strong>
+    <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000583" target="_blank" rel="noopener noopener noreferrer">
+      Here
+    </a>
+  </p>
+
+</div>
 
   </article>
 </div>
@@ -168,7 +368,7 @@
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2025 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+        © Copyright 2025 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener noopener noreferrer" target="_blank">al-folio</a> theme.
 
       </div>
     </footer>
@@ -302,5 +502,22 @@
 </script>
 
     
+
+    <!-- Theme Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const toggleSwitch = document.getElementById("theme-toggle");
+          const currentTheme = localStorage.getItem("theme") || "light";
+          document.documentElement.setAttribute("data-theme", currentTheme);
+
+          toggleSwitch.addEventListener("click", function () {
+              const theme = document.documentElement.getAttribute("data-theme");
+              const newTheme = theme === "dark" ? "light" : "dark";
+              document.documentElement.setAttribute("data-theme", newTheme);
+              localStorage.setItem("theme", newTheme);
+          });
+      });
+    </script>
+
   </body>
 </html>
