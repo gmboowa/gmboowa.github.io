@@ -1,0 +1,13 @@
+{%- comment -%}
+GitHub profile avatar card for one user.
+Usage: {% include repository/repo_user.html username=user %}
+{%- endcomment -%}
+
+<div class="m-3 text-center">
+  <a href="https://github.com/{{ include.username }}" target="_blank" rel="noopener">
+    <img
+      src="https://github.com/{{ include.username }}.png?size=140"
+      alt="{{ include.username }} GitHub avatar"
+      loading="lazy">
+  </a>
+</div>
