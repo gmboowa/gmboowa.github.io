@@ -112,6 +112,14 @@ related_publications: false
       <a href="https://github.com/gmboowa/rMAP-2.0" target="_blank" rel="noopener">
         https://github.com/gmboowa/rMAP-2.0
       </a>
+
+      <div class="mt-2 text-center">
+        {% include figure.html
+          path="assets/img/final_rMAP-2.0.jpg"
+          title="rMAP-2.0 (Docker + Cromwell/WDL) — terminal execution overview"
+          class="img-fluid rounded z-depth-1"
+        %}
+      </div>
     </li>
   </ul>
 
