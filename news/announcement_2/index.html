@@ -55,10 +55,110 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
+
+    <!-- Inline CSS for Light/Dark Mode -->
+    <style>
+      :root {
+          --background-color: #FFFFFF;
+          --text-color: #1A1A1A;
+          --link-color: #8B008B;
+      }
+
+      [data-theme="dark"] {
+          --background-color: #121212;
+          --text-color: #ffffff;
+          --link-color: #4da8da;
+      }
+
+      body {
+          background-color: var(--background-color);
+          color: var(--text-color);
+      }
+
+      a {
+          color: var(--link-color);
+      }
+
+      #theme-toggle {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 1000;
+          background-color: var(--background-color);
+          color: var(--text-color);
+          border: 1px solid var(--text-color);
+          padding: 8px 12px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      /* Font scaling for media & teaching pages */
+      .media-page h1,
+      .teaching-page h1 {
+          font-size: 2rem;
+          margin-top: 1.2rem;
+          margin-bottom: 0.6rem;
+      }
+
+      .media-page h2,
+      .teaching-page h2 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+      }
+
+      .media-page h3,
+      .teaching-page h3 {
+          font-size: 1.2rem;
+          margin-top: 0.8rem;
+          margin-bottom: 0.4rem;
+      }
+
+      @media screen and (max-width: 768px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.6rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.2rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1.05rem;
+          }
+      }
+
+      @media screen and (max-width: 480px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.4rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.1rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1rem;
+          }
+      }
+    </style>
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav sticky-bottom-footer">
+  
+  
+  
+  <body class="announcement_2-page fixed-top-nav sticky-bottom-footer">
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙 Toggle Theme</button>
 
     <!-- Header -->
     <header>
@@ -98,7 +198,7 @@
                 <a class="nav-link" href="/teaching/">Resources</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">CV</a>
+                <a class="nav-link" href="/media/">Media</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -145,7 +245,7 @@
 
 <hr>
 
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com" rel="external nofollow noopener" target="_blank">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice" rel="external nofollow noopener" target="_blank">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com" rel="external nofollow noopener noopener noreferrer" target="_blank">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice" rel="external nofollow noopener noopener noreferrer" target="_blank">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
 
 <h4 id="hipster-list">Hipster list</h4>
 <ul>
@@ -177,7 +277,7 @@
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2025 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+        © Copyright 2026 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener noopener noreferrer" target="_blank">al-folio</a> theme.
 
       </div>
     </footer>
@@ -311,5 +411,22 @@
 </script>
 
     
+
+    <!-- Theme Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const toggleSwitch = document.getElementById("theme-toggle");
+          const currentTheme = localStorage.getItem("theme") || "light";
+          document.documentElement.setAttribute("data-theme", currentTheme);
+
+          toggleSwitch.addEventListener("click", function () {
+              const theme = document.documentElement.getAttribute("data-theme");
+              const newTheme = theme === "dark" ? "light" : "dark";
+              document.documentElement.setAttribute("data-theme", newTheme);
+              localStorage.setItem("theme", newTheme);
+          });
+      });
+    </script>
+
   </body>
 </html>
