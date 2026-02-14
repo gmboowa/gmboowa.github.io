@@ -55,10 +55,110 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
+
+    <!-- Inline CSS for Light/Dark Mode -->
+    <style>
+      :root {
+          --background-color: #FFFFFF;
+          --text-color: #1A1A1A;
+          --link-color: #8B008B;
+      }
+
+      [data-theme="dark"] {
+          --background-color: #121212;
+          --text-color: #ffffff;
+          --link-color: #4da8da;
+      }
+
+      body {
+          background-color: var(--background-color);
+          color: var(--text-color);
+      }
+
+      a {
+          color: var(--link-color);
+      }
+
+      #theme-toggle {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 1000;
+          background-color: var(--background-color);
+          color: var(--text-color);
+          border: 1px solid var(--text-color);
+          padding: 8px 12px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      /* Font scaling for media & teaching pages */
+      .media-page h1,
+      .teaching-page h1 {
+          font-size: 2rem;
+          margin-top: 1.2rem;
+          margin-bottom: 0.6rem;
+      }
+
+      .media-page h2,
+      .teaching-page h2 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+      }
+
+      .media-page h3,
+      .teaching-page h3 {
+          font-size: 1.2rem;
+          margin-top: 0.8rem;
+          margin-bottom: 0.4rem;
+      }
+
+      @media screen and (max-width: 768px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.6rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.2rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1.05rem;
+          }
+      }
+
+      @media screen and (max-width: 480px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.4rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.1rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1rem;
+          }
+      }
+    </style>
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav sticky-bottom-footer">
+  
+  
+  
+  <body class="-page fixed-top-nav sticky-bottom-footer">
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙 Toggle Theme</button>
 
     <!-- Header -->
     <header>
@@ -69,12 +169,12 @@
           <!-- Social Icons -->
           <div class="navbar-brand social">
             <a href="mailto:%67%6D%62%6F%6F%77%61@%67%6D%61%69%6C.%63%6F%6D" title="email"><i class="fas fa-envelope"></i></a>
-            <a href="https://orcid.org/0000-0001-8445-9414" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
-            <a href="https://scholar.google.com/citations?user=P9dSDhoAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
-            <a href="https://www.researchgate.net/profile/Gerald-Mboowa/" title="ResearchGate" rel="external nofollow noopener" target="_blank"><i class="ai ai-researchgate"></i></a>
-            <a href="https://github.com/gmboowa" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gerald-mboowa-99020537" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/GeraldGmboowa" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://orcid.org/0000-0001-8445-9414" title="ORCID" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="ai ai-orcid"></i></a>
+            <a href="https://scholar.google.com/citations?user=P9dSDhoAAAAJ" title="Google Scholar" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.researchgate.net/profile/Gerald-Mboowa/" title="ResearchGate" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="ai ai-researchgate"></i></a>
+            <a href="https://github.com/gmboowa" title="GitHub" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gerald-mboowa-99020537" title="LinkedIn" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/GeraldGmboowa" title="Twitter" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="fab fa-twitter"></i></a>
             
 
           </div>
@@ -110,7 +210,7 @@
                 <a class="nav-link" href="/teaching/">Resources</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">CV</a>
+                <a class="nav-link" href="/media/">Media</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -143,7 +243,7 @@
           <h1 class="post-title">
             <span class="font-weight-bold">Gerald</span>  Mboowa
           </h1>
-          <p class="desc">Bioinformatics Implementation Scientist, <a href="https://africacdc.org/people/gerald-mboowa/" rel="external nofollow noopener" target="_blank">Africa CDC</a>, Addis Ababa, Ethiopia</p>
+          <p class="desc"></p>
         </header>
 
         <article>
@@ -153,13 +253,13 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/gerald-mboowa-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/gerald-mboowa-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/gerald-mboowa-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/gerald-mboowa-1-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/gerald-mboowa-1-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/gerald-mboowa-1-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/gerald-mboowa.png" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="gerald-mboowa.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/gerald-mboowa-1.png" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="gerald-mboowa-1.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
 </figure>
@@ -172,17 +272,37 @@
           </div>
 
           <div class="clearfix">
-            <p>Hi, I’m Gerald Mboowa, a bioinformatics implementation expert dedicated to advancing global health through innovative research and data-driven solutions, particularly in low- and middle-income countries (LMICs). My work integrates genome sequencing technologies and bioinformatics into public health strategies to address critical health challenges. As an implementation scientist, I have collaborated with my team to develop two impactful bioinformatics pipelines: <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000583" rel="external nofollow noopener" target="_blank">rMAP (Rapid Microbial Analysis Pipeline)</a> and <a href="https://www.microbiologyresearch.org/content/journal/acmi/10.1099/acmi.0.000815.v3" rel="external nofollow noopener" target="_blank">HIV-DRIVES (HIV Drug Resistance Identification, Variant Evaluation, and Surveillance Pipeline)</a>. These tools significantly enhance antimicrobial resistance (AMR) surveillance and pathogen characterization, supporting outbreak investigations and evidence-based public health decision-making.</p>
+            <p>Hi, I’m Gerald Mboowa, a scientist dedicated to advancing global health through innovative research and data-driven solutions, particularly in low- and middle-income countries (LMICs). My work integrates genome sequencing technologies and bioinformatics into public health strategies to address critical health challenges. As an implementation scientist, we have developed impactful bioinformatics pipelines, including <strong><a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000583" rel="external nofollow noopener noopener noreferrer" target="_blank">rMAP</a></strong> (Rapid Microbial Analysis Pipeline) for native Linux command-line environments (also supported on macOS) for rapid, end-to-end analysis of <strong>ESKAPE</strong> bacterial whole-genome sequencing data (from raw reads through core outputs such as genome assembly/annotation, AMR profiling &amp; strain/lineage characterization) and <strong><a href="https://academic.oup.com/bioinformaticsadvances/advance-article/doi/10.1093/bioadv/vbag046/8483022" rel="external nofollow noopener noopener noreferrer" target="_blank">rMAP 2.0</a></strong>, a modular &amp; reproducible WDL–Cromwell–Docker workflow that standardizes microbial whole-genome analysis of <strong>ESKAPEE</strong> pathogens by integrating read QC/trimming, assembly &amp; annotation, resistance/virulence/mobile-element profiling, sequence inference and phylogenetic reconstruction, and automated HTML reporting across laptops, institutional servers, and cloud environments.</p>
+
+<p>We also developed <strong><a href="#">HIV-DRIVES</a></strong> (HIV Drug Resistance Identification, Variant Evaluation, and Surveillance Pipeline). These tools significantly enhance antimicrobial resistance (AMR) surveillance and pathogen characterization, supporting outbreak investigations and evidence-based public health decision-making.</p>
 
 <p>The rMAP pipeline facilitates the rapid identification of clinically important bacterial pathogens and genomic determinants of resistance and virulence, offering actionable insights to develop targeted interventions and inform AMR policies. Meanwhile, HIV-DRIVES focuses on identifying HIV drug resistance, evaluating variants, and enabling robust surveillance. Together, these pipelines empower health systems—especially in LMICs—with the capacity to utilize genomic data, transforming how public health challenges are addressed.</p>
 
 <p>With expertise spanning next-generation sequencing (NGS) and genomic data analysis, I focus on bridging data science, bioinformatics, and genomics to develop innovative solutions for improving diagnostics, treatment strategies, and public health outcomes. My contributions underscore the transformative potential of bioinformatics in addressing complex biological systems and translating genomic insights into strategies that enhance global health.</p>
 
-<p>Currently, I contribute to global health initiatives at the <a href="https://www.broadinstitute.org/" rel="external nofollow noopener" target="_blank">Broad Institute of MIT and Harvard</a>, building on my extensive experience in developing bioinformatics frameworks for infectious disease surveillance. My work encompasses AMR, genomics, and infectious disease surveillance, with a strong focus on fostering equitable solutions for LMICs. Previously, I collaborated with public health institutions such as the <a href="https://idi.mak.ac.ug/" rel="external nofollow noopener" target="_blank">Infectious Diseases Institute - Makerere University</a> and the <a href="https://africacdc.org/" rel="external nofollow noopener" target="_blank">Africa Centres for Disease Control and Prevention (Africa CDC)</a> to implement genomic surveillance programs that enhance disease detection and response systems across Africa.</p>
+<p>Currently, I contribute to global health initiatives at the
+<a href="https://www.broadinstitute.org/" rel="external nofollow noopener noopener noreferrer" target="_blank"><b>Broad Institute of MIT and Harvard</b></a>,
+building on my extensive experience in developing bioinformatics frameworks for infectious disease surveillance. My work encompasses AMR, genomics, and infectious disease surveillance, with a strong focus on fostering equitable solutions for LMICs. Previously, I worked with public health institutions such as the
+<a href="https://idi.mak.ac.ug/" rel="external nofollow noopener noopener noreferrer" target="_blank"><b>Infectious Diseases Institute at Makerere University</b></a>
+and the
+<a href="https://africacdc.org/" rel="external nofollow noopener noopener noreferrer" target="_blank"><b>Africa Centres for Disease Control and Prevention (Africa CDC)</b></a>
+to implement genomic surveillance programs aimed at enhancing disease detection and response systems across Africa. I contributed to these efforts as a
+<a href="https://africacdc.org/people/gerald-mboowa/" rel="external nofollow noopener noopener noreferrer" target="_blank"><b>bioinformatics implementation expert</b></a>.</p>
 
-<p>Passionate about translating research into actionable public health outcomes, I actively support Genomics, Bioinformatics, and Data Science programs at the <a href="https://ace.ac.ug/" rel="external nofollow noopener" target="_blank">African Center of Excellence in Bioinformatics &amp; Data-intensive Sciences (ACE)</a> and <a href="https://chs.mak.ac.ug/team/gerald-mboowa" target="_blank" rel="external nofollow noopener">Makerere University</a>.</p>
+<p>Passionate about translating research into actionable public health outcomes, I actively support Genomics, Bioinformatics, and Data Science training programs at the
+<a href="https://ace.ac.ug/" rel="external nofollow noopener noopener noreferrer" target="_blank"><b>African Center of Excellence in Bioinformatics &amp; Data-intensive Sciences (ACE)</b></a>
+and
+<a href="https://chs.mak.ac.ug/team/gerald-mboowa" target="_blank" rel="external nofollow noopener noopener noreferrer"><b>Makerere University</b></a>.</p>
 
-<p>For more details about my research contributions, visit my <a href="https://orcid.org/0000-0001-8445-9414" target="_blank" rel="external nofollow noopener">ORCID</a>, <a href="https://scholar.google.com/citations?user=P9dSDhoAAAAJ" target="_blank" rel="external nofollow noopener">Google Scholar</a>, and <a href="https://www.researchgate.net/profile/Gerald-Mboowa" target="_blank" rel="external nofollow noopener">ResearchGate</a> pages. You can also connect with me via <a href="https://twitter.com/GeraldGMboowa" target="_blank" rel="external nofollow noopener">Twitter</a> and <a href="https://www.linkedin.com/in/gerald-mboowa-99020537/" target="_blank" rel="external nofollow noopener">LinkedIn</a>.</p>
+<p>For more details about my research contributions, visit my
+<a href="https://orcid.org/0000-0001-8445-9414" target="_blank" rel="external nofollow noopener noopener noreferrer"><b>ORCID</b></a>,
+<a href="https://scholar.google.com/citations?user=P9dSDhoAAAAJ" target="_blank" rel="external nofollow noopener noopener noreferrer"><b>Google Scholar</b></a>,
+and
+<a href="https://www.researchgate.net/profile/Gerald-Mboowa" target="_blank" rel="external nofollow noopener noopener noreferrer"><b>ResearchGate</b></a>
+pages. You can also connect with me via
+<a href="https://twitter.com/GeraldGMboowa" target="_blank" rel="external nofollow noopener noopener noreferrer"><b>Twitter</b></a>
+and
+<a href="https://www.linkedin.com/in/gerald-mboowa-99020537/" target="_blank" rel="external nofollow noopener noopener noreferrer"><b>LinkedIn</b></a>.</p>
 
 <p>Let’s connect and explore collaborative opportunities to advance global health, genomics, bioinformatics, data science, and public health innovation!</p>
 
@@ -195,7 +315,11 @@
           
 
           <!-- Selected papers -->
-          <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
+          <h2>
+          <a href="/publications/" style="color: inherit;">
+            <strong>Selected Publications</strong> <!-- Bold text -->
+          </a>
+        </h2>
           <div class="publications">
             <ol class="bibliography">
 <li>
@@ -238,6 +362,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://www.science.org/doi/10.1126/science.abq5358" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/The_evolving_SARS-CoV-2_epidemic_in_Africa-Insights_from_rapidly_expanding_genomic_surveillance.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
@@ -258,9 +384,68 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
+<div class="col-sm-2 abbr"><abbr class="badge">Nature</abbr></div>
+<!-- Entry bib key -->
+        <div id="pathogengenomics_2025" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Genomics reveals zoonotic and sustained human Mpox spread in West Africa</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Edyth Parker, Ifeanyi F Omah, Doreen Delia Djuicy, and
+          <span class="more-authors" title="click to view 59 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '59 more authors' ? 'Andrew Magee, Christopher H Tomkins-Tinch, James Richard Otieno, Patrick Varilly, Akeemat Opeyemi Ayinla, Ayotunde E Sijuwola, Muhammad I Ahmed, Oludayo O Ope-ewe, Olusola Akinola Ogunsanya, Alhaji Olono, Femi Mudasiru Saibu, Philomena Eromon, Moïse Henri Moumbeket Yifomnjou, Loique Landry Messanga Essengue, Martial Gides Wansi Yonga, Gael Dieudonné Essima, Ibrahim Pascal Touoyem, Landry Jules Mouliem Mounchili, Sara Irene Eyangoh, Alain Georges Mballa Etoundi, Linda Esso, Inès Mandah Emah Nguidjol, Steve Franck Metomb, Cornelius Chebo, Samuel Mbah Agwe, Hans Makembe Mossi, Chanceline Ndongo Bilounga, Olusola Akanbi, Abiodun Egwuenu, Odianosen Ehiakhamen, Chimaobi Chukwu, Kabiru Suleiman, Afolabi Akinpelu, Adama Ahmad, Khadijah Isa Imam, Richard Ojedele, Victor Oripenaye, Kenneth Ikeata, Sophiyah Adelakun, Babatunde Olajumoke, Áine O’Toole, Mark Zeller, Karthik Gangavarapu, Daniel J Park, Gerald Mboowa, Sofonias Kifle Tessema, Yenew Kebede Tebeje, Onikepe Folarin, Anise Happi, Philippe Lemey, Marc A Suchard, Kristian G Andersen, Pardis Sabeti, Andrew Rambaut, Chikwe Ihekweazu, Idris Jide, Ifedayo Adetifa, Richard Njouom, Christian T Happi' : '59 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">59 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Nature</em>, May 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://www.nature.com/articles/s41586-025-09128-2" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/Genomics_reveals_zoonotic_and_sustained_human_Mpox_spread_in_West_Africa.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          
+          
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1038/s41586-025-09128-2"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1038/s41586-025-09128-2" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Five years before the 2022 multi-country mpox outbreak, Nigeria and Cameroon reported their first cases in over three decades.1,2 While Nigeria’s outbreak is recognized as an ongoing human epidemic, the drivers of Cameroon’s resurgence remain unclear.3,4 The rate of zoonoses remains uncertain in both countries, and gaps in genomic data obscure the timing, zoonotic and geographic origin of mpox virus (MPXV) emergence in humans. To address these uncertainties, we generated 118 MPXV genomes from Nigeria and Cameroon from 2018-2023. Our findings show that, in contrast to Nigeria, cases in Cameroon are the result of repeated zoonoses, with two distinct zoonotic lineages circulating across the Nigeria-Cameroon border. Our findings suggest that shared animal populations in the cross-border forest ecosystems drive virus emergence and spread. Accordingly, we identify the closest zoonotic outgroup to the Nigerian human epidemic lineage (hMPXV-1) in a southern Nigerian border state. We estimate that the shared ancestor of the zoonotic outgroup and hMPXV-1 circulated in animals in southern Nigeria in late 2013. We estimate that hMPXV-1 emerged in humans in August 2014 in the southern Rivers State and circulated undetected for three years. Rivers State acted as the main source of viral spread across the human epidemic. Our study sheds light on MPXV’s recent establishment in the human population and highlights the risk of persistent zoonotic emergence of MPXV in the complex border regions of Cameroon and Nigeria.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
 <div class="col-sm-2 abbr"><abbr class="badge">Nature Medicine</abbr></div>
 <!-- Entry bib key -->
-        <div id="AfricaCDC_dataplatform_2023" class="col-sm-8">
+        <div id="AfricaCDCdataplatform_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">A pan-African pathogen genomics data sharing platform to support disease outbreaks</div>
         <!-- Author -->
@@ -271,7 +456,7 @@
           <span class="more-authors" title="click to view 19 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '19 more authors' ? 'Sello Makhubela, George Githinji, Sarah Mwangi, Harris Onywera, Ndodo Nnaemeka, Gyamfi Daniel Amoako, Idowu Olawoye, Amadou Diallo, Placide Mbala-Kingebeni, Samuel O Oyola, Bright Adu, Christopher Mvelase, Pascale Ondoa, Athanasius Fred Dratibi, Abdourahmane Sow, Nicksy Gumede, Sofonias K Tessema, Ogwell Ahmed Ouma, Yenew Tebeje Kebede' : '19 more authors';
+                var more_authors_text = element.text() == '19 more authors' ? 'Sello Makhubela, George Githinji, Sarah Mwangi, Harris Onywera, Ndodo Nnaemeka, Gyamfi Daniel Amoako, Idowu Olawoye, Amadou Diallo, Placide Mbala-Kingebeni, Samuel O Oyola, Bright Adu, Christopher Mvelase, Pascale Ondoa, Athanasius Fred Dratibi, Abdourahmane Sow, Nicksy Gumede, Sofonias K Tessema, Ahmed Ogwell Ouma, Yenew Tebeje Kebede' : '19 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -295,6 +480,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://www.nature.com/articles/s41591-023-02266-y" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/A_pan-African_pathogen_genomics_data_sharing_platform_to_support_disease_outbreaks.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
@@ -317,7 +504,7 @@
       <div class="row">
 <div class="col-sm-2 abbr"><abbr class="badge">Cell</abbr></div>
 <!-- Entry bib key -->
-        <div id="mboowa_barriers_in_data_sharing_2024" class="col-sm-8">
+        <div id="mboowabarriersindatasharing_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Africa in the era of pathogen genomics: Unlocking data barriers</div>
         <!-- Author -->
@@ -352,6 +539,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://www.cell.com/cell/abstract/S0092-8674(24)00960-7" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/Africa_in_the_era_of_pathogen_genomics_Unlocking_data_barriers.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
@@ -372,11 +561,57 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">BMC</abbr></div>
+<div class="col-sm-2 abbr"><abbr class="badge">Nat Rev Gen</abbr></div>
 <!-- Entry bib key -->
-        <div id="nsubuga_generalizability_2024" class="col-sm-8">
+        <div id="CRISPR_2025" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Generalizability of machine learning in predicting antimicrobial resistance in E. coli: a multi-country case study in Africa</div>
+        <div class="title">A clinical milestone for CRISPR in sickle-cell disease : Genome editing</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Gerald Mboowa</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Nature Reviews Genetics</em>, Sep 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://www.nature.com/articles/s41576-025-00898-z" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/A_clinical_milestone_for_CRISPR_in_sickle-cell_disease.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          
+          
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1038/s41576-025-00898-z"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1038/s41576-025-00898-z" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The haemoglobinopathies transfusion-dependent β-thalassemia (TDT) and sickle-cell disease (SCD) are two globally prevalent and severe monogenic blood disorders. These conditions impose substantial morbidity and mortality, and their burden falls disproportionately on populations in sub-Saharan Africa, the Middle East and parts of Asia, underscoring the global health significance of any curative approach. In 2021, a study by Frangoul et al. marked a defining moment for genomic medicine and global health. Published in The New England Journal of Medicine, the authors reported the clinical application of CRISPR–Cas9 genome editing to treat two patients with TDT or SCD.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+<div class="col-sm-2 abbr"><abbr class="badge">BMC Gen</abbr></div>
+<!-- Entry bib key -->
+        <div id="nsubugageneralizability_2024" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Generalizability of machine learning in predicting antimicrobial resistance in <i>E. coli</i>: a multi-country case study in Africa</div>
         <!-- Author -->
         <div class="author">
         
@@ -409,6 +644,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://link.springer.com/article/10.1186/s12864-024-10214-4" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/Generalizability_of_machine_learning_in_predicting_antimicrobial_resistance_in_E_coli-a_multi-country_case_study_in_Africa.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
@@ -429,73 +666,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">BMC</abbr></div>
+<div class="col-sm-2 abbr"><abbr class="badge">Nat Comm Med</abbr></div>
 <!-- Entry bib key -->
-        <div id="babirye_generalizability_2024" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Machine learning-based prediction of antibiotic resistance in Mycobacterium tuberculosis clinical isolates from Uganda</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Sandra Ruth Babirye, Mike Nsubuga, Gerald Mboowa, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Charles Batte, Ronald Galiwango, David Patrick Kateete' : '3 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">3 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>BMC Infectious Diseases</em>, Dec 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1186/s12879-024-10282-7"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1186/s12879-024-10282-7" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Efforts toward tuberculosis management and control are challenged by the emergence of Mycobacterium tuberculosis (MTB) resistance to existing anti-TB drugs. This study aimed to explore the potential of machine learning algorithms in predicting drug resistance of four anti-TB drugs (rifampicin, isoniazid, streptomycin, and ethambutol) in MTB using whole-genome sequence and clinical data from Uganda. We also assessed the model’s generalizability on another dataset from South Africa.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Nature</abbr></div>
-<!-- Entry bib key -->
-        <div id="kidenya_prs_2024" class="col-sm-8">
+        <div id="kidenyaprs_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Inclusiveness of the All of Us Research Program improves polygenic risk scores and fosters genomic medicine for all</div>
         <!-- Author -->
         <div class="author">
         
 
-        Benson Kidenya, and Gerald Mboowa</div>
+        Benson R Kidenya, and Gerald Mboowa</div>
 
         <!-- Journal/Book title and date -->
         
@@ -510,6 +690,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://www.nature.com/articles/s43856-024-00647-z" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/Inclusiveness_of_the_All_of_Us_Research_Program_improves_polygenic_risk_scores_and_fosters_genomic_medicine_for_all.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
@@ -567,6 +749,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001769" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/Urgent_need_for_a_non-discriminatory_and_non-stigmatizing_nomenclature_for_monkeypox_virus.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
@@ -589,9 +773,9 @@
       <div class="row">
 <div class="col-sm-2 abbr"><abbr class="badge">Crit Care Med</abbr></div>
 <!-- Entry bib key -->
-        <div id="Tuberculosis_prediction_2012" class="col-sm-8">
+        <div id="Tuberculosisprediction_2012" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Cough aerosols of Mycobacterium tuberculosis predict new infection: a household contact study</div>
+        <div class="title">Cough aerosols of <i>Mycobacterium tuberculosis</i> predict new infection: a household contact study</div>
         <!-- Author -->
         <div class="author">
         
@@ -624,6 +808,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://www.atsjournals.org/doi/10.1164/rccm.201208-1422OC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/moine-et-al-2013-cough-aerosols-of-mycobacterium-tuberculosis-predict-new-infection-a-household-contact-study.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
@@ -646,9 +832,10 @@
       <div class="row">
 <div class="col-sm-2 abbr"><abbr class="badge">Microb Genomics</abbr></div>
 <!-- Entry bib key -->
-        <div id="microbial_genomics_2021" class="col-sm-8">
+        <div id="microbialgenomics_2021" class="col-sm-8">
         <!-- Title -->
-        <div class="title">rMAP: the Rapid Microbial Analysis Pipeline for ESKAPE bacterial group whole-genome sequence data</div>
+        <div class="title">
+<b><i>rMAP</i></b> : the Rapid Microbial Analysis Pipeline for <i>ESKAPE</i>   bacterial group whole-genome sequence data</div>
         <!-- Author -->
         <div class="author">
         
@@ -668,6 +855,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000583" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/rMAP-the-Rapid_Microbial_Analysis_Pipeline_for_ESKAPE_bacterial_group_whole-genome_sequence_data.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
@@ -688,779 +877,20 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Access Microbiol</abbr></div>
-<!-- Entry bib key -->
-        <div id="software_2024" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">HIV-DRIVES: HIV drug resistance identification, variant evaluation, and surveillance pipeline</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Stephen Kanyerezi, Ivan Sserwadda, Aloysious Ssemaganda, and
-          <span class="more-authors" title="click to view 11 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '11 more authors' ? 'Julius Seruyange, Alisen Ayitewala, Hellen Rosette Oundo, Wilson Tenywa, Brian A Kagurusi, Godwin Tusabe, Stacy Were, Isaac Ssewanyana, Susan Nabadda, Maria Magdalene Namaganda, Gerald Mboowa' : '11 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">11 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Access Microbiology</em>, Jul 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1099/acmi.0.000815.v3"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1099/acmi.0.000815.v3" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>The global prevalence of resistance to antiviral drugs combined with antiretroviral therapy (cART) emphasizes the need for continuous monitoring to better understand the dynamics of drug-resistant mutations to guide treatment optimization and patient management as well as check the spread of resistant viral strains. We have recently integrated next-generation sequencing (NGS) into routine HIV drug resistance (HIVDR) monitoring, with key challenges in the bioinformatic analysis and interpretation of the complex data generated, while ensuring data security and privacy for patient information. To address these challenges, here we present HIV-DRIVES (HIV Drug Resistance Identification, Variant Evaluation, and Surveillance), an NGS-HIVDR bioinformatics pipeline that has been developed and validated using Illumina short reads, FASTA, and Sanger ab1. seq files.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Nat Sci Rep</abbr></div>
-<!-- Entry bib key -->
-        <div id="fahad_2023" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">A systematic review reveals that African children of 15–17 years demonstrate low hepatitis B vaccine seroprotection rates</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Fahad Muwanda, Hakim Sendagire, Gerald Mboowa, and
-          <span class="more-authors" title="click to view 5 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '5 more authors' ? 'David P Kateete, Beatrice Achan, Ezekiel Mupere, Hussein M Kafeero, Bernard Ssentalo Bagaya' : '5 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">5 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Scientific Reports</em>, Dec 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1038/s41598-023-49674-1"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1038/s41598-023-49674-1" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Childhood HBV immunization remains globally fundamental to the elimination of hepatitis B virus (HBV). However, monitoring proportions of HBV vaccine seroprotection and their determinants among African Pediatric recipients is crucial. This study sought to verify extent of immune protection accorded by the HBV vaccine in African children of up to 17 years of age by pooling the prevalence of seroprotection reported by primary studies conducted in the Northern, Western, and Southern African regions. We included 19 eligible articles out of the 197 initially downloaded, published from 1999 to 2021 from African Journals Online (AJOL), EMBASE, Scopus, and PubMed. The study protocol was registered with the International Prospective Register of Systematic Reviews (PROSPERO), University of York Centre for Reviews and Dissemination, under the registration number CRD42022361277. Significantly higher (p &lt; 0.0001) proportion of HBV vaccine seroprotection (69.07%) was found among children under 15 years of age than children 15–17 years (32.368%), 95% CI [34.2454–39.0847%]. Whereas successful integration of the HBV vaccine on the extended programs on immunizations (EPI) has been a major achievement in the reduction of HBV infection in Africa, markedly reduced HBV vaccine seroprotection is persistently demonstrated among adolescent children 15–17 years of age. Future studies are required to clarify the need for booster dose vaccination in most at risk populations and age groups.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">J Infect Dis</abbr></div>
-<!-- Entry bib key -->
-        <div id="malaria_2024" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Varied Prevalence of Antimalarial Drug Resistance Markers in Different Populations of Newly Arrived Refugees in Uganda</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Stephen Tukwasibwe, Shreeya Garg, Thomas Katairo, and
-          <span class="more-authors" title="click to view 20 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '20 more authors' ? 'Victor Asua, Brian A Kagurusi, Gerald Mboowa, Rebecca Crudale, Gerald Tumusiime, Julius Businge, David Alula, Julius Kasozi, Ibrahim Wadembere, Isaac Ssewanyana, Emmanuel Arinaitwe, Joaniter I Nankabirwa, Samuel L Nsobya, Moses R Kamya, Bryan Greenhouse, Grant Dorsey, Jeffrey A Bailey, Jessica Briggs, Melissa D Conrad, Philip J Rosenthal' : '20 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">20 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>The Journal of Infectious Diseases</em>, Jun 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1093/infdis/jiae288"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1093/infdis/jiae288" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Newly arrived refugees offer insights into malaria epidemiology in their countries of origin. We evaluated asymptomatic refugee children within 7 days of arrival in Uganda from South Sudan and the Democratic Republic of Congo (DRC) in 2022 for parasitemia, parasite species, and Plasmodium falciparum drug resistance markers. Asymptomatic P. falciparum infections were common in both populations. Coinfection with P. malariae was more common in DRC refugees. Prevalences of markers of aminoquinoline resistance (PfCRT K76T, PfMDR1 N86Y) were much higher in South Sudan refugees, of antifolate resistance (PfDHFR C59R and I164L, PfDHPS A437G, K540E, and A581G) much higher in DRC refugees, and of artemisinin partial resistance (ART-R; PfK13 C469Y and A675V) moderate in both populations. Prevalences of most mutations differed from those seen in Ugandans attending health centers near the refugee centers. Refugee evaluations yielded insights into varied malaria epidemiology and identified markers of ART-R in 2 previously little-studied countries.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Front Microbiol</abbr></div>
-<!-- Entry bib key -->
-        <div id="pseudomonas_2022" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Genetic Diversity, Distribution, and Genomic Characterization of Antibiotic Resistance and Virulence of Clinical Pseudomonas aeruginosa Strains in Kenya</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Shahiid Kiyaga, Cecilia Kyany’a, Angela W Muraya, and
-          <span class="more-authors" title="click to view 5 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '5 more authors' ? 'Hunter J Smith, Emma G Mills, Caleb Kibet, Gerald Mboowa, Lillian Musila' : '5 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">5 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Frontiers in Microbiology</em>, Mar 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.3389/fmicb.2022.835403"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.3389/fmicb.2022.835403" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Pseudomonas aeruginosa is a leading cause of nosocomial infections worldwide. It can produce a range of debilitating infections, have a propensity for developing antimicrobial resistance, and present with a variety of potent virulence factors. This study investigated the sequence types (ST), phenotypic antimicrobial susceptibility profiles, and resistance and virulence genes among clinical isolates from urinary tract and skin and soft tissue infections. Fifty-six P. aeruginosa clinical isolates were obtained from six medical centers across five counties in Kenya between 2015 and 2020. Whole-genome sequencing (WGS) was performed to conduct genomic characterization, sequence typing, and phylogenetic analysis of the isolates. Results showed the presence of globally distributed high-risk clones (ST244 and ST357), local high-risk clones (ST2025, ST455, and ST233), and a novel multidrug-resistant (MDR) clone carrying virulence genes (ST3674). Furthermore, 31% of the study isolates were found to be MDR with phenotypic resistance to a variety of antibiotics, including piperacillin (79%), ticarcillin-clavulanic acid (57%), meropenem (34%), levofloxacin (70%), and cefepime (32%). Several resistance genes were identified, including carbapenemases VIM-6 (ST1203) and NDM-1 (ST357), fluoroquinolone genes, crpP, and qnrVCi, while 14 and 22 different chromosomal mutations were detected in the gyrA and parC genes, respectively. All isolates contained at least three virulence genes. Among the virulence genes identified, phzB1 was the most abundant (50/56, 89%). About 21% (12/56) of the isolates had the exoU+/exoS- genotype, while 73% (41/56) of the isolates had the exoS+/exoU- genotype. This study also discovered 12 novel lineages of P. aeruginosa, of which one (ST3674) demonstrated both extensive antimicrobial resistance and the highest number of virulence genes (236/242, 98%). Although most high-risk clones were detected in Nairobi County, high-risk and clones of interest were found throughout the country, indicating the local spread of global epidemic clones and the emergence of new strains. Thus, this study illustrates the urgent need for coordinated local, regional, and international antimicrobial resistance surveillance efforts.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">AAC</abbr></div>
-<!-- Entry bib key -->
-        <div id="amr_2014" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Sensititre MYCOTB MIC plate for testing Mycobacterium tuberculosis susceptibility to first- and second-line drugs</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Jongseok Lee, Derek T Armstrong, Willy Ssengooba, and
-          <span class="more-authors" title="click to view 15 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '15 more authors' ? 'Jeong-Ae Park, Yeuni Yu, Francis Mumbowa, Carolyn Namaganda, Gerald Mboowa, Germine Nakayita, Sandra Armakovitch, Gina Chien, Sang-Nae Cho, Laura E Via, Clifton E Barry, Jerrold J Ellner, David Alland, Susan E Dorman, Moses L Joloba' : '15 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">15 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Antimicrobial Agents and Chemotherapy</em>, Dec 2014
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1128/AAC.01209-13"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1128/AAC.01209-13" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>For Mycobacterium tuberculosis, phenotypic methods for drug susceptibility testing of second-line drugs are poorly standardized and technically challenging. The Sensititre MYCOTB MIC plate (MYCOTB) is a microtiter plate containing lyophilized antibiotics and configured for determination of MICs to first- and second-line antituberculosis drugs. To evaluate the performance of MYCOTB for M. tuberculosis drug susceptibility testing using the Middlebrook 7H10 agar proportion method (APM) as the comparator, we conducted a two-site study using archived M. tuberculosis isolates from Uganda and the Republic of Korea. Thawed isolates were subcultured, and dilutions were inoculated into MYCOTB wells and onto 7H10 agar. MYCOTB results were read at days 7, 10, 14, and 21; APM results were read at 21 days. A total of 222 isolates provided results on both platforms. By APM, 106/222 (47.7%) of isolates were resistant to at least isoniazid and rifampin. Agreement between MYCOTB and APM with respect to susceptibility or resistance was ≥92% for 7 of 12 drugs when a strict definition was used and ≥96% for 10 of 12 drugs when agreement was defined by allowing a ± one-well range of dilutions around the APM critical concentration. For ethambutol, agreement was 80% to 81%. For moxifloxacin, agreement was 83% to 85%; incorporating existing DNA sequencing information for discrepant analysis raised agreement to 91% to 96%. For MYCOTB, the median time to plate interpretation was 10 days and interreader agreement was ≥95% for all drugs. MYCOTB provided reliable results for M. tuberculosis susceptibility testing of first- and second-line drugs except ethambutol, and results were available sooner than those determined by APM.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">BMC Infect Dis</abbr></div>
-<!-- Entry bib key -->
-        <div id="amr_2015" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Rifampicin resistance mutations in the 81 bp RRDR of rpoB gene in Mycobacterium tuberculosis clinical isolates using Xpert® MTB/RIF in Kampala, Uganda: a retrospective study</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Gerald Mboowa, Carolyn Namaganda, and Willy Ssengooba</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>BMC Infectious Diseases</em>, Sep 2014
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1186/1471-2334-14-481"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1186/1471-2334-14-481" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Background: Introduction of Xpert® MTB/RIF assay has revolutionalised the diagnosis of tuberculosis (TB) by simultaneously detecting the bacteria and resistance to rifampicin (rif), a surrogate marker for multi-drug resistant TB (MDR-TB) as well as one of the principal first-line anti-tuberculosis drugs. In general, rpoB mutations can be found in 96.1% of rif-resistant Mycobacterium tuberculosis (MTB) strains worldwide and these mutations usually are located in a region at the 507-533rd amino acid residuals (81 bp) in the MTB rpoB gene, which is referred to as Rifampicin-resistance-determining region (RRDR). In this study, we determined the frequency of MDR-TB in Kampala using Xpert® MTB/RIF in comparison with the agar proportion method using Middlebrook 7H11and further determined the frequency of probes for different rpoB gene mutations using Xpert® MTB/RIF assay in the 81 bp RRDR. Methods: A total of 1501 specimens received at Mycobacteriology laboratory, Makerere University for Xpert testing between May 2011 and May 2014 were analysed by Xpert® MTB/RIF assay. Specimens that were positive for both MTB and rifampicin resistance were further subjected to a complete first line anti-mycobacterial drug susceptibility testing using Middlebrook 7H11 agar proportion method (APM). Results: Xpert® MTB/RIF assay detected 313 MTB positive specimens and out of which 12 specimens had both MTB and rifampicin- resistance conferred by four different rpoB gene mutations in the 81 bp-RRDR of MTB, further one (1/12), specimen was found to be rifampicin mono-resistant on APM while the 11 were found to be MDR-TB. Probes associated with the observed rif- resistance were as follows: E (7/12), B (3/12), A (1/12), D (1/12) and no rif-resistance was associated with probe C. No specimen yielded rif-resistance associated with more than one probe failure (mutation combinations). Probe D was associated with rifampicin mono-resistant. Conclusions: MDR-TB was at 3.5% in the studied population. Mutations associated with Probe E (58%) also known as codons 531and 533 are the commonest rpoB gene mutation identified by Xpert® MTB/RIF assay in this setting and mutations identified by probe E of the assay, turned out to be MDR-TB strains by agar proportion method antimicrobial susceptibility testing. No mutation was detected in the codon 522.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Bioinformatics</abbr></div>
-<!-- Entry bib key -->
-        <div id="amr_2016" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Bioinformatics mentorship in a resource limited setting</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Jjingo Daudi, Gerald Mboowa, Ivan Sserwadda, and
-          <span class="more-authors" title="click to view 7 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '7 more authors' ? 'Robert Kakaire, Davis Kiberu, Marion Amujal, Ronald Galiwango, David Kateete, Moses Joloba, Christopher C Whalen' : '7 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">7 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Briefings in Bioinformatics</em>, Sep 2021
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1093/bib/bbab399"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1093/bib/bbab399" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Background: The two recent simultaneous developments of high-throughput sequencing and increased computational power have brought bioinformatics to the forefront as an important tool for effective and efficient biomedical research. Consequently, there have been multiple approaches to developing bioinformatics skills. In resource rich environments, it has been possible to develop and implement formal fully accredited graduate degree training programs in bioinformatics. In resource limited settings with a paucity of expert bioinformaticians, infrastructure and financial resources, the task has been approached by delivering short courses on bioinformatics—lasting only a few days to a couple of weeks. Alternatively, courses are offered online, usually over a period of a few months. These approaches are limited by both the lack of sustained in-person trainer–trainee interactions, which is a key part of quality mentorships and short durations which constrain the amount of learning that can be achieved. Methods: Here, we pioneered and tested a bioinformatics training/mentorship model that effectively uses the available expertise and computational infrastructure to deliver an in-person hands-on skills training experience. This is done through a few physical lecture hours each week, guided personal coursework over the rest of the week, group discussions and continuous close mentorship and assessment of trainees over a period of 1 year. Results: This model has now completed its third iteration at Makerere University and has successfully mentored trainees, who have progressed to a variety of viable career paths. Conclusions: One-year (intermediate) skills based in-person bioinformatics training and mentorships are viable, effective and particularly appropriate for resource limited settings.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">JCM</abbr></div>
-<!-- Entry bib key -->
-        <div id="pcr_2024" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">CDC Trioplex diagnostic assay underperforms in detection of circulating Chikungunya West African genotype</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Mignane Ndiaye, Mouhamed Kane, Diamilatou Balde, and
-          <span class="more-authors" title="click to view 15 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '15 more authors' ? 'Safietou Sankhé, Maimouna Mbanne, Seynabou Mbaye Souna Diop, Umar Ahmad, Gerald Mboowa, Samba Niang Sagne, Mamadou Cisse, Ndongo Dia, Amadou Alpha Sall, Ousmane Faye, Gamou Fall, Oumar Faye, Manfred Weidmann, Moussa Moïse Diagne, Idrissa Dieng' : '15 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">15 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Journal of Clinical Microbiology</em>, Jun 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1128/jcm.00405-24"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1128/jcm.00405-24" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Since 2015, the virology laboratory at Institut Pasteur de Dakar (IPD) has conducted real-time molecular diagnostics for arboviruses as part of Senegal’s syndromic sentinel surveillance network. During the largest Chikungunya fever (CF) outbreak in Senegal in late 2023, with 210 confirmed cases in Kédougou and Tambacounda, the IPD evaluated the CDC Trioplex RT-qPCR assay, which detects Zika, Dengue, and Chikungunya viruses. Testing revealed a significant performance delay—an average 7 Ct value—compared to IPD’s in-house assay for 15 CHIKV RNA-positive samples. Whole genome sequencing and in silico analyses identified seven mismatches in the CDC Trioplex assay’s primer and probe binding sites for the CHIKV West Africa (WA) genotype, notably a critical mismatch at the 3’ end of the forward primer. This mismatch reduced elongation efficiency and caused a detection shift of approximately two logs, raising the risk of false negatives, especially for samples with low viral loads (Ct &gt; 28). Conversely, the IPD in-house assay remained effective, with no mismatches detected against CHIKV WA genotype sequences. The findings highlight the need for continuous genomic surveillance and assay validation using region-specific viral strains to ensure diagnostic accuracy during outbreaks.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Trop Anim Health</abbr></div>
-<!-- Entry bib key -->
-        <div id="animal_health_2016" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Serological and molecular investigation for brucellosis in swine in selected districts of Uganda</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Joseph Erume, Kristina Roesel, Michel M Dione, and
-          <span class="more-authors" title="click to view 10 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '10 more authors' ? 'Francis Ejobi, Gerald Mboowa, Joseph M Kungu, Joyce Akol, Danilo Pezo, Hosny El-Adawy, Falk Melzer, Mandy Elschner, Heinrich Neubauer, Delia Grace' : '10 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">10 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Tropical Animal Health and Production</em>, May 2016
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1007/s11250-016-1067-9"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1007/s11250-016-1067-9" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Brucellosis is a notifiable zoonotic disease affecting livestock, humans, and wildlife in Uganda. Pigs can be infected with human pathogenic Brucella suis biovars 1 and 3 and can be a significant source of brucellosis for humans. Uganda has a rapidly growing pig population, and the pork consumption per capita is the highest in East Africa. The objective of this work was to determine the seroprevalence of brucellosis in Ugandan pigs. A cross-sectional serosurvey of pigs was conducted in three of the major pig-keeping districts in Uganda (Masaka (n = 381 samples), Mukono (n = 398), and Kamuli (n = 414)). In addition, pigs originating from these districts were sampled in the major pig abattoir in Kampala (n = 472). In total, 1665 serum samples were investigated by serological and molecular tests. Only three putative brucellosis-positive samples were detected serologically using indirect ELISA. These sera were found negative for Brucella antibodies by CFT; however, two had antibodies against Yersinia enterocolitica as determined by SAT. Presence of antibodies against Yersiniae was confirmed by Y. enterocolitica antibody-specific ELISA. The two Yersiniae ELISA-positive samples were brucellosis negative using real-time PCR. We tested additional 142 sera from the 1665 samples with real-time PCR. All tested negative. Under this type of production system, we expect a maximum B. suis prevalence of less than 1 % at 95 % confidence level, and therefore, the risk of acquiring brucellosis from the pigs or their products is negligible. However, pigs may harbor the zoonotic Y. enterocolitica. This is the first study to investigate the occurrence of brucellosis in pigs in Uganda and the first study to report Y. enterocolitica antibodies in swine in Uganda.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">PLoS ONE</abbr></div>
-<!-- Entry bib key -->
-        <div id="amr_2017" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Cough Aerosol Cultures of Mycobacterium tuberculosis: Insights on TST / IGRA Discordance and Transmission Dynamics</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Edward C Jones-López, Laura F White, Bruce Kirenga, and
-          <span class="more-authors" title="click to view 11 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '11 more authors' ? 'Francis Mumbowa, Martin Ssebidandi, Stephanie Moine, Olive Mbabazi, Gerald Mboowa, Irene Ayakaka, Soyeon Kim, Christina S Thornton, Alphonse Okwera, Moses Joloba, Kevin P Fennelly' : '11 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">11 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>PLoS ONE</em>, Sep 2015
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1371/journal.pone.0138358"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1371/journal.pone.0138358" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Rationale: The diagnosis of latent tuberculosis (TB) infection (LTBI) is complicated by the absence of a gold standard. Discordance between tuberculin skin tests (TST) and interferon gamma release assays (IGRA) occurs in 10–20% of individuals, but the underlying mechanisms are poorly understood. Methods: We analyzed data from a prospective household contact study that included cough aerosol culture results from index cases, environmental and contact factors. We assessed contacts for LTBI using TST and IGRA at baseline and six weeks. We examined TST/IGRA discordance in qualitative and quantitative analyses, and used multivariable logistic regression analysis with generalized estimating equations to analyze predictors of discordance. Measurements and Results: We included 96 TB patients and 384 contacts. Discordance decreased from 15% at baseline to 8% by six weeks. In adjusted analyses, discordance was related to less crowding (p = 0.004), non-cavitary disease (OR 1.41, 95% CI: 1.02–1.96; p = 0.03), and marginally with BCG vaccination in contacts (OR 1.40, 95% CI: 0.99–1.98, p = 0.06). Conclusions: We observed significant individual variability and temporal dynamism in TST and IGRA results in household contacts of pulmonary TB cases. Discordance was associated with a less intense infectious exposure, and marginally associated with a BCG-mediated delay in IGRA conversion. Cough aerosols provide an additional dimension to the assessment of infectiousness and risk of infection in contacts.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Trop Med Hyg</abbr></div>
-<!-- Entry bib key -->
-        <div id="amr_2020" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Face-Masking, an Acceptable Protective Measure against COVID-19 in Ugandan High-Risk Groups</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Gerald Mboowa, David Musoke, Douglas Bulafu, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Dickson Aruhomukama' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>The American Journal of Tropical Medicine and Hygiene</em>, Dec 2020
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.4269/ajtmh.20-1174"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.4269/ajtmh.20-1174" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Methods: This study assessed the acceptability and effectiveness of face masking as a protective measure against COVID-19 among high-risk groups in Uganda. A mixed-methods approach was used, combining surveys and focus group discussions to evaluate knowledge, attitudes, and practices regarding face masking. Participants included healthcare workers, market vendors, public transport operators, and individuals with pre-existing health conditions. The study also analyzed mask-wearing compliance in public spaces and evaluated the effectiveness of masks through laboratory testing of filtration efficiency and wearability. Results: The study found high awareness (90%) of face masking as a protective measure, with 75% of participants regularly using masks in public. Market vendors and healthcare workers had the highest compliance rates, while public transport operators showed lower adherence. Laboratory analysis revealed that cloth masks commonly used in Uganda provided moderate protection, with a filtration efficiency of 50-70%. Participants cited affordability, discomfort, and limited access to quality masks as barriers to consistent use. Conclusion: Face masking is an acceptable and moderately effective COVID-19 protective measure among Ugandan high-risk groups. Increasing public access to affordable, high-quality masks and addressing barriers such as discomfort can improve compliance. Enhanced public health messaging tailored to specific groups is recommended to sustain mask-wearing practices.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Genome</abbr></div>
-<!-- Entry bib key -->
-        <div id="training_2021" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Genomics and bioinformatics capacity in Africa: no continent is left behind</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Gerald Mboowa, Ivan Sserwadda, and Dickson Aruhomukama</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Genome</em>, Jan 2021
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1139/gen-2020-0013"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1139/gen-2020-0013" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Despite the poor genomics research capacity in Africa, efforts have been made to empower African scientists to get involved in genomics research, particularly that involving African populations. As part of the Human Heredity and Health in Africa (H3Africa) Consortium, an initiative was set to make genomics research in Africa an African endeavor and was developed through funding from the United States’ National Institutes of Health Common Fund and the Wellcome Trust. H3Africa is intended to encourage a contemporary research approach by African investigators and to stimulate the study of genomic and environmental determinants of common diseases. The goal of these endeavors is to improve the health of African populations. To build capacity for bioinformatics and genomics research, organizations such as the African Society for Bioinformatics and Computational Biology have been established. In this article, we discuss the current status of the bioinformatics infrastructure in Africa as well as the training challenges and opportunities.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">F1000</abbr></div>
-<!-- Entry bib key -->
-        <div id="training_2022" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Investigating colistin drug resistance: the role of high-throughput sequencing and bioinformatics</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Dickson Aruhomukama, Ivan Sserwadda, and Gerald Mboowa</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>F1000Research</em>, May 2019
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.12688/f1000research.18081.2"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.12688/f1000research.18081.2" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Bacterial infections involving antibiotic-resistant gram-negative bacteria continue to increase and represent a major global public health concern. Resistance to antibiotics in these bacteria is mediated by chromosomal and/or acquired resistance mechanisms, these give rise to multi-drug resistant (MDR), extensive-drug resistant (XDR) or pan-drug resistant (PDR) bacterial strains. Most recently, plasmid-mediated resistance to colistin, an antibiotic that had been set apart as the last resort antibiotic in the treatment of infections involving MDR, XDR and PDR gram-negative bacteria has been reported. Plasmid-mediated colistin resistant gram-negative bacteria have been described to be PDR, implying a state devoid of alternative antibiotic therapeutic options. This review concisely describes the evolution of antibiotic resistance to plasmid-mediated colistin resistance and discusses the potential role of high-throughput sequencing technologies, genomics, and bioinformatics towards improving antibiotic resistance surveillance, the search for novel drug targets and precision antibiotic therapy focused at combating colistin resistance, and antibiotic resistance as a whole.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">AAS Open Res</abbr></div>
-<!-- Entry bib key -->
-        <div id="training_2018" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">The Collaborative African Genomics Network (CAfGEN): Applying Genomic technologies to probe host factors important to the progression of HIV and HIV-tuberculosis infection in sub-Saharan Africa</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Gerald Mboowa, Savannah Mwesigwa, Eric Katagirya, and
-          <span class="more-authors" title="click to view 22 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '22 more authors' ? 'Gaone Retshabile, Busisiwe C Mlotshwa, Lesedi Williams, Adeodata Kekitiinwa, David Kateete, Eddie Wampande, Misaki Wayengera, Betty Nsangi Kintu, Grace P Kisitu, Samuel Kyobe, Chester C Brown, Neil A Hanchard, Graeme Mardon, Moses Joloba, Gabriel Anabwani, Ed Pettitt, Masego Tsimako-Johnstone, Ishmael Kasvosve, Koketso Maplanka, Sununguko W Mpoloka, Makhosazana Hlatshwayo, Mogomotsi Matshaba' : '22 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">22 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Open Research Africa</em>, May 2018
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.12688/aasopenres.12832.2"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.12688/aasopenres.12832.2" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Background: Here, we describe how the Collaborative African Genomics Network ( CAfGEN) of the Human Heredity and Health in Africa (H3Africa) consortium is using genomics to probe host genetic factors important to the progression of HIV and HIV-tuberculosis (TB) coinfection in sub-Saharan Africa. The H3Africa was conceived to facilitate the application of genomics technologies to improve health across Africa.. Methods: CAfGEN is an H3Africa collaborative centre comprising expertise from the University of Botswana; Makerere University; Baylor College of Medicine Children’s Clinical Centers of Excellence (COEs) in Botswana, Uganda, and Swaziland; as well as Baylor College of Medicine, Texas. The COEs provide clinical expertise for community engagement, participant recruitment and sample collection while the three University settings facilitate processing and management of genomic samples and provide infrastructure and training opportunities to sustain genomics research. Results: The project has focused on utilizing whole-exome sequencing to identify genetic variants contributing to extreme HIV disease progression phenotypes in children, as well as RNA sequencing and integrated genomics to identify host genetic factors associated with TB disease progression among HIV-positive children. These cohorts, developed using the COEs’ electronic medical records, are exceptionally well-phenotyped and present an unprecedented opportunity to assess genetic factors in individuals whose HIV was acquired by a different route than their adult counterparts in the context of a unique clinical course and disease pathophysiology. Conclusions: Our approach offers the prospect of developing a critical mass of well-trained, highly-skilled, continent-based African genomic scientists. To ensure long term genomics research sustainability in Africa, CAfGEN contributes to a wide range of genomics capacity and infrastructure development on the continent, has laid a foundation for genomics graduate programs at its institutions, and continues to actively promote genomics research through innovative forms of community engagement brokered by partnerships with governments and academia to support genomics policy formulation.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
 <div class="col-sm-2 abbr"><abbr class="badge">Nature</abbr></div>
 <!-- Entry bib key -->
-        <div id="training_2023" class="col-sm-8">
+        <div id="africacdc_2024" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Unmapped exome reads implicate a role for Anelloviridae in childhood HIV-1 long-term non-progression</div>
+        <div class="title">The pandemic agreement: an African perspective</div>
         <!-- Author -->
         <div class="author">
         
 
-        Savannah Mwesigwa, Lesedi Williams, Gaone Retshabile, and
-          <span class="more-authors" title="click to view 25 more authors" onclick="
+        Nicaise Ndembi, Gerald Mboowa, Sofonias K Tessema, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '25 more authors' ? 'Eric Katagirya, Gerald Mboowa, Busisiwe Mlotshwa, Samuel Kyobe, David P Kateete, Eddie Mujjwiga Wampande, Misaki Wayengera, Sununguko Wata Mpoloka, Angella N Mirembe, Ishmael Kasvosve, Koketso Morapedi, Grace P Kisitu, Adeodata R Kekitiinwa, Gabriel Anabwani, Moses L Joloba, Enock Matovu, Julius Mulindwa, Harry Noyes, Gerrit Botha, CAfGEN Collaborative African Genomics Network, Group Research TrypanoGEN, Chester W Brown, Graeme Mardon, Mogomotsi Matshaba, Neil A Hanchard' : '25 more authors';
+                var more_authors_text = element.text() == '2 more authors' ? 'Yenew Kebede Tebeje, Jean Kaseya' : '2 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -1468,14 +898,14 @@
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">25 more authors</span>
+              ">2 more authors</span>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Genomic Medicine</em>, Mar 2021
+          <em>Nature</em>, Jul 2024
         </div>
         <div class="periodical">
           
@@ -1484,19 +914,21 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12188460/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/The_pandemic_agreement_an_African_perspective.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
           
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1038/s41525-021-00185-w"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1038/s41525-021-00185-w" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1038/d41586-024-02317-5"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1038/d41586-024-02317-5" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Human immunodeficiency virus (HIV) infection remains a significant public health burden globally. The role of viral co-infection in the rate of progression of HIV infection has been suggested but not empirically tested, particularly among children. We extracted and classified 42 viral species from whole-exome sequencing (WES) data of 813 HIV-infected children in Botswana and Uganda categorised as either long-term non-progressors (LTNPs) or rapid progressors (RPs). The Ugandan participants had a higher viral community diversity index compared to Batswana (p = 4.6 × 10−13), and viral sequences were more frequently detected among LTNPs than RPs (24% vs 16%; p = 0.008; OR, 1.9; 95% CI, 1.6–2.3), with Anelloviridae showing strong association with LTNP status (p = 3 × 10−4; q = 0.004, OR, 3.99; 95% CI, 1.74–10.25). This trend was still evident when stratified by country, sex, and sequencing platform, and after a logistic regression analysis adjusting for age, sex, country, and the sequencing platform (p = 0.02; q = 0.03; OR, 7.3; 95% CI, 1.6–40.5). Torque teno virus (TTV), which made up 95% of the Anelloviridae reads, has been associated with reduced immune activation. We identify an association between viral co-infection and prolonged AIDs-free survival status that may have utility as a biomarker of LTNP and could provide mechanistic insights to HIV progression in children, demonstrating the added value of interrogating off-target WES reads in cohort studies.</p>
+            <p>Your Editorial on efforts to agree a global pandemic treaty (Nature 629, 727; 2024) emphasizes that genomic surveillance and pathogen and data sharing are key to effective infection control and development of therapies. With investment spurred by COVID-19, more than 70% of African Union (AU) member states have developed local capacity to sequence pathogen genomes (M. Makoni Lancet Microbe 1, e318; 2020), and more than 170,000 genomes of the virus SARS-CoV-2 have been sequenced and shared. In collaboration with AU member states, the Africa Centres for Disease Control and Prevention (CDC) is creating a biobanking network across the continent to address pathogen sharing. Led by the AU and the Africa CDC, a Common African Position on Pandemic Prevention, Preparedness, and Response was adopted in February 2024. Agreement on a pathogen-access and benefit-sharing system — which will allow rapid exchange of sequence data and equitable and timely access to countermeasures for pandemic preparedness and response — will be the most crucial outcome of the pandemic treaty. Sharing of pathogen data, reciprocated with multilateral benefits, can provide a guarantee of safety and equity for people all over the world, whether in higher- or lower-income countries.</p>
           </div>
         </div>
       </div>
@@ -1504,235 +936,20 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Bioinformatics</abbr></div>
+<div class="col-sm-2 abbr"><abbr class="badge">Nature Comm</abbr></div>
 <!-- Entry bib key -->
-        <div id="bioinformatics_2024" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Unlocking the future of complex human diseases prediction: multi-omics risk score breakthrough</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Benson R Kidenya, and Gerald Mboowa</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Frontiers in Bioinformatics</em>, Dec 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.3389/fbinf.2024.1510352"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.3389/fbinf.2024.1510352" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>The article "Unlocking the Future of Complex Human Disease Prediction: Multi-Omics Risk Score Breakthrough" discusses the potential of integrating various high-throughput screening technologies—such as genomics, DNA methylomics, metagenomics, transcriptomics, proteomics, and metabolomics—to enhance the prediction of complex human diseases. Traditional polygenic risk scores (PRS), which assess genetic predisposition based on genome-wide association studies, have shown promise in disease prediction but face limitations, especially in diverse populations. The authors advocate for the development of multi-omics risk scores (MoRS) that combine data from multiple omics layers to provide a more comprehensive assessment of disease risk. By integrating information from various biological processes, MoRS can capture the complex interactions between genetics, epigenetics, and environmental factors that contribute to disease development. The article emphasizes the importance of including diverse populations in genomic research to ensure the applicability of MoRS across different genetic backgrounds. Initiatives like the All of Us Research Program and Human Heredity and Health Africa (H3Africa) aim to address this disparity by increasing representation in global genome databases. The authors conclude that the integration of multi-omics data holds significant promise for advancing personalized medicine and improving the prediction and prevention of complex human diseases.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Mic Path</abbr></div>
-<!-- Entry bib key -->
-        <div id="training_2024" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Extracellular hydrolytic enzyme activities and biofilm formation in Candida species isolated from people living with human immunodeficiency virus with oropharyngeal candidiasis at HIV/AIDS clinics in Uganda</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Benson Musinguzi, Andrew Akampurira, Hope Derick, and
-          <span class="more-authors" title="click to view 11 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '11 more authors' ? 'Laban Turyamuhika, Alex Mwesigwa, Edson Mwebesa, Vicent Mwesigye, Immaculate Kabajulizi, Tahalu Sekulima, Francis Ocheng, Herbert Itabangi, Gerald Mboowa, James Obondo Sande, Beatrice Achan' : '11 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">11 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Microbial Pathogenesis</em>, Dec 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1016/j.micpath.2024.107232"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1016/j.micpath.2024.107232" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Background: Commensal oral Candida species can become opportunistic and transition to pathogenic causes of oropharyngeal candidiasis (OPC) in individuals with impaired immunity through ecological cues and the expression of extracellular hydrolytic enzyme activities and biofilm formation. Objective: We evaluated phospholipase, proteinase, hemolysin, esterase, and coagulase enzymatic activities and biofilm formation in Candida species isolated from people living with human immunodeficiency virus (PLHIV) with OPC. Methods: Thirty-five Candida isolates from PLHIV with OPC were retrieved from a sample repository and evaluated for phospholipase activity using the egg yolk agar method, proteinase activity using the bovine serum albumin agar method, hemolysin activity using the blood agar plate method, esterase activity using the Tween 80 opacity test medium method, coagulase activity using the classical tube method, and biofilm formation using the microtiter plate assay method in vitro. Results: A total of 35 Candida isolates obtained from PLHIV with OPC were included in this study, and phospholipase and proteinase activities were detected in 33/35 (94.3 %) and 31/35 (88.6 %) Candida isolates, respectively. Up to 25/35 (71.4 %) of the Candida isolates exhibited biofilm formation, whereas esterase activity was demonstrated in 23/35 (65.7 %) of the Candida isolates. Fewer isolates (21/35, 60 %) produced hemolysin, and coagulase production was the least common virulence activity detected in 18/35 (51.4 %) of the Candida isolates. Conclusion: Phospholipase and proteinase activities were the strongest in oropharyngeal Candida species.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">NMNI</abbr></div>
-<!-- Entry bib key -->
-        <div id="amr_2024" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Whole genome-based characterization of extended-spectrum β-lactamase-producing Enterobacter cloacae from orthopedic patients and environment of a tertiary referral hospital in Tanzania</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Benson R Kidenya, Gerald Mboowa, Ivan Sserwadda, and
-          <span class="more-authors" title="click to view 6 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '6 more authors' ? 'Stephen Kanyerezi, Esther Nakafu, Lawrence Inyasi Akaro, Baraka Mkinze, Moses L Joloba, Jeremiah Seni' : '6 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">6 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>New Microbes and New Infections</em>, Sep 2024
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1016/j.nmni.2024.101486"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1016/j.nmni.2024.101486" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Objectives: We investigated the genomic epidemiology of extended-spectrum β-lactamase-producing Enterobacter cloacae (ESBL-Ec) isolates from patients and hospital environment to better understand their distribution to help devising effective strategies for infection prevention and control. Methods: We screened ESBL-Ec at Bugando Medical Center (BMC) in Mwanza, Tanzania. Rectal swabs from orthopedic patients on admission and swabs from the neighboring inanimate environment were collected. Following microbial culture, DNA was extracted from pure ESBL-Ec, and whole-genome sequencing was done. Sequence typing (ST), plasmid replicons, drug resistance, and virulence genes were deciphered using the Rapid Microbial Analysis Pipeline (rMAP). Results: We obtained 209 ESBL isolates, of which 15 (7.2 %) were ESBL-Ec [8 (53.3 %) from patients and 7 (46.7 %) from the environment]. Seven isolates were novel and eight were diverse, each with a unique ST. All isolates harbored two to five β-lactamase genes, with the predominance of bla CTX-M-15 (15/15), bla OXA-1 (14/15), bla TEM (14/15) and bla ACT (12/15). The most common non β-lactam drug resistance genes were aac(3)-IIa (14/15), aac(6’)-Ib-cr (14/15), fosA (14/15), and qnrB1 (12/15), aph(3″)-Ib (10/15) and aph(6)-Id (10/15). Eleven different types of plasmid replicons were identified in 14/15 of the isolates, harboring one to five plasmids, with the most common plasmids being IncFII (11/15) and IncFIB (10/15). All isolates harbored the outer membrane protein (ompA), and curli protein (csg) was in 14/15 isolates. Conclusion: Admitted orthopedic patients and the hospital environment act as a reservoir of ESBL-Ec with diverse STs and endowed with drug resistance and arsenals of virulence genes, calling for their routine screening on admission for mitigation of potential subsequent infections.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Hosp Infect</abbr></div>
-<!-- Entry bib key -->
-        <div id="amr_2023" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Virulence genes and plasmid replicon profiles of selected β-lactamase-producing Acinetobacter baumannii from orthopaedic patients and the environment in a tertiary referral hospital in Tanzania, East Africa</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Benson R Kidenya, Gerald Mboowa, Ivan Sserwadda, and
-          <span class="more-authors" title="click to view 6 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '6 more authors' ? 'Stephen Kanyerezi, Esther Nakafu, Lawrence Inyasi Akaro, Baraka Mkinze, Moses L Joloba, Jeremiah Seni' : '6 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">6 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Journal of Hospital Infection</em>, Sep 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1016/j.jhin.2023.09.005"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1016/j.jhin.2023.09.005" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Acinetobacter baumannii has emerged as an important nosocomial pathogen due to its high resistance to multi-drugs and disinfectants plus its ability to survive in hospital environments. Rectal swabs were collected for screening β-lactamases-producing Acinetobacter baumannii among hospitalized orthopedic patients at a tertiary referral hospital in Tanzania. Swabs were also taken from patients’ caretakers, healthcare workers, and the neighboring inanimate environment. A total of 26 confirmed β-lactamases producing Acinetobacter baumannii were isolated, of which 4 representative isolates (two from patients and two from hospital environment) underwent whole-genome sequencing (WGS) to detect sequence types (ST), β-lactamases genes, plasmid replicon types, and virulence genes. All four isolates harbored multiple β-lactamases genes including blaADC-25(3), blaOXA(4), blaCTX-M-15(2) and blaNDM-1(2). Furthermore, isolates harbored virulence genes encoding outer membrane protein (ompA), curli protein (csg), siderophore biosynthesis systems (enterobactin [entABCDEFS, fepABCDG, fes]; yersiniabactin [ybtAEPQSTUX, irp1, irp2, fyuA] and aerobactin [iucABCD, iutA]), transport secretion system type II (T2SS) and type III (T3SS), E. coli common pilus (ecpRABCDE operon), type 1 fimbriae (fim), arylsulfatase (aslA) and adhesions (fedC). Only isolates from patients harbored 4 plasmid replicons each, with the most common plasmid replicons being IncFIA_1; IncY_1 and IncFIB(AP001918)_1. Admitted orthopedic patients and the hospital environment act as a reservoir of multiple β-lactamases producing Acinetobacter baumannii (including those against carbapenems like blaOXA and blaNDM-1) endowed with virulence genes, highlighting the necessity to routinely screening of orthopedic patients with open fractures on admission as well as reinforcing infection prevention and control measures to reduce the dissemination of nosocomial infection within the hospital environment.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">medRxiv</abbr></div>
-<!-- Entry bib key -->
-        <div id="cholera_2024" class="col-sm-8">
+        <div id="africacdc_2026" class="col-sm-8">
         <!-- Title -->
         <div class="title">Multicountry genomic analysis underscores regional cholera spread in Africa</div>
         <!-- Author -->
         <div class="author">
         
 
-        Gerald Mboowa, Nathaniel Lucero Matteson, Collins Kipngetichi Tanui, and
-          <span class="more-authors" title="click to view 52 more authors" onclick="
+        Gerald Mboowa, Nathaniel Lucero Matteson, Collins Kipngetich Tanui, and
+          <span class="more-authors" title="click to view 51 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '52 more authors' ? 'Mpanga Kasonde, Guyguyu Kusanzangana Kamwizik, Olusola Anuoluwapo Akanbi, Elias Jucunú Johane Chitio, Mathews Kagoli, René Ghislain Essomba, Alisen Ayitewala, Isaac Ssewanyana, Valentina Josiane Ngo Bitoungui, Aziza Adrienne Amuri, Andrew S Azman, Olajumoke Atinuke Babatunde, Blaise Mboringong Akenji, Anaïs Broban, Espoir Bwenge Malembaka, Francis Ongole, Chimaobi Emmanuel Chukwu, Nália Ismael, Otridah Kapona, Osvaldo Laurindo, Placide Kingebeni Mbala, Georges Alain Etoundi Mballa, Imelda Carlos Zulfa Miambo, Alex Ansaye Mwanyongo, Grace Najjuka, Joseph Mutale, Kunda Musonda, Allan Muruta Niyonzima, Mirriam Ethel Nyenje, Michael Popoola, Doreen Mainza Shempela, Christiane Medi Sike, Sofião Manjor Sitoe, Dorcas Waruguru Wanjohi, Placide Okitayemba Welo, Mtisunge Yelewa, Sebastian Yennan, Lucius Ziba, CholGEN Consortium, Joseph Ephram Bitilinyu-Bangoh, Roma Chilengi, Hamsatou Hadja, Jide Idris, José Paulo Maurício Langa, Daniel Mukadi-Bamuleka, Susan Nabadda, Amanda K Debes, David A Sack, Jean Kaseya, Yenew Tebeje Kebede, Shirlee Wohl, Sofonias Kifle Tessema' : '52 more authors';
+                var more_authors_text = element.text() == '51 more authors' ? 'Mpanga Kasonde, Guyguy Kusanzangana Kamwiziku, Olusola Anuoluwapo Akanbi, Jucunú Johane Elias Chitio, Mathews Kagoli, René Ghislain Essomba, Alisen Ayitewala, Isaac Ssewanyana, Valentina Josiane Ngo Bitoungui, Adrienne Aziza Amuri, Andrew S Azman, Olajumoke Atinuke Babatunde, Blaise Mboringong Akenji, Anaïs Broban, Espoir Bwenge Malembaka, Francis Ongole, Chimaobi Emmanuel Chukwu, Nália Ismael, Otridah Kapona, Osvaldo Laurindo, Placide Kingebeni Mbala, Georges Alain Etoundi Mballa, Imelda Carlos Zulfa Miambo, Alex Ansaye Mwanyongo, Grace Najjuka, Joseph Mutale, Kunda Musonda, Allan Muruta Niyonzima, Mirriam Ethel Nyenje, Michael Popoola, Doreen Mainza Shempela, Christiane Medi Sike, Sofião Manjor Sitoe, Dorcas Waruguru Wanjohi, Placide Okitayemba Welo, Mtisunge Yelewa, Sebastian Yennan, Lucius Ziba, CholGEN Consortium, Joseph Ephram Bitilinyu-Bangoh, Roma Chilengi, Hamsatou Hadja, Jide Idris, José Paulo Maurício Langa, Daniel Mukadi-Bamuleka, Susan Nabadda, Amanda K Debes, David A Sack, Yenew Kebede Tebeje, Shirlee Wohl, Sofonias Kifle Tessema' : '51 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -1740,14 +957,14 @@
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">52 more authors</span>
+              ">51 more authors</span>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>medRxiv</em>, Nov 2024
+          <em>Nature Communications</em>, Feb 2026
         </div>
         <div class="periodical">
           
@@ -1756,19 +973,21 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://www.nature.com/articles/s41467-026-68642-7" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/Multicountry_genomic_analysis_underscores_regional_cholera_spread_in_Africa.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
           
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1101/2024.11.15.24317392"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1101/2024.11.15.24317392" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1038/s41467-026-68642-7"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1038/s41467-026-68642-7" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Cholera remains a significant public health burden in many countries in sub-Saharan Africa, though the exact mechanisms of bacterial emergence and spread remain largely undefined. We generated genomic data from 728 Vibrio cholerae O1 isolates predominantly collected between 2019-2024 to create the largest dataset of V. cholerae genomes sequenced locally in Africa. This dataset enabled us to interrogate recent patterns of spread, including the rapid circulation of the AFR15 lineage associated with unusually large outbreaks in Southern Africa. We provide evidence for the movement of the AFR15 lineage into new African Member States and confirm previously observed differences in V. cholerae transmission dynamics in West versus East Africa, though cross-border transmission is prevalent on both sides of the continent. Despite observed differences, evolutionary processes are similar across lineages and we find no evidence for significant changes in antimicrobial resistance genotypes. Overall, our findings emphasize the importance of regionally coordinated cross-border surveillance and interventions, while also demonstrating the critical role of locally generated genomic data in understanding the spread of cholera in Africa.</p>
+            <p>Cholera remains a significant public health burden in many countries in sub-Saharan Africa, though the exact mechanisms of bacterial emergence and spread remain largely undefined. We generated genomic data from 763 Vibrio cholerae O1 isolates predominantly collected between 2019-2024 to create the largest dataset of V. cholerae genomes sequenced locally in Africa. This dataset enabled us to interrogate recent patterns of spread, including the rapid circulation of the AFR15 lineage associated with unusually large outbreaks in Southern Africa. We provide evidence for the movement of the AFR15 lineage into new African Union Member States and confirm previously observed differences in V. cholerae transmission dynamics in West versus East Africa, though cross-border transmission is prevalent on both sides of the continent. Despite observed differences, evolutionary processes are similar across lineages and we find no evidence for significant changes in antimicrobial resistance genotypes. Overall, our findings emphasize the importance of regionally coordinated cross-border surveillance and interventions, while also demonstrating the critical role of locally generated genomic data in understanding the spread of cholera in Africa.</p>
           </div>
         </div>
       </div>
@@ -1776,35 +995,23 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">MDPI</abbr></div>
+<div class="col-sm-2 abbr"><abbr class="badge">Bioinform Adv</abbr></div>
 <!-- Entry bib key -->
-        <div id="hepatitis_2024" class="col-sm-8">
+        <div id="amr_2028" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Serological Status of Vaccine and Hepatitis B Virus Exposure Among Children Under 5 and Aged 15–17 Years in Kampala, Uganda</div>
+        <div class="title">
+<b><i>rMAP-2.0</i></b> : A modular, reproducible and scalable WDL-Cromwell-Docker workflow for genomic analysis of <i>ESKAPEE</i>  pathogens</div>
         <!-- Author -->
         <div class="author">
         
 
-        Fahad Muwanda, Edward Kiyonga, Joan Nambafu, and
-          <span class="more-authors" title="click to view 10 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '10 more authors' ? 'Agnes Turyamubona, Hussein Mukasa Kafeero, Edgar Kigozi, Harriet Mupere Babikako, Enock Wekiya, Gerald Mboowa, David Patrick Kateete, Hakim Sendagire, Paul J Norman, Bernard Ssentalo Bagaya' : '10 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">10 more authors</span>
-</div>
+        Gerald Mboowa, Ivan Sserwadda, and Stephen Kanyerezi</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Livers</em>, Oct 2024
+          <em>Bioinformatics Advances</em>, Feb 2026
         </div>
         <div class="periodical">
           
@@ -1813,19 +1020,22 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://academic.oup.com/bioinformaticsadvances/advance-article/doi/10.1093/bioadv/vbag046/8483022" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/rMAP_2.0_Amodular_reproducible_and_scalable_WDL_Cromwell_Docker_workflow_for_genomic_analysis_of_ESKAPEE_pathogens.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
           
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.3390/livers4040039"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.3390/livers4040039" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1093/bioadv/vbag046"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1093/bioadv/vbag046" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Background: Pediatric hepatitis B virus (HBV) serostatus remains variably characterized, hardly determined at times, or documented as part of national monitoring of the Extended Programs for Immunization (EPI). Methods: We cross-sectionally characterized the seroprevalence of HBV vaccine and/or infection status among 501 and 288 children &lt;5 and 15–17 years old, respectively, in Kawempe Division, Kampala, Uganda, between May and August 2023. These children received HBV vaccination under the Uganda National Extended Program on Immunizations (UNEPI). Samples were qualitatively screened for hepatitis B surface antigen (HBsAg), hepatitis B surface antibody (HBsAb or anti-HBs), hepatitis B e antigen (HBeAg), hepatitis B e antibody (HBeAb or anti-HBe), and for hepatitis B core antibody (HBcAb or anti-HBc) using three different HBV Combo test rapid immunochromatographic diagnostic tests: Nova, Fastep, and Beright. Results: The seroprevalence of HBsAg, anti-HBs, HBeAg, anti-HBe, and anti-HBc was 1.52%, 27.75%, 0.88%, 0.63%, and 0.76%, respectively, for the combined study age groups. The HBsAg seroprevalence of 2.78% was almost 3.5-fold higher among adolescents when compared to the 0.8% observed in the under-5-year-olds. The qualitative seroprevalence of anti-HBs was 33.1% and 18.4% in the under-5 and among the 15–17-year-old study groups, respectively. Conclusions: The proportion of qualitatively detectable anti-HBs in both groups of vaccinated children is low and probably indicates reduced seroprotection. Consequently, a large proportion of children who received the hepatitis B vaccine under UNEPI may be at risk of HBV infection, especially adolescents. A booster dose of the Hepatitis B Vaccine may be required for adolescents.</p>
+            <p>Motivation: Antimicrobial resistance surveillance in ESKAPEE pathogens requires reproducible, portable whole-genome analysis that public health laboratories including those operating under data-sovereignty constraints can run on laptops, institutional servers, or cloud backends without local dependency conflicts. rMAP 2.0 addresses these needs using a containerized Workflow Description Language pipeline executed with Cromwell. Results:
+rMAP 2.0 standardizes end-to-end bacterial whole-genome analysis—read quality control, trimming, assembly and annotation, resistance/virulence/mobile-element profiling, sequence typing, pangenome inference, and phylogenetic reconstruction using containerized execution, and generates a single interactive HTML report that collates outputs for rapid review. The workflow supports fully offline execution (including BLAST searches) for data-sovereign deployments and can run on local workstations, institutional servers, and cloud backends where Docker is supported, providing a consistent execution environment without local tool installation. In a representative benchmark of 20 Enterobacterales isolates, rMAP 2.0 completed a cohort run in ∼4.5 hours on an 8-core/16-GB laptop and flagged a public record misannotated in public repository metadata (SRR9703249, reclassified from Klebsiella pneumoniae to Enterobacter cloacae sequence type 182), while confirming lineage assignments such as Escherichia coli sequence type 131. Availability &amp; implementation: https://github.com/gmboowa/rMAP-2.0 and example workflow reports are available at: https://gmboowa.github.io/rMAP-2.0/.</p>
           </div>
         </div>
       </div>
@@ -1833,20 +1043,20 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">AJHG</abbr></div>
+<div class="col-sm-2 abbr"><abbr class="badge">Sci Reports</abbr></div>
 <!-- Entry bib key -->
-        <div id="cafgen_2018" class="col-sm-8">
+        <div id="Stephen_PhD_2026" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Whole-Exome Sequencing Reveals Uncaptured Variation and Distinct Ancestry in the Southern African Population of Botswana</div>
+        <div class="title">Targeted metagenomics reveals hidden chickenpox epidemic amid Mpox surveillance in Uganda</div>
         <!-- Author -->
         <div class="author">
         
 
-        Gaone Retshabile, Busisiwe C Mlotshwa, Lesedi Williams, and
-          <span class="more-authors" title="click to view 27 more authors" onclick="
+        Stephen Kanyerezi, Alisen Ayitewala, Jupiter Marina Kabahita, and
+          <span class="more-authors" title="click to view 26 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '27 more authors' ? 'Savannah Mwesigwa, Gerald Mboowa, Zhuoyi Huang, Navin Rustagi, Shanker Swaminathan, Eric Katagirya, Samuel Kyobe, Misaki Wayengera, Grace P Kisitu, David P Kateete, Eddie M Wampande, Koketso Maplanka, Ishmael Kasvosve, Edward D Pettitt, Mogomotsi Matshaba, Betty Nsangi, Marape Marape, Masego Tsimako-Johnstone, Chester W Brown, Fuli Yu, Adeodata Kekitiinwa, Moses Joloba, Sununguko W Mpoloka, Graeme Mardon, Gabriel Anabwani, Neil A Hanchard, Collaborative African Genomics Network (CAfGEN) H3Africa Consortium' : '27 more authors';
+                var more_authors_text = element.text() == '26 more authors' ? 'Hellen Rosette Oundo, Julius Sseruyange, Tenywa Wilson, Godwin Tusabe, Stacy Were, Moses Murungi, Martha Nabukyu, Valeria Nakintu, Caroline Makoha, Ivan Sserwadda, Harris Onywera, Collins Tanui, Ibrahim Mugerwa, Atek Kagirita, Benard Lubwama, Eilu Roggers Michael, David Patrick Kateete, Morgan Otita, Samuel Giduddu, Daudi Jjingo, Andrew Nsawotebba, Gerald Mboowa, Aloysious Ssemaganda, Susan Nabadda, Sofonias K Tessema, Isaac Ssewanyana' : '26 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -1854,14 +1064,14 @@
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">27 more authors</span>
+              ">26 more authors</span>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>The American Journal of Human Genetics</em>, May 2018
+          <em>Scientific Reports</em>, Feb 2026
         </div>
         <div class="periodical">
           
@@ -1870,19 +1080,21 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://www.nature.com/articles/s41598-026-38778-z" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/Targeted_metagenomics_reveals_hidden_chickenpox_epidemic_amid_Mpox_surveillance_in_Uganda.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
           
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1016/j.ajhg.2018.03.010"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ajhg.2018.03.010" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1038/s41598-026-38778-z"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1038/s41598-026-38778-z" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Large-scale, population-based genomic studies have provided a context for modern medical genetics. Among such studies, however, African populations have remained relatively underrepresented. The breadth of genetic diversity across the African continent argues for an exploration of local genomic context to facilitate burgeoning disease mapping studies in Africa. We sought to characterize genetic variation and to assess population substructure within a cohort of HIV-positive children from Botswana-a Southern African country that is regionally underrepresented in genomic databases. Using whole-exome sequencing data from 164 Batswana and comparisons with 150 similarly sequenced HIV-positive Ugandan children, we found that 13%-25% of variation observed among Batswana was not captured by public databases. Uncaptured variants were significantly enriched (p = 2.2 × 10-16) for coding variants with minor allele frequencies between 1% and 5% and included predicted-damaging non-synonymous variants. Among variants found in public databases, corresponding allele frequencies varied widely, with Botswana having significantly higher allele frequencies among rare (&lt;1%) pathogenic and damaging variants. Batswana clustered with other Southern African populations, but distinctly from 1000 Genomes African populations, and had limited evidence for admixture with extra-continental ancestries. We also observed a surprising lack of genetic substructure in Botswana, despite multiple tribal ethnicities and language groups, alongside a higher degree of relatedness than purported founder populations from the 1000 Genomes project. Our observations reveal a complex, but distinct, ancestral history and genomic architecture among Batswana and suggest that disease mapping within similar Southern African populations will require a deeper repository of genetic variation and allelic dependencies than presently exists.</p>
+            <p>In regions where both monkeypox virus (MPXV) and varicella zoster virus (VZV) are co-circulating, overlapping clinical manifestations can complicate clinical diagnosis. During the MPXV outbreak declared in Uganda in July, 2024, symptomatic suspected cases tested PCR negative for Mpox. To determine the cause of symptoms, we employed metagenomic sequencing with a targeted Viral Surveillance panel in 284 MPXV negative samples. VZV was identified as the predominant pathogen in 86% of MPXV-negative cases, suggesting a concurrent chickenpox surge. Using the VaricellaGen pipeline for variant calling, clade typing, and phylogeny, 118 (49%) samples that achieved ≥ 70% genome coverage were of clade 5 based on the single-nucleotide polymorphism (SNP) dataset. This data confirms co-circulation of VZV during the MPXV outbreak in Uganda. Our results underscore the need for laboratory confirmation of MPXV and the inclusion of VZV in the testing algorithm during the Mpox outbreak.</p>
           </div>
         </div>
       </div>
@@ -1890,20 +1102,20 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">BMC</abbr></div>
+<div class="col-sm-2 abbr"><abbr class="badge">Brief Bioinform</abbr></div>
 <!-- Entry bib key -->
-        <div id="mycobacterium_2022" class="col-sm-8">
+        <div id="Capacity_building_2026" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Phylogenetic lineages of tuberculosis isolates and their association with patient demographics in Tanzania</div>
+        <div class="title">Pathways, outputs and impact of NIH-supported bioinformatics and genomics graduate trainees in Africa</div>
         <!-- Author -->
         <div class="author">
         
 
-        Beatrice Kemilembe Mutayoba, Michael Hoelscher, Norbert Heinrich, and
-          <span class="more-authors" title="click to view 27 more authors" onclick="
+        Daudi Jjingo, Andrew Walakira, Suhaila Hashim, and
+          <span class="more-authors" title="click to view 64 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '27 more authors' ? 'Moses L Joloba, Eligius Lyamuya, Andrew Martin Kilale, Nyagosya Segere Range, Bernard James Ngowi, Nyanda Elias Ntinginya, Saidi Mwinjuma Mfaume, Amani Wilfred, Basra Doulla, Johnson Lyimo, Riziki Kisonga, Amri Kingalu, Jupiter Marina Kabahita, Ocung Guido, Joel Kabugo, Isa Adam, Moses Luutu, Maria Magdalene Namaganda, Joanitah Namutebi, George William Kasule, Hasfah Nakato, Henry Byabajungu, Pius Lutaaya, Kenneth Musisi, Denis Oola, Gerald Mboowa, Michel Pletschette' : '27 more authors';
+                var more_authors_text = element.text() == '64 more authors' ? 'Cisse Cheickna, Ronald Galiwango, Caleb Kibet, Florence N Kivunike, Gerald Mboowa, Fredrick Elishama Kakembo, Babajide Ayodele, Jean-Baka Domelevo Entfellner, Santie Villiers, Karen Wambui, Segun Fatumo, Tinashe Chikowore, John Mukisa, Alfred Ssekagiri, Nicholas Bbosa, Julius Mulindwa, Samuel Kyobe, Mike Nsubuga, Grace Kebirungi, Eric Katagirya, Savannah Mwesigwa, Ibra Lujumba, Rogers Kamulegeya, Samuel Kirimunda, Stephen Kanyerezi, Shahiid Kiyaga, Ivan Sserwadda, Davis Kiberu, Bernard S Bagaya, Julius Okwir, Patricia Nabisubi, Grace Nabakooza, Mugume Twinamatsiko Atwine, Ricard Sserunjogi, Rolanda Julius, Mariam Quiñones, Meghan McCarthy, Phillip Cruz, Karlynn Noble, Christopher J Whalen, Darrell Hurt, Maria Y Giovanni, Michael Tartakovsky, Deogratius Ssemwanga, John M Kitayimbwa, Steven J Reynolds, Christopher C Whalen, Andrew Kambugu, Neil A Hanchard, Li Jian, Peter Amoako-Yirenkyi, Graeme Mardon, I King Jordan, Samson Pandam Salifu, Mamadou Wele, Ezekiel Adebiyi, Jeffrey G Shaffer, Seydou Doumbia, David Patrick Kateete, Michelle Skelton, Nicola Mulder, Jonathan K Kayondo, Daniel Masiga, H3Africa Consortium' : '64 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -1911,14 +1123,14 @@
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">27 more authors</span>
+              ">64 more authors</span>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>BMC Genomics</em>, Aug 2022
+          <em>Briefings in Bioinformatics</em>, Feb 2026
         </div>
         <div class="periodical">
           
@@ -1927,418 +1139,21 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://academic.oup.com/bib/article/27/1/bbag046/8475545" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener noopener noreferrer" target="_blank">HTML</a>
+            <a href="/assets/pdf/Pathways_outputs_and_impact_of_NIH_supported_bioinformatics_and_genomics_graduate_trainees_in_Africa.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           
           
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1186/s12864-022-08791-3"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1186/s12864-022-08791-3" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1093/bib/bbag046"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1093/bib/bbag046" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Background: Mycobacterium tuberculosis presents several lineages each with distinct characteristics of evolutionary status, transmissibility, drug resistance, host interaction, latency, and vaccine efficacy. Whole genome sequencing (WGS) has emerged as a new diagnostic tool to reliably inform the occurrence of phylogenetic lineages of Mycobacterium tuberculosis and examine their relationship with patient demographic characteristics and multidrug-resistance development. Methods: 191 Mycobacterium tuberculosis isolates obtained from a 2017/2018 Tanzanian drug resistance survey were sequenced on the Illumina Miseq platform at Supranational Tuberculosis Reference Laboratory in Uganda. Obtained fast-q files were imported into tools for resistance profiling and lineage inference (Kvarq v0.12.2, Mykrobe v0.8.1 and TBprofiler v3.0.5). Additionally for phylogenetic tree construction, RaxML-NG v1.0.3(25) was used to generate a maximum likelihood phylogeny with 800 bootstrap replicates. The resulting trees were plotted, annotated and visualized using ggtree v2.0.4. Results: Most [172(90.0%)] of the isolates were from newly treated Pulmonary TB patients. Coinfection with HIV was observed in 33(17.3%) TB patients. Of the 191 isolates, 22(11.5%) were resistant to one or more commonly used first line anti-TB drugs (FLD), 9(4.7%) isolates were MDR-TB while 3(1.6%) were resistant to all the drugs. Of the 24 isolates with any resistance conferring mutations, 13(54.2%) and 10(41.6%) had mutations in genes associated with resistance to INH and RIF respectively. The findings also show four major lineages i.e. Lineage 3[81 (42.4%)], followed by Lineage 4 [74 (38.7%)], the Lineage 1 [23 (12.0%)] and Lineages 2 [13 (6.8%)] circulaing in Tanzania. Conclusion: The findings in this study show that Lineage 3 is the most prevalent lineage in Tanzania whereas drug resistant mutations were more frequent among isolates that belonged to Lineage 4.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">BMC</abbr></div>
-<!-- Entry bib key -->
-        <div id="mycobacterium_drug_resistance_2022" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">First report of whole-genome analysis of an extensively drug-resistant Mycobacterium tuberculosis clinical isolate with bedaquiline, linezolid and clofazimine resistance from Uganda</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Jupiter Marina Kabahita, Joel Kabugo, Francis Kakooza, and
-          <span class="more-authors" title="click to view 17 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '17 more authors' ? 'Isa Adam, Ocung Guido, Henry Byabajungu, Joanitah Namutebi, Maria Magdalene Namaganda, Pius Lutaaya, James Otim, Fredrick Elishama Kakembo, Stephen Kanyerezi, Patricia Nabisubi, Ivan Sserwadda, George William Kasule, Hasfah Nakato, Kenneth Musisi, Denis Oola, Moses L Joloba, Gerald Mboowa' : '17 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">17 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Antimicrobial Resistance &amp; Infection Control</em>, May 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1186/s13756-022-01101-2"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1186/s13756-022-01101-2" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Background: Uganda remains one of the countries with the highest burden of TB/HIV. Drug-resistant TB remains a substantial challenge to TB control globally and requires new strategic effective control approaches. Drug resistance usually develops due to inadequate management of TB patients including improper treatment regimens and failure to complete the treatment course which may be due to an unstable supply or a lack of access to treatment, as well as patient noncompliance. Methods: Two sputa samples were collected from Xpert MTB/RIF® assay-diagnosed multi-drug resistant tuberculosis (MDR-TB) patient at Lira regional referral hospital in northern Uganda between 2020 and 2021 for comprehensive routine mycobacterial species identification and drug susceptibility testing using culture-based methods. Detection of drug resistance-conferring genes was subsequently performed using whole-genome sequencing with Illumina MiSeq platform at the TB Supranational Reference Laboratory in Uganda. Results: In both isolates, extensively drug-resistant TB (XDR-TB) was identified including resistance to Isoniazid (katG p.Ser315Thr), Rifampicin (rpoB p.Ser450Leu), Moxifloxacin (gyrA p.Asp94Gly), Bedaquiline (Rv0678 Glu49fs), Clofazimine (Rv0678 Glu49fs), Linezolid (rplC Cys154Arg), and Ethionamide (ethA c.477del). Further analysis of these two high quality genomes revealed that this 32 years-old patient was infected with the Latin American Mediterranean TB strain (LAM). Conclusions: This is the first identification of extensively drug-resistant Mycobacterium tuberculosis clinical isolates with bedaquiline, linezolid and clofazimine resistance from Uganda. These acquired resistances were because of non-adherence as seen in the patient’s clinical history. Our study also strongly highlights the importance of combating DR-TB in Africa through implementing next generation sequencing that can test resistance to all drugs while providing a faster turnaround time. This can facilitate timely clinical decisions in managing MDR-TB patients with non-adherence or lost to follow-up.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">Biomed Res Int</abbr></div>
-<!-- Entry bib key -->
-        <div id="brucella_2015" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Isolation and Molecular Characterization of Brucella Isolates in Cattle Milk in Uganda</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Denis Rwabiita Mugizi, Shaman Muradrasoli, Sofia Boqvist, and
-          <span class="more-authors" title="click to view 6 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '6 more authors' ? 'Joseph Erume, George William Nasinyama, Charles Waiswa, Gerald Mboowa, Markus Klint, Ulf Magnusson' : '6 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">6 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>BioMed Research International</em>, Feb 2015
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1155/2015/720413"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1155/2015/720413" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Brucellosis is endemic in livestock and humans in Uganda and its transmission involves a multitude of risk factors like consumption of milk from infected cattle. To shed new light on the epidemiology of brucellosis in Uganda the present study used phenotypic and molecular approaches to delineate the Brucella species, biovars, and genotypes shed in cattle milk. Brucella abortus without a biovar designation was isolated from eleven out of 207 milk samples from cattle in Uganda. These isolates had a genomic monomorphism at 16 variable number tandem repeat (VNTR) loci and showed in turn high levels of genetic variation when compared with other African strains or other B. abortus biovars from other parts of the world. This study further highlights the usefulness of MLVA as an epidemiological tool for investigation of Brucella infections.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">JCM</abbr></div>
-<!-- Entry bib key -->
-        <div id="brucella_2016" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Improving the sensitivity of the Xpert MTB/RIF assay on sputum pellets by decreasing the amount of added sample reagent: a laboratory and clinical evaluation</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Nila J Dharan, Danielle Amisano, Gerald Mboowa, and
-          <span class="more-authors" title="click to view 10 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '10 more authors' ? 'Willy Ssengooba, Robert Blakemore, Rachel W Kubiak, Derek T Armstrong, Martin Jones, Yukari C Manabe, Moses L Joloba, Jerrold J Ellner, Susan E Dorman, David Alland' : '10 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">10 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Journal of Clinical Microbiology</em>, Mar 2015
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1128/JCM.03619-14"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1128/JCM.03619-14" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>The Xpert MTB/RIF (Xpert) assay permits rapid near-patient detection of Mycobacterium tuberculosis in sputum; however, the test sensitivity remains suboptimal in paucibacillary specimens that are negative for acid-fast bacilli using smear microscopy. Xpert testing includes dilution with sample reagent, and when processed sputum pellets are tested, the recommended sample reagent/pellet ratio is 3:1. We evaluated whether a decreased sample reagent/pellet ratio of 2:1 increased Xpert sensitivity compared to the recommended 3:1. The limit of detection was determined by inoculating serial dilutions of M. tuberculosis into sputum samples, preparing sputum pellets, and testing each pellet by Xpert at both sample reagent ratios. Processed sputum pellets obtained from M. tuberculosis culture-positive clinical specimens were also tested by Xpert at both ratios. Among spiked sputum pellets, the limit of detection was 1,478 CFU/ml (95% confidence interval [CI], 1,211 to 1,943) at a 3:1 ratio and decreased to 832 CFU/ml (95% CI, 671 to 1,134) at 2:1. The proportion of specimens in which M. tuberculosis was detected was greater at 2:1 than at 3:1 for almost all numbers of CFU/ml; this difference was most prominent at lower numbers of CFU/ml. Among 134 concentrated sputum pellets from the clinical study, the sensitivity of Xpert at 2:1 was greater than at 3:1 overall (80% versus 72%; P=0.03) and for smear-negative specimens (67% versus 58%; P=0.12). For Xpert testing of sputum pellets, using a lower sample reagent/pellet ratio increased M. tuberculosis detection, especially for paucibacillary specimens. Our study supports use of a 2:1 sample reagent/pellet dilution for Xpert testing of sputum pellets.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">BMC</abbr></div>
-<!-- Entry bib key -->
-        <div id="hospital_infection_2018" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Microbial contaminants isolated from items and work surfaces in the post- operative ward at Kawolo general hospital, Uganda</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Ivan Sserwadda, Mathew Lukenge, Bashir Mwambi, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Gerald Mboowa, Apollo Walusimbi, Farouk Segujja' : '3 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">3 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>BMC Infectious Diseases</em>, Feb 2018
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1186/s12879-018-2980-5"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1186/s12879-018-2980-5" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Background: Nosocomial infections are a major setback in the healthcare delivery system especially in developing countries due to the limited resources. The roles played by medical care equipment and work surfaces in the transmission of such organisms have inevitably contributed to the elevated mortality, morbidity and antibiotic resistances. Methods: A total 138 samples were collected during the study from Kawolo general hospital. Swab samples were collected from various work surfaces and fomites which consisted of; beds, sink taps, infusion stands, switches, work tables and scissors. Cultures were done and the susceptibility patterns of the isolates were determined using Kirby Bauer disc diffusion method. Data was analyzed using Stata 13 and Microsoft Excel 2013 packages. Results: A total of 44.2% (61/138) of the collected swab specimens represented the overall bacterial contamination of the sampled articles. Staphylococcus aureus and Klebsiella pneumoniae accounted for the highest bacterial contaminants constituting of 75.4% (46/61) and 11.5% (7/61) respectively. Infusion stands and patient beds were found to have the highest bacterial contamination levels both constituting 19.67% (12/61). The highest degree of transmission of organisms to patients was found to be statistically significant for patient beds with OR: 20.1 and P-value 8X10− 4. Vancomycin, ceftriaxone and ciprofloxacin were the most effective antibiotics with 100%, 80% and 80% sensitivity patterns among the isolates respectively. Multi-drug resistant (MDR) Staphylococcus aureus accounted for 52% (24/46) with 4% (1/24) classified as a possible extensively drug resistant (XDR) whereas Gram negative isolates had 27% (4/15) MDR strains out of which 50%(2/4) were classified as possible pan-drug resistant (PDR). Conclusion: The high prevalence of bacterial contaminants in the hospital work environment is an indicator of poor or ineffective decontamination. The study findings reiterate the necessity to formulate drug usage policies and reexamine effectiveness of decontamination and sterilization practices within Kawolo general hospital. We also recommend installation of a sound Microbiology unit at the hospital to take on susceptibility testing to check on the empirical use of antibiotics as a way of reducing the rampant elevations in drug resistances.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">BMC</abbr></div>
-<!-- Entry bib key -->
-        <div id="hospital_infection_2019" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">blaVIM- and blaOXA-mediated carbapenem resistance among Acinetobacter baumannii and Pseudomonas aeruginosa isolates from the Mulago hospital intensive care unit in Kampala, Uganda</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Dickson Aruhomukama, Christine F Najjuka, Henry Kajumbula, and
-          <span class="more-authors" title="click to view 6 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '6 more authors' ? 'Moses Okee, Gerald Mboowa, Ivan Sserwadda, Richard Mayanja, Moses L Joloba, David P Kateete' : '6 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">6 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>BMC Infectious Diseases</em>, Oct 2019
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1186/s12879-019-4510-5"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.1186/s12879-019-4510-5" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Background: Between January 2015 and July 2017, we investigated the frequency of carbapenem resistant Acinetobacter baumannii (CRAB) and carbapenem resistant Pseudomonas aeruginosa (CRPA) at the Mulago Hospital intensive care unit (ICU) in Kampala, Uganda. Carbapenemase production and carbapenemase gene carriage among CRAB and CRPA were determined; mobility potential of carbapenemase genes via horizontal gene transfer processes was also studied. Methods: Clinical specimens from 9269 patients were processed for isolation of CRAB and CRPA. Drug susceptibility testing was performed with the disk diffusion method. Carriage of carbapenemase genes and class 1 integrons was determined by PCR. Conjugation experiments that involved blaVIM positive CRAB/CRPA (donors) and sodium azide resistant Escherichia coli J53 (recipient) were performed. Results: The 9269 specimens processed yielded 1077 and 488 isolates of Acinetobacter baumannii and Pseudomonas aeruginosa, respectively. Of these, 2.7% (29/1077) and 7.4% (36/488) were confirmed to be CRAB and CRPA respectively, but 46 were available for analysis (21 CRAB and 25 CRPA). Majority of specimens yielding CRAB and CRPA were from the ICU (78%) while 20 and 2% were from the ENT (Ear Nose &amp; Throat) Department and the Burns Unit, respectively. Carbapenemase assays performed with the MHT assay showed that 40 and 33% of CRPA and CRAB isolates respectively, were carbapenemase producers. Also, 72 and 48% of CRPA and CRAB isolates respectively, were metallo-beta-lactamase producers. All the carbapenemase producing isolates were multidrug resistant but susceptible to colistin. blaVIM was the most prevalent carbapenemase gene, and it was detected in all CRAB and CRPA isolates while blaOXA-23 and blaOXA-24 were detected in 29 and 24% of CRAB isolates, respectively. Co-carriage of blaOXA-23 and blaOXA-24 occurred in 14% of CRAB isolates. Moreover, 63% of the study isolates carried class 1 integrons; of these 31% successfully transferred blaVIM to E. coli J53. Conclusions: CRAB and CRPA prevalence at the Mulago Hospital ICU is relatively low but carbapenemase genes especially blaVIM and blaOXA-23 are prevalent among them. This requires strengthening of infection control practices to curb selection and transmission of these strains in the hospital.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">MDPI</abbr></div>
-<!-- Entry bib key -->
-        <div id="sars_cov_2_2020" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Molecular Epidemiology and Diversity of SARS-CoV-2 in Ethiopia, 2020–2022</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Abay Sisay, Derek Tshiabuila, Stephanie Wyk, and
-          <span class="more-authors" title="click to view 23 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '23 more authors' ? 'Abraham Tesfaye, Gerald Mboowa, Samuel O Oyola, Sofonias Kifle Tessema, Cheryl Baxter, Darren Martin, Richard Lessells, Houriiyah Tegally, Monika Moir, Jennifer Giandhari, Sureshnee Pillay, Lavanya Singh, Yajna Ramphal, Arisha Maharaj, Yusasha Pillay, Akhil Maharaj, Yeshnee Naidoo, Upasana Ramphal, Lucious Chabuka, Eduan Wilkinson, Tulio Oliveira, Adey Feleke Desta, James E San' : '23 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">23 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Genes</em>, Mar 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.3390/genes14030705"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.3390/genes14030705" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Ethiopia is the second most populous country in Africa and the sixth most affected by COVID-19 on the continent. Despite having experienced five infection waves, &gt;499,000 cases, and  7500 COVID-19-related deaths as of January 2023, there is still no detailed genomic epidemiological report on the introduction and spread of SARS-CoV-2 in Ethiopia. In this study, we reconstructed and elucidated the COVID-19 epidemic dynamics. Specifically, we investigated the introduction, local transmission, ongoing evolution, and spread of SARS-CoV-2 during the first four infection waves using 353 high-quality near-whole genomes sampled in Ethiopia. Our results show that whereas viral introductions seeded the first wave, subsequent waves were seeded by local transmission. The B.1.480 lineage emerged in the first wave and notably remained in circulation even after the emergence of the Alpha variant. The B.1.480 was outcompeted by the Delta variant. Notably, Ethiopia’s lack of local sequencing capacity was further limited by sporadic, uneven, and insufficient sampling that limited the incorporation of genomic epidemiology in the epidemic public health response in Ethiopia. These results highlight Ethiopia’s role in SARS-CoV-2 dissemination and the urgent need for balanced, near-real-time genomic sequencing.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-<div class="col-sm-2 abbr"><abbr class="badge">F1000</abbr></div>
-<!-- Entry bib key -->
-        <div id="sars_cov_2_2021" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Whole-genome sequencing of SARS-CoV-2 in Uganda: implementation of the low-cost ARTIC protocol in resource-limited settings</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Gerald Mboowa, Savannah Mwesigwa, David Kateete, and
-          <span class="more-authors" title="click to view 13 more authors" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '13 more authors' ? 'Misaki Wayengera, Emmanuel Nasinghe, Eric Katagirya, Fred Ashaba Katabazi, Edgar Kigozi, Samuel Kirimunda, Rogers Kamulegeya, Jupiter Marina Kabahita, Moses Nsubuga Luutu, Patricia Nabisubi, Stephen Kanyerezi, Bernard Ssentalo Bagaya, Moses L Joloba' : '13 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">13 more authors</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>F1000Research</em>, Jul 2021
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-          </div>
-          
-          
-          
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.12688/f1000research.53567.1"></span>
-              <span class="__dimensions_badge_embed__" data-doi="10.12688/f1000research.53567.1" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Background: In January 2020, a previously unknown coronavirus strain was identified as the cause of a severe acute respiratory syndrome (SARS-CoV-2). The first viral whole-genome was sequenced using high-throughput sequencing from a sample collected in Wuhan, China. Whole-genome sequencing (WGS) is imperative in investigating disease outbreak transmission dynamics and guiding decision-making in public health. Methods: We retrieved archived SARS-CoV-2 samples at the Integrated Biorepository of H3Africa Uganda, Makerere University (IBRH3AU). These samples were collected previously from individuals diagnosed with coronavirus disease 2019 (COVID-19) using real-time reverse transcription quantitative polymerase chain reaction (RT-qPCR). 30 samples with cycle thresholds (Cts) values &lt;25 were selected for WGS using SARS-CoV-2 ARTIC protocol at Makerere University Molecular Diagnostics Laboratory. Results: 28 out of 30 (93.3%) samples generated analyzable genomic sequence reads. We detected SARS-CoV-2 and lineages A (22/28) and B (6/28) from the samples. We further show phylogenetic relatedness of these isolates alongside other 328 Uganda (lineage A = 222, lineage B = 106) SARS-CoV-2 genomes available in GISAID by April 22, 2021 and submitted by the Uganda Virus Research Institute. Conclusions: Our study demonstrated adoption and optimization of the low-cost ARTIC SARS-CoV-2 WGS protocol in a resource limited laboratory setting. This work has set a foundation to enable rapid expansion of SARS-CoV-2 WGS in Uganda as part of the Presidential Scientific Initiative on Epidemics (PRESIDE) CoV-bank project and IBRH3AU.</p>
+            <p>Global biomedical and health research is increasingly relying on genomic and computational approaches, largely driven by the increasing volumes of nucleic acid sequencing. Concurrently, epidemiological studies and clinical records are generating enormous amounts of data amenable to disease modeling, machine learning, and artificial intelligence techniques. Bioinformatics and data science expertise is therefore essential for improved population health. Accordingly, in 2012, the US National Institutes of Health (NIH) in partnership with the Wellcome Trust, and with support from the African Society for Human Genetics, initiated the H3Africa (Human Heredity and Health in Africa) consortium. One of its key goals was to build capacity among African scientists to lead research on genetic and environmental contributors to health and disease across the continent. In 2017, the NIH provided funding to support the establishment of four graduate bioinformatics training programs across five African universities. Over seven years, these programs enrolled multiple trainees (n &gt; 270), with &gt;110 earning Master’s degrees and &gt;20 completing PhDs in Bioinformatics. It is thus timely to evaluate the outcomes and impact of these programs, particularly regarding graduation rates, career trajectories, and the institutions and research domains their alumni are serving. We also assess employment outcomes and the nature of the research they are enabling (n &gt; 110 peer-reviewed articles). We additionally include the progress and outputs of the programs’ instructors, which were partially enabled by program resources, networks, and trainees. Overall, this review paints valuable insights into the pioneering role of NIH extramural support in shaping Africa’s biomedical research landscape.</p>
           </div>
         </div>
       </div>
@@ -2351,12 +1166,12 @@
             <div class="social">
               <div class="contact-icons">
                 <a href="mailto:%67%6D%62%6F%6F%77%61@%67%6D%61%69%6C.%63%6F%6D" title="email"><i class="fas fa-envelope"></i></a>
-            <a href="https://orcid.org/0000-0001-8445-9414" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
-            <a href="https://scholar.google.com/citations?user=P9dSDhoAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
-            <a href="https://www.researchgate.net/profile/Gerald-Mboowa/" title="ResearchGate" rel="external nofollow noopener" target="_blank"><i class="ai ai-researchgate"></i></a>
-            <a href="https://github.com/gmboowa" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gerald-mboowa-99020537" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/GeraldGmboowa" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://orcid.org/0000-0001-8445-9414" title="ORCID" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="ai ai-orcid"></i></a>
+            <a href="https://scholar.google.com/citations?user=P9dSDhoAAAAJ" title="Google Scholar" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.researchgate.net/profile/Gerald-Mboowa/" title="ResearchGate" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="ai ai-researchgate"></i></a>
+            <a href="https://github.com/gmboowa" title="GitHub" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gerald-mboowa-99020537" title="LinkedIn" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/GeraldGmboowa" title="Twitter" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="fab fa-twitter"></i></a>
             
 
               </div>
@@ -2376,7 +1191,7 @@
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2025 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+        © Copyright 2026 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener noopener noreferrer" target="_blank">al-folio</a> theme.
 
       </div>
     </footer>
@@ -2510,5 +1325,22 @@
 </script>
 
     
+
+    <!-- Theme Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const toggleSwitch = document.getElementById("theme-toggle");
+          const currentTheme = localStorage.getItem("theme") || "light";
+          document.documentElement.setAttribute("data-theme", currentTheme);
+
+          toggleSwitch.addEventListener("click", function () {
+              const theme = document.documentElement.getAttribute("data-theme");
+              const newTheme = theme === "dark" ? "light" : "dark";
+              document.documentElement.setAttribute("data-theme", newTheme);
+              localStorage.setItem("theme", newTheme);
+          });
+      });
+    </script>
+
   </body>
 </html>

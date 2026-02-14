@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>RT-qPCR Based SARS-CoV-2 Variants of Concern (VOC) testing | Gerald  Mboowa</title>
+    <title>CholGen | Gerald  Mboowa</title>
     <meta name="author" content="Gerald  Mboowa">
     <meta name="description" content="Gerald Mboowa integrates data science, genomics, and bioinformatics to tackle critical global health challenges, driving innovations in antimicrobial resistance surveillance, outbreak investigation, and pathogen characterization.
 ">
@@ -55,10 +55,110 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
+
+    <!-- Inline CSS for Light/Dark Mode -->
+    <style>
+      :root {
+          --background-color: #FFFFFF;
+          --text-color: #1A1A1A;
+          --link-color: #8B008B;
+      }
+
+      [data-theme="dark"] {
+          --background-color: #121212;
+          --text-color: #ffffff;
+          --link-color: #4da8da;
+      }
+
+      body {
+          background-color: var(--background-color);
+          color: var(--text-color);
+      }
+
+      a {
+          color: var(--link-color);
+      }
+
+      #theme-toggle {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 1000;
+          background-color: var(--background-color);
+          color: var(--text-color);
+          border: 1px solid var(--text-color);
+          padding: 8px 12px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      /* Font scaling for media & teaching pages */
+      .media-page h1,
+      .teaching-page h1 {
+          font-size: 2rem;
+          margin-top: 1.2rem;
+          margin-bottom: 0.6rem;
+      }
+
+      .media-page h2,
+      .teaching-page h2 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+      }
+
+      .media-page h3,
+      .teaching-page h3 {
+          font-size: 1.2rem;
+          margin-top: 0.8rem;
+          margin-bottom: 0.4rem;
+      }
+
+      @media screen and (max-width: 768px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.6rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.2rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1.05rem;
+          }
+      }
+
+      @media screen and (max-width: 480px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.4rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.1rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1rem;
+          }
+      }
+    </style>
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav sticky-bottom-footer">
+  
+  
+  
+  <body class="4_project-page fixed-top-nav sticky-bottom-footer">
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙 Toggle Theme</button>
 
     <!-- Header -->
     <header>
@@ -98,7 +198,7 @@
                 <a class="nav-link" href="/teaching/">Resources</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">CV</a>
+                <a class="nav-link" href="/media/">Media</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -126,15 +226,46 @@
     <div class="container mt-5">
       
         <!-- page.html -->
-<div class="post">
+<div class="post ">
 
   <header class="post-header">
-    <h1 class="post-title">RT-qPCR Based SARS-CoV-2 Variants of Concern (VOC) testing</h1>
+    <h1 class="post-title"><strong>CholGen</strong></h1> <!-- Bold the page title -->
     <p class="post-description"></p>
   </header>
 
   <article>
-    <p><a href="https://www.gatesfoundation.org/about/committed-grants/2021/10/inv036379" rel="external nofollow noopener" target="_blank">This project bridges gaps in genomic surveillance by leveraging commercially available RT-qPCR assays as a rapid, cost-effective solution for SARS-CoV-2 VOC screening.</a></p>
+    <style>
+  /* Color definitions for both modes */
+  :root {
+    --cholera-link-color: #B509AC; /* Purple for light mode */
+  }
+
+  [data-theme="dark"] {
+    --cholera-link-color: #4682b4; /* Steel blue for dark mode */
+  }
+
+  /* Style for Cholera project links (bold) */
+  .cholera-project-link {
+    color: var(--cholera-link-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .cholera-project-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Style for CholGen activity link */
+  .cholgen-activity-link {
+    color: var(--cholera-link-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .cholgen-activity-link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<p><a href="https://bit.ly/3ZzVJWX" class="cholera-project-link" rel="external nofollow noopener noopener noreferrer" target="_blank">Building Africa’s Capacity for Cholera Surveillance and Outbreak Response</a></p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -155,8 +286,74 @@
 
     </div>
 </div>
-<div class="caption">
-    Schematic showing the study workflow and project sites.
+<div class="caption" style="text-align: justify;">
+    <p>
+        Establishing capacity for cholera genomic surveillance in Africa.
+    </p>
+    <p>
+        <strong>CholGen: Building Capacity for Genomic Surveillance of Cholera in Africa</strong>
+    </p>
+    <p>
+        Cholera remains a significant public health challenge across Africa, with periodic outbreaks causing considerable morbidity and mortality. The CholGen project aims to strengthen genomic surveillance capacity for cholera in Africa, addressing the critical need for rapid, data-driven public health interventions. By leveraging advancements in pathogen genomics, CholGen seeks to enhance understanding of cholera dynamics, improve outbreak response, and support long-term control strategies.
+    </p>
+
+    <p>
+        <strong>Project Resources</strong>
+    </p>
+    <p>
+        <a href="https://github.com/CholGen/Vibecheck" target="_blank" class="cholera-project-link" rel="external nofollow noopener noopener noreferrer">
+            CholGen GitHub – Vibecheck
+        </a>
+        <br>
+        <a href="https://www.nature.com/articles/s41467-026-68642-7" target="_blank" class="cholera-project-link" rel="external nofollow noopener noopener noreferrer">
+            CholGen Publication – Nature Communications
+        </a>
+    </p>
+
+    <p>
+        <strong>Project Progress</strong>
+    </p>
+    <p>
+        You can access a detailed overview of CholGen activities
+        <a href="https://cdn.who.int/media/docs/default-source/crs-crr/gerald-mboowa-enhanced-cholera-genomic-surveillance-in-africa----gerald-mboowa-(1).pdf?sfvrsn=15f2ce1e_1" target="_blank" class="cholgen-activity-link" rel="external nofollow noopener noopener noreferrer">here</a>.
+    </p>
+
+    <p>
+        <strong>Project Goals</strong>
+    </p>
+    <p>
+        The primary objective of CholGen is to build and expand the capacity of laboratories and public health institutions across Africa to perform genomic surveillance of <em>Vibrio cholerae</em>, the causative agent of cholera. The project focuses on equipping regional labs with the tools, infrastructure, and expertise necessary to sequence, analyze, and interpret genomic data. This capacity will enable the timely identification of cholera strains, their origins, transmission pathways, and potential antimicrobial resistance patterns.
+    </p>
+
+    <p>
+        <strong>Approach</strong>
+    </p>
+    <p>
+        CholGen collaborates with National Public Health Institutes (NPHIs) and regional laboratories, providing specialized training in whole-genome sequencing (WGS) and bioinformatics. By utilizing cutting-edge genomic tools, the project supports routine surveillance and rapid response during outbreaks. CholGen also emphasizes partnerships, fostering collaboration between African countries to share data and resources for regional cholera control.
+    </p>
+
+    <p>
+    <strong>Expected Outcomes</strong>
+    </p>
+<pre>
+    🔹 Enhanced Genomic Surveillance:  
+       Development of a sustainable genomic surveillance network capable of tracking cholera outbreaks
+       in real-time.  
+
+    🔹 Data-Driven Interventions:
+       Improved understanding of cholera transmission dynamics and hotspots, informing targeted
+       interventions.  
+
+    🔹 Capacity Building:
+       A skilled workforce proficient in genomic technologies, ensuring long-term sustainability of   
+       cholera surveillance efforts.  
+
+    🔹 Policy Support:
+       Evidence-based insights to guide regional and national cholera control strategies.   
+    </pre>
+    <p>
+      CholGen represents a critical step towards combating cholera in Africa, empowering countries to respond effectively to outbreaks and move closer to eliminating this deadly disease. By combining technology, expertise, and collaboration, the project contributes to building resilient health systems and saving lives.
+    </p>
 </div>
 
   </article>
@@ -167,7 +364,7 @@
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2025 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+        © Copyright 2026 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener noopener noreferrer" target="_blank">al-folio</a> theme.
 
       </div>
     </footer>
@@ -301,5 +498,22 @@
 </script>
 
     
+
+    <!-- Theme Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const toggleSwitch = document.getElementById("theme-toggle");
+          const currentTheme = localStorage.getItem("theme") || "light";
+          document.documentElement.setAttribute("data-theme", currentTheme);
+
+          toggleSwitch.addEventListener("click", function () {
+              const theme = document.documentElement.getAttribute("data-theme");
+              const newTheme = theme === "dark" ? "light" : "dark";
+              document.documentElement.setAttribute("data-theme", newTheme);
+              localStorage.setItem("theme", newTheme);
+          });
+      });
+    </script>
+
   </body>
 </html>

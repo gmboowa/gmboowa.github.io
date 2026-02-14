@@ -55,10 +55,110 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
+
+    <!-- Inline CSS for Light/Dark Mode -->
+    <style>
+      :root {
+          --background-color: #FFFFFF;
+          --text-color: #1A1A1A;
+          --link-color: #8B008B;
+      }
+
+      [data-theme="dark"] {
+          --background-color: #121212;
+          --text-color: #ffffff;
+          --link-color: #4da8da;
+      }
+
+      body {
+          background-color: var(--background-color);
+          color: var(--text-color);
+      }
+
+      a {
+          color: var(--link-color);
+      }
+
+      #theme-toggle {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 1000;
+          background-color: var(--background-color);
+          color: var(--text-color);
+          border: 1px solid var(--text-color);
+          padding: 8px 12px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      /* Font scaling for media & teaching pages */
+      .media-page h1,
+      .teaching-page h1 {
+          font-size: 2rem;
+          margin-top: 1.2rem;
+          margin-bottom: 0.6rem;
+      }
+
+      .media-page h2,
+      .teaching-page h2 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+      }
+
+      .media-page h3,
+      .teaching-page h3 {
+          font-size: 1.2rem;
+          margin-top: 0.8rem;
+          margin-bottom: 0.4rem;
+      }
+
+      @media screen and (max-width: 768px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.6rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.2rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1.05rem;
+          }
+      }
+
+      @media screen and (max-width: 480px) {
+          .media-page h1,
+          .teaching-page h1 {
+              font-size: 1.4rem;
+          }
+
+          .media-page h2,
+          .teaching-page h2 {
+              font-size: 1.1rem;
+          }
+
+          .media-page h3,
+          .teaching-page h3 {
+              font-size: 1rem;
+          }
+      }
+    </style>
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav sticky-bottom-footer">
+  
+  
+  
+  <body class="teaching-page fixed-top-nav sticky-bottom-footer">
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙 Toggle Theme</button>
 
     <!-- Header -->
     <header>
@@ -98,7 +198,7 @@
                 <a class="nav-link" href="/teaching/">Resources<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">CV</a>
+                <a class="nav-link" href="/media/">Media</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -126,50 +226,114 @@
     <div class="container mt-5">
       
         <!-- page.html -->
-<div class="post">
+<div class="post teaching-page">
 
   <header class="post-header">
-    <h1 class="post-title">Resources</h1>
+    <h1 class="post-title"><strong>Resources</strong></h1> <!-- Bold the page title -->
     <p class="post-description"></p>
   </header>
 
   <article>
-    <hr>
+    <hr style="border: 3px solid #800080;">
 
-<h2 id="1-bioinformatics-training-resources"><strong>1. Bioinformatics Training Resources</strong></h2>
+<h3 id="training-resources"><strong>Training Resources</strong></h3>
 
-<h3 id="11-taylor-paisies-veme-2024-ngs-de-novo-assembly-tutorial"><strong>1.1 Taylor Paisie’s VEME 2024 NGS De Novo Assembly Tutorial</strong></h3>
-<p>This course focuses on de novo genome assembly using next-generation sequencing (NGS) data, providing a comprehensive overview of workflows and practical exercises tailored for the VEME 2024 workshop. It includes step-by-step guidance on assembling viral genomes, with specific tools and methods to handle Illumina sequencing data efficiently.</p>
+<hr style="border: 3px solid #00008B;">
 
-<p><strong>Course Link:</strong> <a href="https://github.com/taylorpaisie/VEME_2024_NGS_Denovo_Assembly" rel="external nofollow noopener" target="_blank">Taylor Paisie’s VEME 2024 NGS De Novo Assembly</a></p>
+<h2 id="1-broad-institutes-training-resources"><strong>1. Broad Institute’s Training Resources</strong></h2>
 
-<hr>
+<h3 id="11-viral-genomics-workshops"><strong>1.1 Viral Genomics Workshops</strong></h3>
 
-<h3 id="12-taylor-paisies-veme-2024-ngs-variant-calling"><strong>1.2 Taylor Paisie’s VEME 2024 NGS Variant Calling</strong></h3>
-<p>This course provides comprehensive guidance on variant calling workflows using next-generation sequencing (NGS) data. It is tailored for the VEME 2024 workshop and includes step-by-step instructions and examples.</p>
+<p style="text-align: justify;">
+    These workshops provide hands-on training in genomic analysis workflows, focusing on the study of viral genomes using next-generation sequencing (NGS) data. Hosted by the Broad Institute, they offer practical insights into cutting-edge tools and techniques for viral surveillance, assembly, and data interpretation.
+</p>
 
-<p><strong>Course Link:</strong> <a href="https://github.com/taylorpaisie/VEME_2024_NGS_Variant_Calling" rel="external nofollow noopener" target="_blank">Taylor Paisie’s VEME 2024 NGS Variant Calling</a></p>
+<p><strong><span style="color: #00A3E0; font-weight: bold;">Course Link:</span></strong> <a href="https://broadinstitute.github.io/viral-workshops/" rel="external nofollow noopener noopener noreferrer" target="_blank">Viral Genomics Workshops</a></p>
 
-<hr>
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
 
-<h2 id="2-broad-institutes-training-resources"><strong>2. Broad Institute’s Training Resources</strong></h2>
+<h3 id="12-viral-de-novo-assembly-workflows-on-the-terra-cloud-platform"><strong>1.2 Viral <em>De Novo</em> Assembly Workflows on the Terra Cloud Platform</strong></h3>
 
-<h3 id="21-viral-genomics-workshops"><strong>2.1 Viral Genomics Workshops</strong></h3>
-<p>These workshops provide hands-on training in genomic analysis workflows, focusing on the study of viral genomes using next-generation sequencing (NGS) data. Hosted by the Broad Institute, they offer practical insights into cutting-edge tools and techniques for viral surveillance, assembly, and data interpretation.</p>
+<p style="text-align: justify;">
+    This course focuses on viral <em>de novo</em> assembly workflows using Illumina sequencing data. It specifically uses Lassa virus data as a case study and leverages the Terra cloud platform to demonstrate the assembly process.
+</p>
 
-<p><strong>Course Link:</strong> <a href="https://broadinstitute.github.io/viral-workshops/" rel="external nofollow noopener" target="_blank">Viral Genomics Workshops</a></p>
+<p><strong><span style="color: #00A3E0; font-weight: bold;">Course Link:</span></strong> <a href="https://broadinstitute.github.io/viral-workshops/veme-ngs/denovo.html#viral-de-novo-assembly" rel="external nofollow noopener noopener noreferrer" target="_blank">Viral De Novo Assembly Workflows on Terra Cloud Platform</a></p>
 
-<hr>
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
 
-<h3 id="22-viral-de-novo-assembly-workflows-on-the-terra-cloud-platform"><strong>2.2 Viral De Novo Assembly Workflows on the Terra Cloud Platform</strong></h3>
-<p>This course focuses on viral de novo assembly workflows using Illumina sequencing data. It specifically uses Lassa virus data as a case study and leverages the Terra cloud platform to demonstrate the assembly process.</p>
+<h3 id="13-terra-training-archive-access-previous-workshops--event-materials"><strong>1.3 Terra Training Archive: Access Previous Workshops &amp; Event Materials</strong></h3>
 
-<p><strong>Course Link:</strong> <a href="https://broadinstitute.github.io/viral-workshops/veme-ngs/denovo.html#viral-de-novo-assembly" rel="external nofollow noopener" target="_blank">Viral De Novo Assembly Workflows on Terra Cloud Platform</a></p>
+<p style="text-align: justify;">
+    The Terra Support platform offers a comprehensive repository of materials from previous training events, designed to assist users in effectively utilizing Terra's data science infrastructure. These resources encompass a wide range of topics, including <strong>cloud-native pipeline development, data repository management, and machine learning applications.</strong>
+</p>
 
-<h2 id="-30-a-beginners-guide-to-genomic-data-analysis-variant-calling">** 3.0 A Beginner’s Guide to Genomic Data Analysis: Variant calling</h2>
-<p>The link provides a beginner-friendly introduction to genomic data analysis, specifically focusing on variant calling, which involves identifying genetic variations in sequencing data. It outlines the key steps in the process, including quality control, alignment of reads to a reference genome, and the use of tools like GATK for variant identification and filtering. The guide emphasizes the importance of understanding the pipeline and highlights resources and tools to help newcomers get started with genomic data analysis.</p>
+<h4 id="key-highlights"><strong>Key Highlights</strong></h4>
 
-<p><strong>Course Link:</strong> <a href="https://medium.com/@manabeel.vet/a-beginners-guide-to-genomic-data-analysis-variant-calling-ad8515eebddf" rel="external nofollow noopener" target="_blank">A Beginner’s Guide to Genomic Data Analysis: Variant calling</a></p>
+<pre>
+🔹 Cloud-Native Pipelines:  
+   Workshops such as the July 2024 session focused on creating &amp; running cloud-native
+   pipelines using WDL, Dockstore &amp; Terra.
+
+🔹 Data Repository Management:  
+   The March and February 2024 workshops introduced users to the Terra Data Repository
+   (TDR), covering essential features like data organization, secure collaboration, &amp;
+   efficient data retrieval methods.
+
+🔹 Machine Learning Integration:
+   In September 2023, a collaborative workshop with Google's AI in Healthcare and Life
+   Sciences team showcased the integration of Vertex AI on Terra.
+
+🔹 Interactive Analysis Tools:
+   Regular sessions, including those in October 2023, provided introductions to Terra's
+   interactive analysis capabilities, emphasizing the use of Jupyter Notebooks
+   for data exploration &amp; visualization.
+
+🔹 Specialized Applications:
+   Workshops have also delved into niche areas such as structural variant discovery using
+   the GATK-SV pipeline (February 2023) &amp; the integration of DRAGEN-GATK workflows
+   (October 2022), catering to advanced genomic analysis needs.
+</pre>
+
+<p style="text-align: justify;">
+    Each event's materials typically include <strong>presentation slides, video recordings, and tutorial workspaces</strong>, enabling users to revisit and practice the concepts discussed. These resources are invaluable for both <strong>new and experienced users</strong> aiming to enhance their proficiency with Terra's platform.
+</p>
+
+<p><strong><span style="color: #00A3E0; font-weight: bold;">Events Link:</span></strong> <a href="https://support.terra.bio/hc/en-us/sections/360003513671-Previous-Event-Materials" rel="external nofollow noopener noopener noreferrer" target="_blank">Previous Event Materials on Terra Cloud Platform</a></p>
+
+<hr style="border: 3px solid #00008B;">
+
+<h2 id="theiagen-genomics"><strong>Theiagen Genomics</strong></h2>
+
+<p style="text-align: justify;">
+Theiagen Genomics is a leading bioinformatics company specializing in infectious disease genomics, pathogen surveillance, and public health data analysis. They provide cutting-edge solutions for next-generation sequencing (NGS) data interpretation, enabling researchers and public health institutions to track and respond to emerging threats. With a strong focus on capacity building and open-source bioinformatics tools, Theiagen Genomics empowers global health communities to harness genomic data for better disease control and prevention.
+</p>
+
+<p><strong><span style="color: #00A3E0; font-weight: bold;">TheiaProk:</span></strong><br>
+<a href="https://theiagen.notion.site/TheiaProk-Workflow-Series-1296f3df6a7c41c7937053a03f664a5a" rel="external nofollow noopener noopener noreferrer" target="_blank">Workflow Series</a></p>
+
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
+
+<p><strong><span style="color: #00A3E0; font-weight: bold;">Theiagen Public Health Bioinformatics Resources:</span></strong><br>
+<a href="https://theiagen.notion.site/6bbb869ea4134b52be6e729adfefea9c?v=2466758e3fe6402191baf9be4d12a504" rel="external nofollow noopener noopener noreferrer" target="_blank">PHB v1.2.1 Resources</a></p>
+
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
+
+<p><strong><span style="color: #00A3E0; font-weight: bold;">Theiagen Public Health Bioinformatics Resources:</span></strong><br>
+<a href="https://theiagen.github.io/public_health_bioinformatics/latest/workflows_overview/workflows_type/" rel="external nofollow noopener noopener noreferrer" target="_blank">Theiagen’s Public Health Bioinformatics</a></p>
+
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
+
+<p><strong><span style="color: #00A3E0; font-weight: bold;">Theiagen Public Health Bioinformatics Resources:</span></strong><br>
+<a href="https://theiagen.github.io/public_health_bioinformatics/v3.1.1/#purpose-workflows" rel="external nofollow noopener noopener noreferrer" target="_blank">Theiagen’s Public Health Bioinformatics relationships between the workflows</a></p>
+
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
+
+<p><strong><span style="color: #00A3E0; font-weight: bold;">Theiagen Public Health Bioinformatics Resources (Docker page):</span></strong><br>
+<a href="https://dockstore.org/organizations/Theiagen/collections/public-health-bioinformatics" rel="external nofollow noopener noopener noreferrer" target="_blank">Docker Collection</a></p>
+
+<hr style="border: 3px solid #00008B;">
+
 
   </article>
 </div>
@@ -179,7 +343,7 @@
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2025 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+        © Copyright 2026 Gerald  Mboowa. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener noopener noreferrer" target="_blank">al-folio</a> theme.
 
       </div>
     </footer>
@@ -313,5 +477,22 @@
 </script>
 
     
+
+    <!-- Theme Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const toggleSwitch = document.getElementById("theme-toggle");
+          const currentTheme = localStorage.getItem("theme") || "light";
+          document.documentElement.setAttribute("data-theme", currentTheme);
+
+          toggleSwitch.addEventListener("click", function () {
+              const theme = document.documentElement.getAttribute("data-theme");
+              const newTheme = theme === "dark" ? "light" : "dark";
+              document.documentElement.setAttribute("data-theme", newTheme);
+              localStorage.setItem("theme", newTheme);
+          });
+      });
+    </script>
+
   </body>
 </html>
