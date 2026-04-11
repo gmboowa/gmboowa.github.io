@@ -85,6 +85,18 @@ nav_order: 4
 
 **<span style="color: #00A3E0; font-weight: bold;">Events Link:</span>** [Previous Event Materials on Terra Cloud Platform](https://support.terra.bio/hc/en-us/sections/360003513671-Previous-Event-Materials)
 
+### **1.5 Access malaria genomics resources, Terra workspaces, and Mad4Hatter workflows**
+
+<p style="text-align: justify;">
+  Explore malaria genomics resources for processing <em>Plasmodium</em> Illumina amplicon sequencing data, including the Terra workspace for the Malaria Plasmodium Illumina Mad4Hatter pipeline, supporting documentation, and publicly available Dockstore workflows for data processing, post-processing, and quality control. Please note that access to the Terra workspace requires a Terra account.
+</p>
+
+[Malaria Resources in Terra - Malaria Plasmodium Illumina Mad4Hatter Amplicon Workspace for Processing of Sequencing Data](https://app.terra.bio/#workspaces/964667ee-7cca-4536-a54d-395f1de891d0)  
+[Wonderland Documentation](https://eppicenter.github.io/wonderland-docs/)  
+[Mad4Hatter Workflow on Dockstore](https://dockstore.org/workflows/github.com/EPPIcenter/mad4hatter-wdl/Mad4Hatter:main?tab=info)  
+[Mad4Hatter PostProcessing Workflow on Dockstore](https://dockstore.org/workflows/github.com/EPPIcenter/mad4hatter-wdl/Mad4HatterPostProcessing:main?tab=info)  
+[Mad4Hatter QC Only Workflow on Dockstore](https://dockstore.org/workflows/github.com/EPPIcenter/mad4hatter-wdl/Mad4HatterQcOnly:main?tab=info)
+
 <hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
 
 ### **1.4 Explore detailed insights on the variant calling process and GATK best practices, accessible via a public Google Drive**
@@ -259,5 +271,11 @@ Theiagen Genomics is a leading bioinformatics company specializing in infectious
 **<span style="color: #00A3E0; font-weight: bold;">PHB Dockstore Resources:</span>**
 
 [Dockstore Collection](https://dockstore.org/organizations/Theiagen/collections/public-health-bioinformatics)
+
+**<span style="color: #00A3E0; font-weight: bold;">TheiaProk Workflow Series:</span>**
+
+[TheiaProk Workflow Series](https://theiagen.notion.site/TheiaProk-Workflow-Series-1296f3df6a7c41c7937053a03f664a5a)
+
+<hr style="border: 1px dotted rgba(0, 0, 139, 0.2);">
 
 <hr style="border: 3px solid #00008B;">

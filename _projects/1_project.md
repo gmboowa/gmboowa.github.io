@@ -124,11 +124,44 @@ related_publications: false
   </ul>
 
   <p style="margin-top: 0.75rem;">
-    <strong>rMAP-1.0 Publication:</strong>
-    <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000583"
-       target="_blank" rel="noopener">
-      Here
-    </a>
-  </p>
+  <div style="margin-top: 2rem;">
 
-</div>
+    <!-- Section Title -->
+    <h3 style="
+      font-weight: 900;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    ">
+      rMAP Pipeline Publications
+    </h3>
+
+    <!-- Thick Divider -->
+    <hr style="
+      border: none;
+      height: 4px;
+      background-color: #ffffff;
+      margin-bottom: 1rem;
+    ">
+
+    <!-- Publications -->
+    <p style="margin-top: 0.75rem;">
+      <strong>rMAP-1.0 Publication (Microbial Genomics):</strong>
+      <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000583"
+         target="_blank"
+         rel="noopener noreferrer"
+         style="font-weight: 900; color: #1a73e8; text-decoration: none;">
+         Here
+      </a>
+    </p>
+
+    <p style="margin-top: 0.75rem;">
+      <strong>rMAP-2.0 Publication (Bioinformatics Advances):</strong>
+      <a href="https://academic.oup.com/bioinformaticsadvances/article/6/1/vbag046/8483022"
+         target="_blank"
+         rel="noopener noreferrer"
+         style="font-weight: 900; color: #1a73e8; text-decoration: none;">
+         Here
+      </a>
+    </p>
+
+  </div>
