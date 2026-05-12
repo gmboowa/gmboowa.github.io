@@ -3,7 +3,6 @@ github_users:
   - MicroBioGenoHub
   - GunzIvan28
   - Kanyerezi30
-  - mikensubuga
   - imboowa
  
 
@@ -18,3 +17,5 @@ github_repos:
   - gmboowa/blastannotate
   - gmboowa/gmboowa.github.io
   - gmboowa/AMRSurveillanceDashboard
+  - gmboowa/rMAP-TB
+  - gmboowa/gtdbtk-setup-and-classification

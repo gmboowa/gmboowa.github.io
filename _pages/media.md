@@ -739,7 +739,7 @@ nav_order: 7
 
 <p>
   <strong style="color: #00A3E0;">African Population Cohort Consortium (APCC) Omics Workstream:</strong>
-  <a href="https://ce-apcc.org/collaborators/"
+  <a href="https://publish.obsidian.md/apcc/APCC+Blueprint/Work+leading+up+to+the+APCC+Blueprint"
      target="_blank"
      rel="noopener noreferrer"
      style="font-weight: 900; color: #1a73e8; text-decoration: none;">
