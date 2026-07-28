@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-REPO="/Users/gerald/gmboowa.github.io"
+REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TMP_SITE="/tmp/gmboowa_site_deploy"
 
 cd "$REPO"
