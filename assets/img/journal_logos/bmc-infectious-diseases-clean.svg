@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+  <rect width="500" height="300" fill="#ffffff"/>
+
+  <text x="55" y="90"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="72"
+        font-weight="700"
+        fill="#26385f">BMC</text>
+
+  <text x="55" y="170"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="66"
+        font-weight="700"
+        fill="#26385f">Infectious</text>
+
+  <text x="55" y="245"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="66"
+        font-weight="700"
+        fill="#26385f">Diseases</text>
+</svg>

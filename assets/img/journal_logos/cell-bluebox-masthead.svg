@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 180" role="img" aria-labelledby="title desc">
+  <title id="title">Cell journal masthead</title>
+  <desc id="desc">A clean blue-box Cell journal masthead for a publication card.</desc>
+  <rect x="38" y="28" width="284" height="112" rx="4" fill="#0A86C8"/>
+  <text x="180" y="111"
+        text-anchor="middle"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="88"
+        font-weight="700"
+        letter-spacing="-5"
+        fill="#FFFFFF">Cell</text>
+</svg>

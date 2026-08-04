@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+  <rect width="500" height="300" fill="#ffffff"/>
+  <text x="55" y="130"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="82"
+        font-weight="700"
+        fill="#222222">BMC</text>
+  <text x="55" y="225"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="82"
+        font-weight="700"
+        fill="#222222">Genomics</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" role="img" aria-labelledby="title desc">
+  <title id="title">PLOS ONE journal wordmark</title>
+  <desc id="desc">Consistent horizontal PLOS ONE wordmark for publication cards.</desc>
+  <rect width="360" height="120" rx="12" fill="#ffffff"/>
+  <circle cx="58" cy="60" r="37" fill="#1596b6"/>
+  <circle cx="58" cy="60" r="20" fill="#ffffff"/>
+  <circle cx="58" cy="60" r="9" fill="#1596b6"/>
+  <text x="108" y="68" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="800" letter-spacing="0.8" fill="#111827">PLOS</text>
+  <text x="238" y="68" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="400" fill="#1596b6">ONE</text>
+  <text x="110" y="94" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" letter-spacing="1.7" fill="#5f6b76">OPEN ACCESS</text>
+</svg>

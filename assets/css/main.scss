@@ -1,0 +1,10 @@
+
+/* Bold journal names in publication citations */
+.bibliography .periodical em {
+  font-weight: 700;
+}
+
+/* Bold journal name inside generated journal cards */
+.journal-fallback-card .journal-fallback-title {
+  font-weight: 800 !important;
+}
