@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="540" viewBox="0 0 480 540" role="img" aria-labelledby="t desc">
+<title id="t">Pediatric Health, Medicine and Therapeutics custom journal wordmark</title>
+<desc id="desc">Custom typographic journal wordmark, not official publisher artwork.</desc>
+<rect width="480" height="540" fill="#ffffff"/>
+<rect x="50" y="47" width="380" height="8" rx="4" fill="#1C678B"/>
+<path d="M185 113h110" stroke="#8AB5CA" stroke-width="3"/>
+<text x="240" y="174" fill="#145073" font-family="Georgia,Times New Roman,serif" font-size="43" font-weight="bold" text-anchor="middle">Pediatric</text>
+<text x="240" y="235" fill="#145073" font-family="Georgia,Times New Roman,serif" font-size="42" font-weight="bold" text-anchor="middle">Health,</text>
+<text x="240" y="296" fill="#145073" font-family="Georgia,Times New Roman,serif" font-size="42" font-weight="bold" text-anchor="middle">Medicine</text>
+<text x="240" y="357" fill="#145073" font-family="Georgia,Times New Roman,serif" font-size="39" font-weight="bold" text-anchor="middle">&amp; Therapeutics</text>
+<path d="M145 410h190" stroke="#8AB5CA" stroke-width="3"/>
+<text x="240" y="465" fill="#566776" font-family="Arial,Helvetica,sans-serif" font-size="19" text-anchor="middle" letter-spacing="1.1">DOVE MEDICAL PRESS</text>
+</svg>

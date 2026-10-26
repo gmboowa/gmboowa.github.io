@@ -1,0 +1,212 @@
+.journal-thumbnail-panel {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto 0.9rem;
+    text-align: center;
+  }
+
+  .journal-thumbnail-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .journal-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 128px;
+    aspect-ratio: 4 / 5;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 5px solid var(--global-theme-color);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.99), rgba(238, 244, 248, 0.99));
+    color: #202124 !important;
+    -webkit-text-fill-color: #202124 !important;
+  }
+
+  .journal-logo-area {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    padding: 0.65rem;
+    background: #ffffff;
+  }
+
+  .journal-logo,
+  .journal-preview-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 84px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  .journal-preview-image {
+    max-height: 100%;
+  }
+
+  .journal-fallback-card {
+    padding: 0.75rem 0.65rem 0;
+    text-align: left;
+  }
+
+  .journal-fallback-label {
+    display: block;
+    font-size: 0.56rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--global-theme-color) !important;
+    -webkit-text-fill-color: var(--global-theme-color) !important;
+  }
+
+  .journal-fallback-title {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    min-height: 0;
+    padding: 0.2rem 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.86rem;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.12;
+    overflow-wrap: anywhere;
+    color: #202124 !important;
+    -webkit-text-fill-color: #202124 !important;
+  }
+
+  .journal-fallback-title.is-compact { font-size: 0.74rem; line-height: 1.08; }
+  .journal-fallback-title.is-long { font-size: 0.64rem; line-height: 1.04; }
+  .journal-fallback-title.is-extra-long { font-size: 0.56rem; line-height: 1.02; }
+
+  .journal-impact-factor {
+    display: block;
+    margin-top: auto;
+    padding: 0.48rem 0.62rem 0.55rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(244, 246, 248, 0.96);
+    color: #5f6368 !important;
+    -webkit-text-fill-color: #5f6368 !important;
+    text-align: left;
+  }
+
+  .journal-fallback-card .journal-impact-factor {
+    margin-right: -0.65rem;
+    margin-left: -0.65rem;
+  }
+
+  .journal-impact-factor-label {
+    display: block;
+    font-size: 0.46rem;
+    font-weight: 750;
+    line-height: 1.15;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    color: #5f6368 !important;
+    -webkit-text-fill-color: #5f6368 !important;
+  }
+
+  .journal-impact-factor-value {
+    display: block;
+    margin-top: 0.14rem;
+    font-size: 0.82rem;
+    font-weight: 850;
+    line-height: 1.05;
+    color: #202124 !important;
+    -webkit-text-fill-color: #202124 !important;
+  }
+
+  .journal-thumbnail-name {
+    margin-top: 0.55rem;
+    font-size: 0.78rem;
+    font-weight: 750;
+    line-height: 1.25;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  .journal-thumbnail-name a {
+    color: var(--global-theme-color) !important;
+    font-weight: 750;
+    text-decoration: none;
+  }
+
+  .journal-thumbnail-name a:hover {
+    text-decoration: underline;
+  }
+
+  html[data-theme="dark"] .journal-card,
+  body[data-theme="dark"] .journal-card,
+  .dark .journal-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.99), rgba(238, 244, 248, 0.99)) !important;
+    color: #202124 !important;
+    -webkit-text-fill-color: #202124 !important;
+  }
+
+  html[data-theme="dark"] .journal-logo-area,
+  body[data-theme="dark"] .journal-logo-area,
+  .dark .journal-logo-area {
+    background: #ffffff !important;
+  }
+
+/* BEGIN JOURNAL CARD TEXT FIT FIX */
+/* Preserve the live-site logo artwork, border and impact-factor design. */
+.journal-card .journal-logo-area {
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Journals without a logo: equal typography and no spill into the footer. */
+.journal-card.journal-fallback-card .journal-logo-area {
+  padding: 10px 9px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #fff !important;
+}
+.journal-card.journal-fallback-card .journal-fallback-name {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  hyphens: auto;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0 !important;
+  text-align: center !important;
+  color: #20252b !important;
+}
+
+/* Actual journal logo images retain their own fonts and wordmarks. */
+.journal-card.journal-logo-card .journal-logo {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* Keep the impact-factor footer separated from the journal name. */
+.journal-card .journal-impact-factor {
+  position: relative;
+  z-index: 1;
+}
+/* END JOURNAL CARD TEXT FIT FIX */
