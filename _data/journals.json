@@ -1,0 +1,312 @@
+{
+  "AAS Open Research": {
+    "logo": "custom-aas-open-research.svg",
+    "impact_factor": "N/A",
+    "impact_factor_year": 2025
+  },
+  "Access Microbiology": {
+    "logo": "custom-access-microbiology.svg",
+    "impact_factor": "N/A",
+    "impact_factor_year": 2025
+  },
+  "American Journal of Respiratory and Critical Care Medicine": {
+    "logo": "ajrccm.png",
+    "impact_factor": "21.7",
+    "impact_factor_year": 2025
+  },
+  "Annals of Human Genetics": {
+    "logo": "custom-annals-of-human-genetics.svg",
+    "impact_factor": "1.5",
+    "impact_factor_year": 2025
+  },
+  "Antimicrobial Agents and Chemotherapy": {
+    "logo": "custom-antimicrobial-agents-and-chemotherapy.svg",
+    "impact_factor": "4.2",
+    "impact_factor_year": 2025
+  },
+  "Antimicrobial Resistance & Infection Control": {
+    "logo": "custom-antimicrobial-resistance-infection-control.svg",
+    "impact_factor": "5.2",
+    "impact_factor_year": 2025
+  },
+  "BMC Clinical Pathology": {
+    "logo": "custom-bmc-clinical-pathology.svg",
+    "impact_factor": "N/A",
+    "impact_factor_year": 2025
+  },
+  "BMC Genomics": {
+    "logo": "bmc-genomics-bold.svg",
+    "impact_factor": "3.9",
+    "impact_factor_year": 2025
+  },
+  "BMC Infectious Diseases": {
+    "logo": "bmc-infectious-diseases.png",
+    "impact_factor": "3.2",
+    "impact_factor_year": 2025
+  },
+  "BMC Microbiology": {
+    "logo": "custom-bmc-microbiology.svg",
+    "impact_factor": "5.4",
+    "impact_factor_year": 2025
+  },
+  "BioMed Research International": {
+    "logo": "custom-biomed-research-international.svg",
+    "impact_factor": "2.9",
+    "impact_factor_year": 2025
+  },
+  "Bioinformatics Advances": {
+    "logo": "custom-bioinformatics-advances.svg",
+    "impact_factor": "2.6",
+    "impact_factor_year": 2025
+  },
+  "Briefings in Bioinformatics": {
+    "logo": "custom-briefings-in-bioinformatics.svg",
+    "impact_factor": "7.3",
+    "impact_factor_year": 2025
+  },
+  "Canadian Journal of Infectious Diseases and Medical Microbiology": {
+    "logo": "custom-canadian-journal-of-infectious-diseases-and-medical-microbiology.svg",
+    "impact_factor": "2.4",
+    "impact_factor_year": 2025
+  },
+  "Cell": {
+    "logo": "cell-full.svg",
+    "impact_factor": "45.1",
+    "impact_factor_year": 2025
+  },
+  "Communications Medicine": {
+    "logo": "communications-medicine.png",
+    "impact_factor": "7.4",
+    "impact_factor_year": 2025
+  },
+  "Diagnostic and Prognostic Research": {
+    "logo": "custom-diagnostic-and-prognostic-research.svg",
+    "impact_factor": "3.9",
+    "impact_factor_year": 2025
+  },
+  "F1000Research": {
+    "logo": "custom-f1000research.svg",
+    "impact_factor": "N/A",
+    "impact_factor_year": 2025
+  },
+  "Frontiers in Artificial Intelligence": {
+    "logo": "custom-frontiers-in-artificial-intelligence.svg",
+    "impact_factor": "6.7",
+    "impact_factor_year": 2025
+  },
+  "Frontiers in Bioinformatics": {
+    "logo": "custom-frontiers-in-bioinformatics.svg",
+    "impact_factor": "3.6",
+    "impact_factor_year": 2025
+  },
+  "Frontiers in Microbiology": {
+    "logo": "custom-frontiers-in-microbiology.svg",
+    "impact_factor": "5.8",
+    "impact_factor_year": 2025
+  },
+  "Frontiers in Public Health": {
+    "logo": "custom-frontiers-in-public-health.svg",
+    "impact_factor": "4.1",
+    "impact_factor_year": 2025
+  },
+  "Genes": {
+    "logo": "custom-genes.svg",
+    "impact_factor": "3.1",
+    "impact_factor_year": 2025
+  },
+  "Genetics in Medicine": {
+    "logo": "custom-genetics-in-medicine.svg",
+    "impact_factor": "6.2",
+    "impact_factor_year": 2025
+  },
+  "Genome": {
+    "logo": "custom-genome.svg",
+    "impact_factor": "1.9",
+    "impact_factor_year": 2025
+  },
+  "HIV Research & Clinical Practice": {
+    "logo": "custom-hiv-research-clinical-practice.svg",
+    "impact_factor": "2.1",
+    "impact_factor_year": 2025
+  },
+  "Immunogenetics": {
+    "logo": "custom-immunogenetics.svg",
+    "impact_factor": "2.1",
+    "impact_factor_year": 2025
+  },
+  "International Journal of Evolutionary Biology": {
+    "logo": "custom-international-journal-of-evolutionary-biology.svg",
+    "impact_factor": "N/A",
+    "impact_factor_year": 2025
+  },
+  "Journal of Clinical Microbiology": {
+    "logo": "custom-journal-of-clinical-microbiology.svg",
+    "impact_factor": "5.9",
+    "impact_factor_year": 2025
+  },
+  "Journal of Hospital Infection": {
+    "logo": "custom-journal-of-hospital-infection.svg",
+    "impact_factor": "3.4",
+    "impact_factor_year": 2025
+  },
+  "Livers": {
+    "logo": "custom-livers.svg",
+    "impact_factor": "2.2",
+    "impact_factor_year": 2025
+  },
+  "Malaria Journal": {
+    "logo": "custom-malaria-journal.svg",
+    "impact_factor": "3.7",
+    "impact_factor_year": 2025
+  },
+  "Microbial Genomics": {
+    "logo": "microbial-genomics.png",
+    "impact_factor": "4.5",
+    "impact_factor_year": 2025
+  },
+  "Microbial Pathogenesis": {
+    "logo": "custom-microbial-pathogenesis.svg",
+    "impact_factor": "3.9",
+    "impact_factor_year": 2025
+  },
+  "Microbiology Resource Announcements": {
+    "logo": "custom-microbiology-resource-announcements.svg",
+    "impact_factor": "0.6",
+    "impact_factor_year": 2025
+  },
+  "Molecular Genetics & Genomic Medicine": {
+    "logo": "custom-molecular-genetics-genomic-medicine.svg",
+    "impact_factor": "1.6",
+    "impact_factor_year": 2025
+  },
+  "Nature": {
+    "logo": "nature.png",
+    "impact_factor": "56.1",
+    "impact_factor_year": 2025
+  },
+  "Nature Medicine": {
+    "logo": "nature-medicine.png",
+    "impact_factor": "52.5",
+    "impact_factor_year": 2025
+  },
+  "Nature Reviews Genetics": {
+    "logo": "nature-reviews-genetics.png",
+    "impact_factor": "51.4",
+    "impact_factor_year": 2025
+  },
+  "New Microbes and New Infections": {
+    "logo": "custom-new-microbes-and-new-infections.svg",
+    "impact_factor": "6.0",
+    "impact_factor_year": 2025
+  },
+  "Open Forum Infectious Diseases": {
+    "logo": "custom-open-forum-infectious-diseases.svg",
+    "impact_factor": "3.8",
+    "impact_factor_year": 2025
+  },
+  "Open Research Africa": {
+    "logo": "custom-open-research-africa.svg",
+    "impact_factor": "N/A",
+    "impact_factor_year": 2025
+  },
+  "PLOS Biology": {
+    "logo": "plos-biology.png",
+    "impact_factor": "6.9",
+    "impact_factor_year": 2025
+  },
+  "PLOS Global Public Health": {
+    "logo": "custom-plos-global-public-health.svg",
+    "impact_factor": "2.8",
+    "impact_factor_year": 2025
+  },
+  "PLOS ONE": {
+    "logo": "plos-one-wordmark.svg",
+    "impact_factor": "2.8",
+    "impact_factor_year": 2025
+  },
+  "Science": {
+    "logo": "science.png",
+    "impact_factor": "47.3",
+    "impact_factor_year": 2025
+  },
+  "Scientific African": {
+    "logo": "custom-scientific-african.svg",
+    "impact_factor": "3.7",
+    "impact_factor_year": 2025
+  },
+  "Scientific Reports": {
+    "logo": "custom-scientific-reports.svg",
+    "impact_factor": "4.9",
+    "impact_factor_year": 2025
+  },
+  "The American Journal of Human Genetics": {
+    "logo": "custom-the-american-journal-of-human-genetics.svg",
+    "impact_factor": "7.7",
+    "impact_factor_year": 2025
+  },
+  "The American Journal of Tropical Medicine and Hygiene": {
+    "logo": "custom-the-american-journal-of-tropical-medicine-and-hygiene.svg",
+    "impact_factor": "1.9",
+    "impact_factor_year": 2025
+  },
+  "The Journal of Infectious Diseases": {
+    "logo": "custom-the-journal-of-infectious-diseases.svg",
+    "impact_factor": "4.1",
+    "impact_factor_year": 2025
+  },
+  "Tropical Animal Health and Production": {
+    "logo": "custom-tropical-animal-health-and-production.svg",
+    "impact_factor": "2.0",
+    "impact_factor_year": 2025
+  },
+  "Tropical Medicine and Infectious Disease": {
+    "logo": "custom-tropical-medicine-and-infectious-disease.svg",
+    "impact_factor": "3.1",
+    "impact_factor_year": 2025
+  },
+  "npj Genomic Medicine": {
+    "logo": "custom-npj-genomic-medicine.svg",
+    "impact_factor": "5.3",
+    "impact_factor_year": 2025
+  },
+  "BMC infectious diseases": {
+    "logo": "bmc-infectious-diseases.png",
+    "impact_factor": "3.2",
+    "impact_factor_year": 2025
+  },
+  "F1000 Research": {
+    "logo": "custom-f1000research.svg",
+    "impact_factor": "N/A",
+    "impact_factor_year": 2025
+  },
+  "Genomic Medicine": {
+    "logo": "custom-recovered-genomic-medicine-6ae3ff9.svg",
+    "impact_factor": "N/A",
+    "impact_factor_year": 2025
+  },
+  "MedRxiv": {
+    "logo": "custom-recovered-medrxiv-a79e7a8.svg",
+    "impact_factor": "N/A",
+    "impact_factor_year": 2025
+  },
+  "Molecular Genetics & Genomic medicine": {
+    "logo": "custom-molecular-genetics-genomic-medicine.svg",
+    "impact_factor": "1.6",
+    "impact_factor_year": 2025
+  },
+  "PLoS ONE": {
+    "logo": "plos-one-wordmark.svg",
+    "impact_factor": "2.8",
+    "impact_factor_year": 2025
+  },
+  "PloS One": {
+    "logo": "plos-one-wordmark.svg",
+    "impact_factor": "2.8",
+    "impact_factor_year": 2025
+  },
+  "Pediatric Health, Medicine and Therapeutics": {
+    "logo": "custom-pediatric-health-medicine-and-therapeutics.svg",
+    "impact_factor": "1.8",
+    "impact_factor_year": 2025
+  }
+}

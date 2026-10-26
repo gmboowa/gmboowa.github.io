@@ -3,29 +3,61 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         {%- if site.enable_publication_thumbnails -%}
-        <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
-        {%- if entry.preview -%}
-          {% if entry.preview contains '://' -%}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
-          {%- else -%}
-            {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' -%}
-            {% include figure.html
-            path=entry_path
-            class="preview z-depth-1 rounded"
-            zoomable=false
-            alt=entry.preview -%}
+        <div class="col-sm-2 preview">
+          {%- assign journal_lookup_name = entry.journal | default: entry.abbr -%}
+          {%- assign journal_meta = site.data.journals[journal_lookup_name] -%}
+          {%- assign article_url = entry.html | default: entry.url -%}
+          {%- if article_url == blank and entry.doi != blank -%}
+            {%- assign article_url = entry.doi | prepend: 'https://doi.org/' -%}
           {%- endif -%}
-        {%- elsif entry.abbr -%}
-          {%- if site.data.venues[entry.abbr] -%}
-            {%- assign venue_style = nil -%}
-            {%- if site.data.venues[entry.abbr].color != blank -%}
-              {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' -%}
+          {%- if journal_meta -%}
+          <div class="journal-thumbnail-panel">
+            {%- if article_url != blank -%}
+            <a class="journal-thumbnail-link" href="{{ article_url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ entry.journal | escape }}">
             {%- endif -%}
-            <abbr class="badge" {% if venue_style %}{{venue_style}}{% endif %}><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
-          {%- else -%}
-            <abbr class="badge">{{entry.abbr}}</abbr>
+              <div class="journal-card {% if journal_meta.logo != blank %}journal-logo-card{% else %}journal-fallback-card{% endif %} z-depth-1 rounded">
+                <div class="journal-logo-area">
+                  {%- if journal_meta.logo != blank -%}
+                  {%- assign journal_logo_path = journal_meta.logo | prepend: '/assets/img/journal_logos/' -%}
+                  <img class="journal-logo" src="{{ journal_logo_path | relative_url }}" alt="{{ journal_lookup_name | escape }} logo" loading="lazy">
+                  {%- else -%}
+                  <span class="journal-fallback-name">{{ journal_lookup_name }}</span>
+                  {%- endif -%}
+                </div>
+                <div class="journal-impact-factor">
+                  <span class="journal-impact-factor-label">{{ journal_meta.impact_factor_year }} impact factor</span>
+                  <strong class="journal-impact-factor-value">{{ journal_meta.impact_factor | default: 'N/A' }}</strong>
+                </div>
+              </div>
+            {%- if article_url != blank -%}
+            </a>
+            {%- endif -%}
+            <div class="journal-thumbnail-name">
+              {%- if article_url != blank -%}
+              <a href="{{ article_url | escape }}" target="_blank" rel="noopener noreferrer">{{ entry.journal }}</a>
+              {%- else -%}
+              {{ entry.journal }}
+              {%- endif -%}
+            </div>
+          </div>
+          {%- elsif entry.preview -%}
+            {%- if entry.preview contains '://' -%}
+            <img class="preview z-depth-1 rounded" src="{{ entry.preview }}" alt="{{ entry.title | escape }}">
+            {%- else -%}
+              {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' -%}
+              {% include figure.html path=entry_path class="preview z-depth-1 rounded" zoomable=false alt=entry.preview %}
+            {%- endif -%}
+          {%- elsif entry.abbr -%}
+            {%- if site.data.venues[entry.abbr] -%}
+              {%- assign venue_style = nil -%}
+              {%- if site.data.venues[entry.abbr].color != blank -%}
+                {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' -%}
+              {%- endif -%}
+              <abbr class="badge" {% if venue_style %}{{venue_style}}{% endif %}><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+            {%- else -%}
+              <abbr class="badge">{{entry.abbr}}</abbr>
+            {%- endif -%}
           {%- endif -%}
-        {%- endif -%}
         </div>
         {%- endif -%}
 

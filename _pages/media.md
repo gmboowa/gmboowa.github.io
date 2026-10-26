@@ -101,22 +101,12 @@ nav_order: 7
 </p>
 
 <p>
-  <strong>MDPI Pathogens:</strong>
-  <a href="https://www.mdpi.com/journal/pathogens/special_issues/340F8X1PKC"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="font-weight: 900; color: #1a73e8; text-decoration: none;">
-     Genomic Epidemiology & Drug Resistance in Mycobacterium tuberculosis
-  </a>
-</p>
-
-<p>
   <strong>BMC Infectious Diseases:</strong>
-  <a href="https://www.biomedcentral.com/collections/bamrb"
+  <a href="https://link.springer.com/collections/cejfecjbbg"
      target="_blank"
      rel="noopener noreferrer"
      style="font-weight: 900; color: #1a73e8; text-decoration: none;">
-     Bacteriophages Against Multi-Drug Resistant Bacteria
+     Combatting AMR in infectious disease management
   </a>
 </p>
 
