@@ -9,3 +9,7 @@ _site
 Gemfile.lock
 vendor
 
+*.bak
+*.backup
+*.before-*
+*.before_*
