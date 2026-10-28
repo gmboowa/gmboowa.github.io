@@ -238,3 +238,66 @@ body:has(.gm-unified-about) .post-header > .post-title {
     line-height: 1.7;
   }
 }
+
+
+/* ============================================================
+   ABOUT PAGE: ALIGN SELECTED PUBLICATIONS WITH RESEARCH CONTENT
+   The main theme defaults to .container { max-width: 800px }.
+   Our About layout uses a wider centered column, while the theme
+   renders Selected Publications outside .gm-unified-about.
+   Match the two sections without altering publication card styles.
+   ============================================================ */
+
+/* Only when the unified About page exists. */
+body:has(.gm-unified-about) .publications {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Use the same left edge for all three primary page sections. */
+body:has(.gm-unified-about) .gm-unified-about,
+body:has(.gm-unified-about) .gm-unified-about .gm-pipeline-portfolio,
+body:has(.gm-unified-about) .gm-unified-about .gm-research-title,
+body:has(.gm-unified-about) .gm-unified-about .gm-research-copy {
+  box-sizing: border-box;
+}
+
+/* On phones, retain the natural fluid width and the theme's padding. */
+@media (max-width: 767px) {
+  body:has(.gm-unified-about) .publications {
+    max-width: 100%;
+  }
+}
+
+/* ============================================================
+   VERIFIED SELECTED PUBLICATIONS HEADING ALIGNMENT
+   _layouts/about.html renders this heading as:
+   article > div.clearfix (contains .gm-unified-about) + h2
+   The heading is NOT a direct child of .post and is NOT inside
+   .publications. Match the same centered 900px content column.
+   ============================================================ */
+@media (min-width: 768px) {
+  body:has(.gm-unified-about) .post article > h2:has(> a[href*="/publications/"]) {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+}
+
+/* On smaller screens the heading follows the available article width. */
+@media (max-width: 767px) {
+  body:has(.gm-unified-about) .post article > h2:has(> a[href*="/publications/"]) {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
