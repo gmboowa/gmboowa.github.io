@@ -3,32 +3,32 @@ layout: about
 title: About
 permalink: /
 subtitle:
-
-profile:
-  align: right
-  image: gerald-mboowa-1.png
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p></p><br>
-    <p></p>
-
-news: false  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+profile: false
+news: false
+latest_posts: false
+selected_papers: true
+social: true
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/pipeline-portfolio.css' | relative_url }}">
 
-
-
-<p class="gm-about-intro">Hi, I’m Gerald Mboowa, a scientist dedicated to advancing global health through innovative research and data-driven solutions, particularly in low- and middle-income countries (LMICs). My work integrates genome sequencing technologies, bioinformatics, and data science into public health strategies to address critical health challenges. As an implementation scientist, I develop reproducible bioinformatics pipelines that support bacterial, viral, and fungal pathogen characterization, antimicrobial and antifungal resistance surveillance, genomic epidemiology, outbreak investigations, and evidence-based public health decision-making.</p>
+<div class="gm-unified-about">
+  <header class="gm-unified-hero">
+    <img class="gm-unified-photo"
+         src="{{ '/assets/img/gerald-mboowa-1.png' | relative_url }}"
+         alt="Portrait of Gerald Mboowa"
+         width="228" height="228"
+         loading="eager" decoding="async">
+    <h1 class="gm-unified-name"><strong>Gerald</strong> Mboowa</h1>
+    <p class="gm-unified-tagline">Genomics <span aria-hidden="true">•</span> Bioinformatics <span aria-hidden="true">•</span> Global Health</p>
+    <p class="gm-unified-intro">Hi, I’m Gerald Mboowa, a scientist dedicated to advancing global health through innovative research and data-driven solutions, particularly in low- and middle-income countries (LMICs). My work integrates genome sequencing technologies, bioinformatics, and data science into public health strategies to address critical health challenges. As an implementation scientist, I develop reproducible bioinformatics pipelines that support bacterial, viral, and fungal pathogen characterization, antimicrobial and antifungal resistance surveillance, genomic epidemiology, outbreak investigations, and evidence-based public health decision-making.</p>
+  </header>
 
 <section class="gm-pipeline-portfolio" aria-labelledby="gm-pipeline-heading">
   <div class="gm-pipeline-heading">
     <span class="gm-pipeline-eyebrow">Research software portfolio</span>
     <h2 id="gm-pipeline-heading">Bioinformatics Pipelines</h2>
-    <p>Open-source and published frameworks advancing pathogen genomics, resistance research, and public health surveillance.</p>
+    <p>Open-source bioinformatics frameworks supporting bacterial, viral, and fungal pathogen genomics, antimicrobial resistance research, and public health surveillance.</p>
   </div>
 
   <div class="gm-pipeline-group">
@@ -82,4 +82,5 @@ For more details about my research contributions, visit my <a href="https://orci
 
 Let’s connect and explore collaborative opportunities to advance global health, genomics, bioinformatics, data science, and public health innovations!
 
+</div>
 </div>
